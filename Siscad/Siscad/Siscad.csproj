@@ -69,6 +69,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frmTercero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTercero.Designer.cs">
+      <DependentUpon>frmTercero.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -77,6 +83,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSaludoUsuario.resx">
       <DependentUpon>frmSaludoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTercero.resx">
+      <DependentUpon>frmTercero.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -104,6 +113,93 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fondo2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tercero.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sucursal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\producto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cambioClave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cambioUsuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\venta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\traslado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\devolucion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salida.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\afiliacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contrato.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nomina.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\incidenteAccidente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\historialMedico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vigilancia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empresa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tarea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anexoProducto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anexoTercero.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anexoRrHh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anexoSiso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\infoLaboral.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\infoComercial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\infoEmpresa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\infoSiso.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

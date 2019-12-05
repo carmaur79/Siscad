@@ -46,7 +46,7 @@ namespace Siscad
 
         private void showSubmenu(Panel subMenu)
         {
-            if(subMenu.Visible==false)
+            if (subMenu.Visible == false)
             {
                 hideSubmenu();
                 subMenu.Visible = true;
@@ -55,11 +55,6 @@ namespace Siscad
             {
                 subMenu.Visible = false;
             }
-        }
-
-        private void frmPrincipal_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Application.Exit();
         }
 
         private void buttonArchivo_Click(object sender, EventArgs e)
@@ -255,6 +250,16 @@ namespace Siscad
         }
 
         private void buttonSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void buttonMenu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmPrincipal1_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
         }

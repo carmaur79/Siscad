@@ -1,6 +1,6 @@
 ﻿namespace Siscad
 {
-    partial class frmPrincipal1
+    partial class frmPrincipal
     {
         /// <summary>
         /// Required designer variable.
@@ -30,50 +30,50 @@
         {
             this.panelMenuSuperior = new System.Windows.Forms.Panel();
             this.labelNombreAplicacion = new System.Windows.Forms.Label();
+            this.buttonMenu = new System.Windows.Forms.Button();
             this.panelMenuInferior = new System.Windows.Forms.Panel();
             this.panelMenuLateral = new System.Windows.Forms.Panel();
-            this.panelSubMenuInformeReporte = new System.Windows.Forms.Panel();
-            this.buttonConsultaInformacion = new System.Windows.Forms.Button();
-            this.panelSubMenuHerramientaAnexo = new System.Windows.Forms.Panel();
-            this.buttonHerramientaAnexo = new System.Windows.Forms.Button();
-            this.panelSubMenuSiso = new System.Windows.Forms.Panel();
-            this.buttonSiso = new System.Windows.Forms.Button();
-            this.panelSubMenuRrHh = new System.Windows.Forms.Panel();
-            this.buttonRrHh = new System.Windows.Forms.Button();
-            this.panelSubMenuComercio = new System.Windows.Forms.Panel();
-            this.buttonComercio = new System.Windows.Forms.Button();
-            this.panelSubMenuArchivo = new System.Windows.Forms.Panel();
-            this.buttonArchivo = new System.Windows.Forms.Button();
-            this.panelPanelContenedor = new System.Windows.Forms.Panel();
             this.buttonSalir = new System.Windows.Forms.Button();
+            this.panelSubMenuInformeReporte = new System.Windows.Forms.Panel();
             this.buttonInfoSiso = new System.Windows.Forms.Button();
             this.buttonInfoComercial = new System.Windows.Forms.Button();
             this.buttonInfoLaboral = new System.Windows.Forms.Button();
             this.buttonInfoEmpresa = new System.Windows.Forms.Button();
+            this.buttonConsultaInformacion = new System.Windows.Forms.Button();
+            this.panelSubMenuHerramientaAnexo = new System.Windows.Forms.Panel();
             this.buttonAnexoSiso = new System.Windows.Forms.Button();
             this.buttonAnexoRrHh = new System.Windows.Forms.Button();
             this.buttonAnexoTercero = new System.Windows.Forms.Button();
             this.buttonAnexoProducto = new System.Windows.Forms.Button();
             this.buttonActividadPendiente = new System.Windows.Forms.Button();
             this.buttonEmpresa = new System.Windows.Forms.Button();
+            this.buttonHerramientaAnexo = new System.Windows.Forms.Button();
+            this.panelSubMenuSiso = new System.Windows.Forms.Panel();
             this.buttonVigilanciaControl = new System.Windows.Forms.Button();
             this.buttonHistorialMedico = new System.Windows.Forms.Button();
             this.buttonIncidenteAccidente = new System.Windows.Forms.Button();
+            this.buttonSiso = new System.Windows.Forms.Button();
+            this.panelSubMenuRrHh = new System.Windows.Forms.Panel();
             this.buttonNomina = new System.Windows.Forms.Button();
             this.buttonContrato = new System.Windows.Forms.Button();
             this.buttonAfiliacion = new System.Windows.Forms.Button();
+            this.buttonRrHh = new System.Windows.Forms.Button();
+            this.panelSubMenuComercio = new System.Windows.Forms.Panel();
             this.buttonDevolucion = new System.Windows.Forms.Button();
             this.buttonTraslado = new System.Windows.Forms.Button();
             this.buttonSalida = new System.Windows.Forms.Button();
             this.buttonCompra = new System.Windows.Forms.Button();
             this.buttonVenta = new System.Windows.Forms.Button();
+            this.buttonComercio = new System.Windows.Forms.Button();
+            this.panelSubMenuArchivo = new System.Windows.Forms.Panel();
             this.buttonCambioUsuario = new System.Windows.Forms.Button();
             this.buttonCambioClave = new System.Windows.Forms.Button();
             this.buttonUsuario = new System.Windows.Forms.Button();
             this.buttonTercero = new System.Windows.Forms.Button();
             this.buttonSucursal = new System.Windows.Forms.Button();
             this.buttonProducto = new System.Windows.Forms.Button();
-            this.buttonMenu = new System.Windows.Forms.Button();
+            this.buttonArchivo = new System.Windows.Forms.Button();
+            this.panelPanelContenedor = new System.Windows.Forms.Panel();
             this.panelMenuSuperior.SuspendLayout();
             this.panelMenuLateral.SuspendLayout();
             this.panelSubMenuInformeReporte.SuspendLayout();
@@ -106,6 +106,18 @@
             this.labelNombreAplicacion.TabIndex = 1;
             this.labelNombreAplicacion.Text = "Solución integral en seguridad social, comercio y administración";
             // 
+            // buttonMenu
+            // 
+            this.buttonMenu.FlatAppearance.BorderSize = 0;
+            this.buttonMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMenu.Image = global::Siscad.Properties.Resources.menu;
+            this.buttonMenu.Location = new System.Drawing.Point(12, 3);
+            this.buttonMenu.Name = "buttonMenu";
+            this.buttonMenu.Size = new System.Drawing.Size(35, 35);
+            this.buttonMenu.TabIndex = 0;
+            this.buttonMenu.UseVisualStyleBackColor = true;
+            this.buttonMenu.Click += new System.EventHandler(this.buttonMenu_Click);
+            // 
             // panelMenuInferior
             // 
             this.panelMenuInferior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(26)))), ((int)(((byte)(36)))));
@@ -137,192 +149,6 @@
             this.panelMenuLateral.Size = new System.Drawing.Size(250, 718);
             this.panelMenuLateral.TabIndex = 2;
             // 
-            // panelSubMenuInformeReporte
-            // 
-            this.panelSubMenuInformeReporte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(44)))));
-            this.panelSubMenuInformeReporte.Controls.Add(this.buttonInfoSiso);
-            this.panelSubMenuInformeReporte.Controls.Add(this.buttonInfoComercial);
-            this.panelSubMenuInformeReporte.Controls.Add(this.buttonInfoLaboral);
-            this.panelSubMenuInformeReporte.Controls.Add(this.buttonInfoEmpresa);
-            this.panelSubMenuInformeReporte.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSubMenuInformeReporte.Location = new System.Drawing.Point(0, 1240);
-            this.panelSubMenuInformeReporte.Name = "panelSubMenuInformeReporte";
-            this.panelSubMenuInformeReporte.Size = new System.Drawing.Size(250, 170);
-            this.panelSubMenuInformeReporte.TabIndex = 16;
-            // 
-            // buttonConsultaInformacion
-            // 
-            this.buttonConsultaInformacion.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonConsultaInformacion.FlatAppearance.BorderSize = 0;
-            this.buttonConsultaInformacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonConsultaInformacion.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonConsultaInformacion.Location = new System.Drawing.Point(0, 1195);
-            this.buttonConsultaInformacion.Name = "buttonConsultaInformacion";
-            this.buttonConsultaInformacion.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.buttonConsultaInformacion.Size = new System.Drawing.Size(250, 45);
-            this.buttonConsultaInformacion.TabIndex = 15;
-            this.buttonConsultaInformacion.Text = "Consulta de información";
-            this.buttonConsultaInformacion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonConsultaInformacion.UseVisualStyleBackColor = true;
-            this.buttonConsultaInformacion.Click += new System.EventHandler(this.buttonConsultaInformacion_Click);
-            // 
-            // panelSubMenuHerramientaAnexo
-            // 
-            this.panelSubMenuHerramientaAnexo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(44)))));
-            this.panelSubMenuHerramientaAnexo.Controls.Add(this.buttonAnexoSiso);
-            this.panelSubMenuHerramientaAnexo.Controls.Add(this.buttonAnexoRrHh);
-            this.panelSubMenuHerramientaAnexo.Controls.Add(this.buttonAnexoTercero);
-            this.panelSubMenuHerramientaAnexo.Controls.Add(this.buttonAnexoProducto);
-            this.panelSubMenuHerramientaAnexo.Controls.Add(this.buttonActividadPendiente);
-            this.panelSubMenuHerramientaAnexo.Controls.Add(this.buttonEmpresa);
-            this.panelSubMenuHerramientaAnexo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSubMenuHerramientaAnexo.Location = new System.Drawing.Point(0, 945);
-            this.panelSubMenuHerramientaAnexo.Name = "panelSubMenuHerramientaAnexo";
-            this.panelSubMenuHerramientaAnexo.Size = new System.Drawing.Size(250, 250);
-            this.panelSubMenuHerramientaAnexo.TabIndex = 14;
-            // 
-            // buttonHerramientaAnexo
-            // 
-            this.buttonHerramientaAnexo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonHerramientaAnexo.FlatAppearance.BorderSize = 0;
-            this.buttonHerramientaAnexo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonHerramientaAnexo.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonHerramientaAnexo.Location = new System.Drawing.Point(0, 900);
-            this.buttonHerramientaAnexo.Name = "buttonHerramientaAnexo";
-            this.buttonHerramientaAnexo.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.buttonHerramientaAnexo.Size = new System.Drawing.Size(250, 45);
-            this.buttonHerramientaAnexo.TabIndex = 13;
-            this.buttonHerramientaAnexo.Text = "Herramientas y anexos";
-            this.buttonHerramientaAnexo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonHerramientaAnexo.UseVisualStyleBackColor = true;
-            this.buttonHerramientaAnexo.Click += new System.EventHandler(this.buttonHerramientaAnexo_Click);
-            // 
-            // panelSubMenuSiso
-            // 
-            this.panelSubMenuSiso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(44)))));
-            this.panelSubMenuSiso.Controls.Add(this.buttonVigilanciaControl);
-            this.panelSubMenuSiso.Controls.Add(this.buttonHistorialMedico);
-            this.panelSubMenuSiso.Controls.Add(this.buttonIncidenteAccidente);
-            this.panelSubMenuSiso.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSubMenuSiso.Location = new System.Drawing.Point(0, 770);
-            this.panelSubMenuSiso.Name = "panelSubMenuSiso";
-            this.panelSubMenuSiso.Size = new System.Drawing.Size(250, 130);
-            this.panelSubMenuSiso.TabIndex = 12;
-            // 
-            // buttonSiso
-            // 
-            this.buttonSiso.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonSiso.FlatAppearance.BorderSize = 0;
-            this.buttonSiso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSiso.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonSiso.Location = new System.Drawing.Point(0, 725);
-            this.buttonSiso.Name = "buttonSiso";
-            this.buttonSiso.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.buttonSiso.Size = new System.Drawing.Size(250, 45);
-            this.buttonSiso.TabIndex = 11;
-            this.buttonSiso.Text = "Salud ocupacional";
-            this.buttonSiso.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonSiso.UseVisualStyleBackColor = true;
-            this.buttonSiso.Click += new System.EventHandler(this.buttonSiso_Click);
-            // 
-            // panelSubMenuRrHh
-            // 
-            this.panelSubMenuRrHh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(44)))));
-            this.panelSubMenuRrHh.Controls.Add(this.buttonNomina);
-            this.panelSubMenuRrHh.Controls.Add(this.buttonContrato);
-            this.panelSubMenuRrHh.Controls.Add(this.buttonAfiliacion);
-            this.panelSubMenuRrHh.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSubMenuRrHh.Location = new System.Drawing.Point(0, 595);
-            this.panelSubMenuRrHh.Name = "panelSubMenuRrHh";
-            this.panelSubMenuRrHh.Size = new System.Drawing.Size(250, 130);
-            this.panelSubMenuRrHh.TabIndex = 8;
-            // 
-            // buttonRrHh
-            // 
-            this.buttonRrHh.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonRrHh.FlatAppearance.BorderSize = 0;
-            this.buttonRrHh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonRrHh.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonRrHh.Location = new System.Drawing.Point(0, 550);
-            this.buttonRrHh.Name = "buttonRrHh";
-            this.buttonRrHh.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.buttonRrHh.Size = new System.Drawing.Size(250, 45);
-            this.buttonRrHh.TabIndex = 7;
-            this.buttonRrHh.Text = "Recursos humanos";
-            this.buttonRrHh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonRrHh.UseVisualStyleBackColor = true;
-            this.buttonRrHh.Click += new System.EventHandler(this.buttonRrHh_Click);
-            // 
-            // panelSubMenuComercio
-            // 
-            this.panelSubMenuComercio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(44)))));
-            this.panelSubMenuComercio.Controls.Add(this.buttonDevolucion);
-            this.panelSubMenuComercio.Controls.Add(this.buttonTraslado);
-            this.panelSubMenuComercio.Controls.Add(this.buttonSalida);
-            this.panelSubMenuComercio.Controls.Add(this.buttonCompra);
-            this.panelSubMenuComercio.Controls.Add(this.buttonVenta);
-            this.panelSubMenuComercio.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSubMenuComercio.Location = new System.Drawing.Point(0, 340);
-            this.panelSubMenuComercio.Name = "panelSubMenuComercio";
-            this.panelSubMenuComercio.Size = new System.Drawing.Size(250, 210);
-            this.panelSubMenuComercio.TabIndex = 6;
-            // 
-            // buttonComercio
-            // 
-            this.buttonComercio.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonComercio.FlatAppearance.BorderSize = 0;
-            this.buttonComercio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonComercio.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonComercio.Location = new System.Drawing.Point(0, 295);
-            this.buttonComercio.Name = "buttonComercio";
-            this.buttonComercio.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.buttonComercio.Size = new System.Drawing.Size(250, 45);
-            this.buttonComercio.TabIndex = 5;
-            this.buttonComercio.Text = "Comercio";
-            this.buttonComercio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonComercio.UseVisualStyleBackColor = true;
-            this.buttonComercio.Click += new System.EventHandler(this.buttonComercio_Click);
-            // 
-            // panelSubMenuArchivo
-            // 
-            this.panelSubMenuArchivo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(44)))));
-            this.panelSubMenuArchivo.Controls.Add(this.buttonCambioUsuario);
-            this.panelSubMenuArchivo.Controls.Add(this.buttonCambioClave);
-            this.panelSubMenuArchivo.Controls.Add(this.buttonUsuario);
-            this.panelSubMenuArchivo.Controls.Add(this.buttonTercero);
-            this.panelSubMenuArchivo.Controls.Add(this.buttonSucursal);
-            this.panelSubMenuArchivo.Controls.Add(this.buttonProducto);
-            this.panelSubMenuArchivo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSubMenuArchivo.Location = new System.Drawing.Point(0, 45);
-            this.panelSubMenuArchivo.Name = "panelSubMenuArchivo";
-            this.panelSubMenuArchivo.Size = new System.Drawing.Size(250, 250);
-            this.panelSubMenuArchivo.TabIndex = 4;
-            // 
-            // buttonArchivo
-            // 
-            this.buttonArchivo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonArchivo.FlatAppearance.BorderSize = 0;
-            this.buttonArchivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonArchivo.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonArchivo.Location = new System.Drawing.Point(0, 0);
-            this.buttonArchivo.Name = "buttonArchivo";
-            this.buttonArchivo.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.buttonArchivo.Size = new System.Drawing.Size(250, 45);
-            this.buttonArchivo.TabIndex = 3;
-            this.buttonArchivo.Text = "Archivo";
-            this.buttonArchivo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonArchivo.UseVisualStyleBackColor = true;
-            this.buttonArchivo.Click += new System.EventHandler(this.buttonArchivo_Click);
-            // 
-            // panelPanelContenedor
-            // 
-            this.panelPanelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(26)))), ((int)(((byte)(36)))));
-            this.panelPanelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelPanelContenedor.Location = new System.Drawing.Point(250, 40);
-            this.panelPanelContenedor.Name = "panelPanelContenedor";
-            this.panelPanelContenedor.Size = new System.Drawing.Size(650, 718);
-            this.panelPanelContenedor.TabIndex = 3;
-            // 
             // buttonSalir
             // 
             this.buttonSalir.Dock = System.Windows.Forms.DockStyle.Top;
@@ -341,6 +167,19 @@
             this.buttonSalir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonSalir.UseVisualStyleBackColor = true;
             this.buttonSalir.Click += new System.EventHandler(this.buttonSalir_Click);
+            // 
+            // panelSubMenuInformeReporte
+            // 
+            this.panelSubMenuInformeReporte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(44)))));
+            this.panelSubMenuInformeReporte.Controls.Add(this.buttonInfoSiso);
+            this.panelSubMenuInformeReporte.Controls.Add(this.buttonInfoComercial);
+            this.panelSubMenuInformeReporte.Controls.Add(this.buttonInfoLaboral);
+            this.panelSubMenuInformeReporte.Controls.Add(this.buttonInfoEmpresa);
+            this.panelSubMenuInformeReporte.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelSubMenuInformeReporte.Location = new System.Drawing.Point(0, 1240);
+            this.panelSubMenuInformeReporte.Name = "panelSubMenuInformeReporte";
+            this.panelSubMenuInformeReporte.Size = new System.Drawing.Size(250, 170);
+            this.panelSubMenuInformeReporte.TabIndex = 16;
             // 
             // buttonInfoSiso
             // 
@@ -417,6 +256,37 @@
             this.buttonInfoEmpresa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonInfoEmpresa.UseVisualStyleBackColor = true;
             this.buttonInfoEmpresa.Click += new System.EventHandler(this.buttonInfoEmpresa_Click);
+            // 
+            // buttonConsultaInformacion
+            // 
+            this.buttonConsultaInformacion.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonConsultaInformacion.FlatAppearance.BorderSize = 0;
+            this.buttonConsultaInformacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonConsultaInformacion.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonConsultaInformacion.Location = new System.Drawing.Point(0, 1195);
+            this.buttonConsultaInformacion.Name = "buttonConsultaInformacion";
+            this.buttonConsultaInformacion.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.buttonConsultaInformacion.Size = new System.Drawing.Size(250, 45);
+            this.buttonConsultaInformacion.TabIndex = 15;
+            this.buttonConsultaInformacion.Text = "Consulta de información";
+            this.buttonConsultaInformacion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonConsultaInformacion.UseVisualStyleBackColor = true;
+            this.buttonConsultaInformacion.Click += new System.EventHandler(this.buttonConsultaInformacion_Click);
+            // 
+            // panelSubMenuHerramientaAnexo
+            // 
+            this.panelSubMenuHerramientaAnexo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(44)))));
+            this.panelSubMenuHerramientaAnexo.Controls.Add(this.buttonAnexoSiso);
+            this.panelSubMenuHerramientaAnexo.Controls.Add(this.buttonAnexoRrHh);
+            this.panelSubMenuHerramientaAnexo.Controls.Add(this.buttonAnexoTercero);
+            this.panelSubMenuHerramientaAnexo.Controls.Add(this.buttonAnexoProducto);
+            this.panelSubMenuHerramientaAnexo.Controls.Add(this.buttonActividadPendiente);
+            this.panelSubMenuHerramientaAnexo.Controls.Add(this.buttonEmpresa);
+            this.panelSubMenuHerramientaAnexo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelSubMenuHerramientaAnexo.Location = new System.Drawing.Point(0, 945);
+            this.panelSubMenuHerramientaAnexo.Name = "panelSubMenuHerramientaAnexo";
+            this.panelSubMenuHerramientaAnexo.Size = new System.Drawing.Size(250, 250);
+            this.panelSubMenuHerramientaAnexo.TabIndex = 14;
             // 
             // buttonAnexoSiso
             // 
@@ -532,6 +402,34 @@
             this.buttonEmpresa.UseVisualStyleBackColor = true;
             this.buttonEmpresa.Click += new System.EventHandler(this.buttonEmpresa_Click);
             // 
+            // buttonHerramientaAnexo
+            // 
+            this.buttonHerramientaAnexo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonHerramientaAnexo.FlatAppearance.BorderSize = 0;
+            this.buttonHerramientaAnexo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonHerramientaAnexo.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonHerramientaAnexo.Location = new System.Drawing.Point(0, 900);
+            this.buttonHerramientaAnexo.Name = "buttonHerramientaAnexo";
+            this.buttonHerramientaAnexo.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.buttonHerramientaAnexo.Size = new System.Drawing.Size(250, 45);
+            this.buttonHerramientaAnexo.TabIndex = 13;
+            this.buttonHerramientaAnexo.Text = "Herramientas y anexos";
+            this.buttonHerramientaAnexo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonHerramientaAnexo.UseVisualStyleBackColor = true;
+            this.buttonHerramientaAnexo.Click += new System.EventHandler(this.buttonHerramientaAnexo_Click);
+            // 
+            // panelSubMenuSiso
+            // 
+            this.panelSubMenuSiso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(44)))));
+            this.panelSubMenuSiso.Controls.Add(this.buttonVigilanciaControl);
+            this.panelSubMenuSiso.Controls.Add(this.buttonHistorialMedico);
+            this.panelSubMenuSiso.Controls.Add(this.buttonIncidenteAccidente);
+            this.panelSubMenuSiso.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelSubMenuSiso.Location = new System.Drawing.Point(0, 770);
+            this.panelSubMenuSiso.Name = "panelSubMenuSiso";
+            this.panelSubMenuSiso.Size = new System.Drawing.Size(250, 130);
+            this.panelSubMenuSiso.TabIndex = 12;
+            // 
             // buttonVigilanciaControl
             // 
             this.buttonVigilanciaControl.Dock = System.Windows.Forms.DockStyle.Top;
@@ -589,6 +487,34 @@
             this.buttonIncidenteAccidente.UseVisualStyleBackColor = true;
             this.buttonIncidenteAccidente.Click += new System.EventHandler(this.buttonIncidenteAccidente_Click);
             // 
+            // buttonSiso
+            // 
+            this.buttonSiso.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonSiso.FlatAppearance.BorderSize = 0;
+            this.buttonSiso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSiso.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonSiso.Location = new System.Drawing.Point(0, 725);
+            this.buttonSiso.Name = "buttonSiso";
+            this.buttonSiso.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.buttonSiso.Size = new System.Drawing.Size(250, 45);
+            this.buttonSiso.TabIndex = 11;
+            this.buttonSiso.Text = "Salud ocupacional";
+            this.buttonSiso.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonSiso.UseVisualStyleBackColor = true;
+            this.buttonSiso.Click += new System.EventHandler(this.buttonSiso_Click);
+            // 
+            // panelSubMenuRrHh
+            // 
+            this.panelSubMenuRrHh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(44)))));
+            this.panelSubMenuRrHh.Controls.Add(this.buttonNomina);
+            this.panelSubMenuRrHh.Controls.Add(this.buttonContrato);
+            this.panelSubMenuRrHh.Controls.Add(this.buttonAfiliacion);
+            this.panelSubMenuRrHh.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelSubMenuRrHh.Location = new System.Drawing.Point(0, 595);
+            this.panelSubMenuRrHh.Name = "panelSubMenuRrHh";
+            this.panelSubMenuRrHh.Size = new System.Drawing.Size(250, 130);
+            this.panelSubMenuRrHh.TabIndex = 8;
+            // 
             // buttonNomina
             // 
             this.buttonNomina.Dock = System.Windows.Forms.DockStyle.Top;
@@ -645,6 +571,36 @@
             this.buttonAfiliacion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonAfiliacion.UseVisualStyleBackColor = true;
             this.buttonAfiliacion.Click += new System.EventHandler(this.buttonAfiliacion_Click);
+            // 
+            // buttonRrHh
+            // 
+            this.buttonRrHh.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonRrHh.FlatAppearance.BorderSize = 0;
+            this.buttonRrHh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonRrHh.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonRrHh.Location = new System.Drawing.Point(0, 550);
+            this.buttonRrHh.Name = "buttonRrHh";
+            this.buttonRrHh.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.buttonRrHh.Size = new System.Drawing.Size(250, 45);
+            this.buttonRrHh.TabIndex = 7;
+            this.buttonRrHh.Text = "Recursos humanos";
+            this.buttonRrHh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonRrHh.UseVisualStyleBackColor = true;
+            this.buttonRrHh.Click += new System.EventHandler(this.buttonRrHh_Click);
+            // 
+            // panelSubMenuComercio
+            // 
+            this.panelSubMenuComercio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(44)))));
+            this.panelSubMenuComercio.Controls.Add(this.buttonDevolucion);
+            this.panelSubMenuComercio.Controls.Add(this.buttonTraslado);
+            this.panelSubMenuComercio.Controls.Add(this.buttonSalida);
+            this.panelSubMenuComercio.Controls.Add(this.buttonCompra);
+            this.panelSubMenuComercio.Controls.Add(this.buttonVenta);
+            this.panelSubMenuComercio.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelSubMenuComercio.Location = new System.Drawing.Point(0, 340);
+            this.panelSubMenuComercio.Name = "panelSubMenuComercio";
+            this.panelSubMenuComercio.Size = new System.Drawing.Size(250, 210);
+            this.panelSubMenuComercio.TabIndex = 6;
             // 
             // buttonDevolucion
             // 
@@ -740,6 +696,37 @@
             this.buttonVenta.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonVenta.UseVisualStyleBackColor = true;
             this.buttonVenta.Click += new System.EventHandler(this.buttonVenta_Click);
+            // 
+            // buttonComercio
+            // 
+            this.buttonComercio.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonComercio.FlatAppearance.BorderSize = 0;
+            this.buttonComercio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonComercio.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonComercio.Location = new System.Drawing.Point(0, 295);
+            this.buttonComercio.Name = "buttonComercio";
+            this.buttonComercio.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.buttonComercio.Size = new System.Drawing.Size(250, 45);
+            this.buttonComercio.TabIndex = 5;
+            this.buttonComercio.Text = "Comercio";
+            this.buttonComercio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonComercio.UseVisualStyleBackColor = true;
+            this.buttonComercio.Click += new System.EventHandler(this.buttonComercio_Click);
+            // 
+            // panelSubMenuArchivo
+            // 
+            this.panelSubMenuArchivo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(44)))));
+            this.panelSubMenuArchivo.Controls.Add(this.buttonCambioUsuario);
+            this.panelSubMenuArchivo.Controls.Add(this.buttonCambioClave);
+            this.panelSubMenuArchivo.Controls.Add(this.buttonUsuario);
+            this.panelSubMenuArchivo.Controls.Add(this.buttonTercero);
+            this.panelSubMenuArchivo.Controls.Add(this.buttonSucursal);
+            this.panelSubMenuArchivo.Controls.Add(this.buttonProducto);
+            this.panelSubMenuArchivo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelSubMenuArchivo.Location = new System.Drawing.Point(0, 45);
+            this.panelSubMenuArchivo.Name = "panelSubMenuArchivo";
+            this.panelSubMenuArchivo.Size = new System.Drawing.Size(250, 250);
+            this.panelSubMenuArchivo.TabIndex = 4;
             // 
             // buttonCambioUsuario
             // 
@@ -855,17 +842,30 @@
             this.buttonProducto.UseVisualStyleBackColor = true;
             this.buttonProducto.Click += new System.EventHandler(this.buttonProducto_Click);
             // 
-            // buttonMenu
+            // buttonArchivo
             // 
-            this.buttonMenu.FlatAppearance.BorderSize = 0;
-            this.buttonMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonMenu.Image = global::Siscad.Properties.Resources.menu;
-            this.buttonMenu.Location = new System.Drawing.Point(12, 3);
-            this.buttonMenu.Name = "buttonMenu";
-            this.buttonMenu.Size = new System.Drawing.Size(35, 35);
-            this.buttonMenu.TabIndex = 0;
-            this.buttonMenu.UseVisualStyleBackColor = true;
-            this.buttonMenu.Click += new System.EventHandler(this.buttonMenu_Click);
+            this.buttonArchivo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonArchivo.FlatAppearance.BorderSize = 0;
+            this.buttonArchivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonArchivo.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonArchivo.Location = new System.Drawing.Point(0, 0);
+            this.buttonArchivo.Name = "buttonArchivo";
+            this.buttonArchivo.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.buttonArchivo.Size = new System.Drawing.Size(250, 45);
+            this.buttonArchivo.TabIndex = 3;
+            this.buttonArchivo.Text = "Archivo";
+            this.buttonArchivo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonArchivo.UseVisualStyleBackColor = true;
+            this.buttonArchivo.Click += new System.EventHandler(this.buttonArchivo_Click);
+            // 
+            // panelPanelContenedor
+            // 
+            this.panelPanelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(26)))), ((int)(((byte)(36)))));
+            this.panelPanelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelPanelContenedor.Location = new System.Drawing.Point(250, 40);
+            this.panelPanelContenedor.Name = "panelPanelContenedor";
+            this.panelPanelContenedor.Size = new System.Drawing.Size(650, 718);
+            this.panelPanelContenedor.TabIndex = 3;
             // 
             // frmPrincipal1
             // 
@@ -879,6 +879,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmPrincipal1";
             this.Text = "frmPrincipal1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmPrincipal1_FormClosing);
             this.panelMenuSuperior.ResumeLayout(false);
             this.panelMenuSuperior.PerformLayout();
             this.panelMenuLateral.ResumeLayout(false);
