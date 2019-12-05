@@ -263,5 +263,29 @@ namespace Siscad
         {
             Application.Exit();
         }
+
+        private void buttonCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void buttonRestaurar_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Normal;
+            buttonMaximizar.Visible = true;
+            buttonRestaurar.Visible = false;
+        }
+
+        private void buttonMaximizar_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Maximized;
+            buttonMaximizar.Visible = false;
+            buttonRestaurar.Visible = true;
+        }
+
+        private void buttonMinimizar_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }

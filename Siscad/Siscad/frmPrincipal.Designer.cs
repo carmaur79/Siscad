@@ -1,6 +1,6 @@
 ﻿namespace Siscad
 {
-    partial class frmPrincipal1
+    partial class frmPrincipal
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.panelMenuSuperior = new System.Windows.Forms.Panel();
             this.labelNombreAplicacion = new System.Windows.Forms.Label();
             this.panelMenuInferior = new System.Windows.Forms.Panel();
@@ -73,6 +74,10 @@
             this.buttonTercero = new System.Windows.Forms.Button();
             this.buttonSucursal = new System.Windows.Forms.Button();
             this.buttonProducto = new System.Windows.Forms.Button();
+            this.buttonMaximizar = new System.Windows.Forms.Button();
+            this.buttonCerrar = new System.Windows.Forms.Button();
+            this.buttonRestaurar = new System.Windows.Forms.Button();
+            this.buttonMinimizar = new System.Windows.Forms.Button();
             this.buttonMenu = new System.Windows.Forms.Button();
             this.panelMenuSuperior.SuspendLayout();
             this.panelMenuLateral.SuspendLayout();
@@ -87,12 +92,17 @@
             // panelMenuSuperior
             // 
             this.panelMenuSuperior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(26)))), ((int)(((byte)(36)))));
+            this.panelMenuSuperior.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panelMenuSuperior.Controls.Add(this.buttonMaximizar);
+            this.panelMenuSuperior.Controls.Add(this.buttonCerrar);
+            this.panelMenuSuperior.Controls.Add(this.buttonRestaurar);
+            this.panelMenuSuperior.Controls.Add(this.buttonMinimizar);
             this.panelMenuSuperior.Controls.Add(this.labelNombreAplicacion);
             this.panelMenuSuperior.Controls.Add(this.buttonMenu);
             this.panelMenuSuperior.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelMenuSuperior.Location = new System.Drawing.Point(0, 0);
             this.panelMenuSuperior.Name = "panelMenuSuperior";
-            this.panelMenuSuperior.Size = new System.Drawing.Size(900, 40);
+            this.panelMenuSuperior.Size = new System.Drawing.Size(1000, 40);
             this.panelMenuSuperior.TabIndex = 0;
             // 
             // labelNombreAplicacion
@@ -100,7 +110,7 @@
             this.labelNombreAplicacion.AutoSize = true;
             this.labelNombreAplicacion.Font = new System.Drawing.Font("Lucida Handwriting", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNombreAplicacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.labelNombreAplicacion.Location = new System.Drawing.Point(73, 9);
+            this.labelNombreAplicacion.Location = new System.Drawing.Point(73, 7);
             this.labelNombreAplicacion.Name = "labelNombreAplicacion";
             this.labelNombreAplicacion.Size = new System.Drawing.Size(783, 24);
             this.labelNombreAplicacion.TabIndex = 1;
@@ -109,15 +119,17 @@
             // panelMenuInferior
             // 
             this.panelMenuInferior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(26)))), ((int)(((byte)(36)))));
+            this.panelMenuInferior.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panelMenuInferior.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelMenuInferior.Location = new System.Drawing.Point(0, 758);
+            this.panelMenuInferior.Location = new System.Drawing.Point(0, 670);
             this.panelMenuInferior.Name = "panelMenuInferior";
-            this.panelMenuInferior.Size = new System.Drawing.Size(900, 30);
+            this.panelMenuInferior.Size = new System.Drawing.Size(1000, 30);
             this.panelMenuInferior.TabIndex = 1;
             // 
             // panelMenuLateral
             // 
             this.panelMenuLateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(26)))), ((int)(((byte)(36)))));
+            this.panelMenuLateral.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panelMenuLateral.Controls.Add(this.buttonSalir);
             this.panelMenuLateral.Controls.Add(this.panelSubMenuInformeReporte);
             this.panelMenuLateral.Controls.Add(this.buttonConsultaInformacion);
@@ -134,7 +146,7 @@
             this.panelMenuLateral.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenuLateral.Location = new System.Drawing.Point(0, 40);
             this.panelMenuLateral.Name = "panelMenuLateral";
-            this.panelMenuLateral.Size = new System.Drawing.Size(250, 718);
+            this.panelMenuLateral.Size = new System.Drawing.Size(210, 630);
             this.panelMenuLateral.TabIndex = 2;
             // 
             // panelSubMenuInformeReporte
@@ -147,7 +159,7 @@
             this.panelSubMenuInformeReporte.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSubMenuInformeReporte.Location = new System.Drawing.Point(0, 1240);
             this.panelSubMenuInformeReporte.Name = "panelSubMenuInformeReporte";
-            this.panelSubMenuInformeReporte.Size = new System.Drawing.Size(250, 170);
+            this.panelSubMenuInformeReporte.Size = new System.Drawing.Size(206, 170);
             this.panelSubMenuInformeReporte.TabIndex = 16;
             // 
             // buttonConsultaInformacion
@@ -159,7 +171,7 @@
             this.buttonConsultaInformacion.Location = new System.Drawing.Point(0, 1195);
             this.buttonConsultaInformacion.Name = "buttonConsultaInformacion";
             this.buttonConsultaInformacion.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.buttonConsultaInformacion.Size = new System.Drawing.Size(250, 45);
+            this.buttonConsultaInformacion.Size = new System.Drawing.Size(206, 45);
             this.buttonConsultaInformacion.TabIndex = 15;
             this.buttonConsultaInformacion.Text = "Consulta de información";
             this.buttonConsultaInformacion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -178,7 +190,7 @@
             this.panelSubMenuHerramientaAnexo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSubMenuHerramientaAnexo.Location = new System.Drawing.Point(0, 945);
             this.panelSubMenuHerramientaAnexo.Name = "panelSubMenuHerramientaAnexo";
-            this.panelSubMenuHerramientaAnexo.Size = new System.Drawing.Size(250, 250);
+            this.panelSubMenuHerramientaAnexo.Size = new System.Drawing.Size(206, 250);
             this.panelSubMenuHerramientaAnexo.TabIndex = 14;
             // 
             // buttonHerramientaAnexo
@@ -190,7 +202,7 @@
             this.buttonHerramientaAnexo.Location = new System.Drawing.Point(0, 900);
             this.buttonHerramientaAnexo.Name = "buttonHerramientaAnexo";
             this.buttonHerramientaAnexo.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.buttonHerramientaAnexo.Size = new System.Drawing.Size(250, 45);
+            this.buttonHerramientaAnexo.Size = new System.Drawing.Size(206, 45);
             this.buttonHerramientaAnexo.TabIndex = 13;
             this.buttonHerramientaAnexo.Text = "Herramientas y anexos";
             this.buttonHerramientaAnexo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -206,7 +218,7 @@
             this.panelSubMenuSiso.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSubMenuSiso.Location = new System.Drawing.Point(0, 770);
             this.panelSubMenuSiso.Name = "panelSubMenuSiso";
-            this.panelSubMenuSiso.Size = new System.Drawing.Size(250, 130);
+            this.panelSubMenuSiso.Size = new System.Drawing.Size(206, 130);
             this.panelSubMenuSiso.TabIndex = 12;
             // 
             // buttonSiso
@@ -218,7 +230,7 @@
             this.buttonSiso.Location = new System.Drawing.Point(0, 725);
             this.buttonSiso.Name = "buttonSiso";
             this.buttonSiso.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.buttonSiso.Size = new System.Drawing.Size(250, 45);
+            this.buttonSiso.Size = new System.Drawing.Size(206, 45);
             this.buttonSiso.TabIndex = 11;
             this.buttonSiso.Text = "Salud ocupacional";
             this.buttonSiso.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -234,7 +246,7 @@
             this.panelSubMenuRrHh.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSubMenuRrHh.Location = new System.Drawing.Point(0, 595);
             this.panelSubMenuRrHh.Name = "panelSubMenuRrHh";
-            this.panelSubMenuRrHh.Size = new System.Drawing.Size(250, 130);
+            this.panelSubMenuRrHh.Size = new System.Drawing.Size(206, 130);
             this.panelSubMenuRrHh.TabIndex = 8;
             // 
             // buttonRrHh
@@ -246,7 +258,7 @@
             this.buttonRrHh.Location = new System.Drawing.Point(0, 550);
             this.buttonRrHh.Name = "buttonRrHh";
             this.buttonRrHh.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.buttonRrHh.Size = new System.Drawing.Size(250, 45);
+            this.buttonRrHh.Size = new System.Drawing.Size(206, 45);
             this.buttonRrHh.TabIndex = 7;
             this.buttonRrHh.Text = "Recursos humanos";
             this.buttonRrHh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -264,7 +276,7 @@
             this.panelSubMenuComercio.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSubMenuComercio.Location = new System.Drawing.Point(0, 340);
             this.panelSubMenuComercio.Name = "panelSubMenuComercio";
-            this.panelSubMenuComercio.Size = new System.Drawing.Size(250, 210);
+            this.panelSubMenuComercio.Size = new System.Drawing.Size(206, 210);
             this.panelSubMenuComercio.TabIndex = 6;
             // 
             // buttonComercio
@@ -276,7 +288,7 @@
             this.buttonComercio.Location = new System.Drawing.Point(0, 295);
             this.buttonComercio.Name = "buttonComercio";
             this.buttonComercio.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.buttonComercio.Size = new System.Drawing.Size(250, 45);
+            this.buttonComercio.Size = new System.Drawing.Size(206, 45);
             this.buttonComercio.TabIndex = 5;
             this.buttonComercio.Text = "Comercio";
             this.buttonComercio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -295,7 +307,7 @@
             this.panelSubMenuArchivo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSubMenuArchivo.Location = new System.Drawing.Point(0, 45);
             this.panelSubMenuArchivo.Name = "panelSubMenuArchivo";
-            this.panelSubMenuArchivo.Size = new System.Drawing.Size(250, 250);
+            this.panelSubMenuArchivo.Size = new System.Drawing.Size(206, 250);
             this.panelSubMenuArchivo.TabIndex = 4;
             // 
             // buttonArchivo
@@ -307,7 +319,7 @@
             this.buttonArchivo.Location = new System.Drawing.Point(0, 0);
             this.buttonArchivo.Name = "buttonArchivo";
             this.buttonArchivo.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.buttonArchivo.Size = new System.Drawing.Size(250, 45);
+            this.buttonArchivo.Size = new System.Drawing.Size(206, 45);
             this.buttonArchivo.TabIndex = 3;
             this.buttonArchivo.Text = "Archivo";
             this.buttonArchivo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -317,10 +329,13 @@
             // panelPanelContenedor
             // 
             this.panelPanelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(26)))), ((int)(((byte)(36)))));
+            this.panelPanelContenedor.BackgroundImage = global::Siscad.Properties.Resources.fondo2;
+            this.panelPanelContenedor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelPanelContenedor.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panelPanelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelPanelContenedor.Location = new System.Drawing.Point(250, 40);
+            this.panelPanelContenedor.Location = new System.Drawing.Point(210, 40);
             this.panelPanelContenedor.Name = "panelPanelContenedor";
-            this.panelPanelContenedor.Size = new System.Drawing.Size(650, 718);
+            this.panelPanelContenedor.Size = new System.Drawing.Size(790, 630);
             this.panelPanelContenedor.TabIndex = 3;
             // 
             // buttonSalir
@@ -334,7 +349,7 @@
             this.buttonSalir.Location = new System.Drawing.Point(0, 1410);
             this.buttonSalir.Name = "buttonSalir";
             this.buttonSalir.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.buttonSalir.Size = new System.Drawing.Size(250, 45);
+            this.buttonSalir.Size = new System.Drawing.Size(206, 45);
             this.buttonSalir.TabIndex = 17;
             this.buttonSalir.Text = "Salir";
             this.buttonSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -352,8 +367,8 @@
             this.buttonInfoSiso.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonInfoSiso.Location = new System.Drawing.Point(0, 120);
             this.buttonInfoSiso.Name = "buttonInfoSiso";
-            this.buttonInfoSiso.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.buttonInfoSiso.Size = new System.Drawing.Size(250, 40);
+            this.buttonInfoSiso.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonInfoSiso.Size = new System.Drawing.Size(206, 40);
             this.buttonInfoSiso.TabIndex = 3;
             this.buttonInfoSiso.Text = "Salud en el trabajo";
             this.buttonInfoSiso.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -371,8 +386,8 @@
             this.buttonInfoComercial.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonInfoComercial.Location = new System.Drawing.Point(0, 80);
             this.buttonInfoComercial.Name = "buttonInfoComercial";
-            this.buttonInfoComercial.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.buttonInfoComercial.Size = new System.Drawing.Size(250, 40);
+            this.buttonInfoComercial.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonInfoComercial.Size = new System.Drawing.Size(206, 40);
             this.buttonInfoComercial.TabIndex = 2;
             this.buttonInfoComercial.Text = "Comercial";
             this.buttonInfoComercial.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -390,8 +405,8 @@
             this.buttonInfoLaboral.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonInfoLaboral.Location = new System.Drawing.Point(0, 40);
             this.buttonInfoLaboral.Name = "buttonInfoLaboral";
-            this.buttonInfoLaboral.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.buttonInfoLaboral.Size = new System.Drawing.Size(250, 40);
+            this.buttonInfoLaboral.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonInfoLaboral.Size = new System.Drawing.Size(206, 40);
             this.buttonInfoLaboral.TabIndex = 1;
             this.buttonInfoLaboral.Text = "Laboral";
             this.buttonInfoLaboral.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -409,8 +424,8 @@
             this.buttonInfoEmpresa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonInfoEmpresa.Location = new System.Drawing.Point(0, 0);
             this.buttonInfoEmpresa.Name = "buttonInfoEmpresa";
-            this.buttonInfoEmpresa.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.buttonInfoEmpresa.Size = new System.Drawing.Size(250, 40);
+            this.buttonInfoEmpresa.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonInfoEmpresa.Size = new System.Drawing.Size(206, 40);
             this.buttonInfoEmpresa.TabIndex = 0;
             this.buttonInfoEmpresa.Text = "Empresarial";
             this.buttonInfoEmpresa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -428,8 +443,8 @@
             this.buttonAnexoSiso.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonAnexoSiso.Location = new System.Drawing.Point(0, 200);
             this.buttonAnexoSiso.Name = "buttonAnexoSiso";
-            this.buttonAnexoSiso.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.buttonAnexoSiso.Size = new System.Drawing.Size(250, 40);
+            this.buttonAnexoSiso.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonAnexoSiso.Size = new System.Drawing.Size(206, 40);
             this.buttonAnexoSiso.TabIndex = 5;
             this.buttonAnexoSiso.Text = "Anexo a salud ocupacional";
             this.buttonAnexoSiso.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -447,8 +462,8 @@
             this.buttonAnexoRrHh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonAnexoRrHh.Location = new System.Drawing.Point(0, 160);
             this.buttonAnexoRrHh.Name = "buttonAnexoRrHh";
-            this.buttonAnexoRrHh.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.buttonAnexoRrHh.Size = new System.Drawing.Size(250, 40);
+            this.buttonAnexoRrHh.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonAnexoRrHh.Size = new System.Drawing.Size(206, 40);
             this.buttonAnexoRrHh.TabIndex = 4;
             this.buttonAnexoRrHh.Text = "Anexo a recursos humanos";
             this.buttonAnexoRrHh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -466,8 +481,8 @@
             this.buttonAnexoTercero.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonAnexoTercero.Location = new System.Drawing.Point(0, 120);
             this.buttonAnexoTercero.Name = "buttonAnexoTercero";
-            this.buttonAnexoTercero.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.buttonAnexoTercero.Size = new System.Drawing.Size(250, 40);
+            this.buttonAnexoTercero.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonAnexoTercero.Size = new System.Drawing.Size(206, 40);
             this.buttonAnexoTercero.TabIndex = 3;
             this.buttonAnexoTercero.Text = "Anexo a terceros";
             this.buttonAnexoTercero.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -485,8 +500,8 @@
             this.buttonAnexoProducto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonAnexoProducto.Location = new System.Drawing.Point(0, 80);
             this.buttonAnexoProducto.Name = "buttonAnexoProducto";
-            this.buttonAnexoProducto.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.buttonAnexoProducto.Size = new System.Drawing.Size(250, 40);
+            this.buttonAnexoProducto.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonAnexoProducto.Size = new System.Drawing.Size(206, 40);
             this.buttonAnexoProducto.TabIndex = 2;
             this.buttonAnexoProducto.Text = "Anexo a productos";
             this.buttonAnexoProducto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -504,8 +519,8 @@
             this.buttonActividadPendiente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonActividadPendiente.Location = new System.Drawing.Point(0, 40);
             this.buttonActividadPendiente.Name = "buttonActividadPendiente";
-            this.buttonActividadPendiente.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.buttonActividadPendiente.Size = new System.Drawing.Size(250, 40);
+            this.buttonActividadPendiente.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonActividadPendiente.Size = new System.Drawing.Size(206, 40);
             this.buttonActividadPendiente.TabIndex = 1;
             this.buttonActividadPendiente.Text = "Actividades pendientes";
             this.buttonActividadPendiente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -523,8 +538,8 @@
             this.buttonEmpresa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonEmpresa.Location = new System.Drawing.Point(0, 0);
             this.buttonEmpresa.Name = "buttonEmpresa";
-            this.buttonEmpresa.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.buttonEmpresa.Size = new System.Drawing.Size(250, 40);
+            this.buttonEmpresa.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonEmpresa.Size = new System.Drawing.Size(206, 40);
             this.buttonEmpresa.TabIndex = 0;
             this.buttonEmpresa.Text = "Mi empresa";
             this.buttonEmpresa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -542,8 +557,8 @@
             this.buttonVigilanciaControl.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonVigilanciaControl.Location = new System.Drawing.Point(0, 80);
             this.buttonVigilanciaControl.Name = "buttonVigilanciaControl";
-            this.buttonVigilanciaControl.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.buttonVigilanciaControl.Size = new System.Drawing.Size(250, 40);
+            this.buttonVigilanciaControl.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonVigilanciaControl.Size = new System.Drawing.Size(206, 40);
             this.buttonVigilanciaControl.TabIndex = 2;
             this.buttonVigilanciaControl.Text = "Vigilancia y control";
             this.buttonVigilanciaControl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -561,8 +576,8 @@
             this.buttonHistorialMedico.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonHistorialMedico.Location = new System.Drawing.Point(0, 40);
             this.buttonHistorialMedico.Name = "buttonHistorialMedico";
-            this.buttonHistorialMedico.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.buttonHistorialMedico.Size = new System.Drawing.Size(250, 40);
+            this.buttonHistorialMedico.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonHistorialMedico.Size = new System.Drawing.Size(206, 40);
             this.buttonHistorialMedico.TabIndex = 1;
             this.buttonHistorialMedico.Text = "Historial médico";
             this.buttonHistorialMedico.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -580,10 +595,10 @@
             this.buttonIncidenteAccidente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonIncidenteAccidente.Location = new System.Drawing.Point(0, 0);
             this.buttonIncidenteAccidente.Name = "buttonIncidenteAccidente";
-            this.buttonIncidenteAccidente.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.buttonIncidenteAccidente.Size = new System.Drawing.Size(250, 40);
+            this.buttonIncidenteAccidente.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonIncidenteAccidente.Size = new System.Drawing.Size(206, 40);
             this.buttonIncidenteAccidente.TabIndex = 0;
-            this.buttonIncidenteAccidente.Text = "Incidentes y accidentes laborales";
+            this.buttonIncidenteAccidente.Text = "Incidentes laborales";
             this.buttonIncidenteAccidente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonIncidenteAccidente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonIncidenteAccidente.UseVisualStyleBackColor = true;
@@ -599,8 +614,8 @@
             this.buttonNomina.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonNomina.Location = new System.Drawing.Point(0, 80);
             this.buttonNomina.Name = "buttonNomina";
-            this.buttonNomina.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.buttonNomina.Size = new System.Drawing.Size(250, 40);
+            this.buttonNomina.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonNomina.Size = new System.Drawing.Size(206, 40);
             this.buttonNomina.TabIndex = 2;
             this.buttonNomina.Text = "Nómina";
             this.buttonNomina.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -618,8 +633,8 @@
             this.buttonContrato.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonContrato.Location = new System.Drawing.Point(0, 40);
             this.buttonContrato.Name = "buttonContrato";
-            this.buttonContrato.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.buttonContrato.Size = new System.Drawing.Size(250, 40);
+            this.buttonContrato.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonContrato.Size = new System.Drawing.Size(206, 40);
             this.buttonContrato.TabIndex = 1;
             this.buttonContrato.Text = "Contratos";
             this.buttonContrato.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -637,8 +652,8 @@
             this.buttonAfiliacion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonAfiliacion.Location = new System.Drawing.Point(0, 0);
             this.buttonAfiliacion.Name = "buttonAfiliacion";
-            this.buttonAfiliacion.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.buttonAfiliacion.Size = new System.Drawing.Size(250, 40);
+            this.buttonAfiliacion.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonAfiliacion.Size = new System.Drawing.Size(206, 40);
             this.buttonAfiliacion.TabIndex = 0;
             this.buttonAfiliacion.Text = "Afiliaciones";
             this.buttonAfiliacion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -656,8 +671,8 @@
             this.buttonDevolucion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonDevolucion.Location = new System.Drawing.Point(0, 160);
             this.buttonDevolucion.Name = "buttonDevolucion";
-            this.buttonDevolucion.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.buttonDevolucion.Size = new System.Drawing.Size(250, 40);
+            this.buttonDevolucion.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonDevolucion.Size = new System.Drawing.Size(206, 40);
             this.buttonDevolucion.TabIndex = 4;
             this.buttonDevolucion.Text = "Devoluciones";
             this.buttonDevolucion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -675,8 +690,8 @@
             this.buttonTraslado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonTraslado.Location = new System.Drawing.Point(0, 120);
             this.buttonTraslado.Name = "buttonTraslado";
-            this.buttonTraslado.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.buttonTraslado.Size = new System.Drawing.Size(250, 40);
+            this.buttonTraslado.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonTraslado.Size = new System.Drawing.Size(206, 40);
             this.buttonTraslado.TabIndex = 3;
             this.buttonTraslado.Text = "Traslados";
             this.buttonTraslado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -694,8 +709,8 @@
             this.buttonSalida.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonSalida.Location = new System.Drawing.Point(0, 80);
             this.buttonSalida.Name = "buttonSalida";
-            this.buttonSalida.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.buttonSalida.Size = new System.Drawing.Size(250, 40);
+            this.buttonSalida.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonSalida.Size = new System.Drawing.Size(206, 40);
             this.buttonSalida.TabIndex = 2;
             this.buttonSalida.Text = "Salidas";
             this.buttonSalida.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -713,8 +728,8 @@
             this.buttonCompra.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonCompra.Location = new System.Drawing.Point(0, 40);
             this.buttonCompra.Name = "buttonCompra";
-            this.buttonCompra.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.buttonCompra.Size = new System.Drawing.Size(250, 40);
+            this.buttonCompra.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonCompra.Size = new System.Drawing.Size(206, 40);
             this.buttonCompra.TabIndex = 1;
             this.buttonCompra.Text = "Compras";
             this.buttonCompra.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -732,8 +747,8 @@
             this.buttonVenta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonVenta.Location = new System.Drawing.Point(0, 0);
             this.buttonVenta.Name = "buttonVenta";
-            this.buttonVenta.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.buttonVenta.Size = new System.Drawing.Size(250, 40);
+            this.buttonVenta.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonVenta.Size = new System.Drawing.Size(206, 40);
             this.buttonVenta.TabIndex = 0;
             this.buttonVenta.Text = "Ventas";
             this.buttonVenta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -751,8 +766,8 @@
             this.buttonCambioUsuario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonCambioUsuario.Location = new System.Drawing.Point(0, 200);
             this.buttonCambioUsuario.Name = "buttonCambioUsuario";
-            this.buttonCambioUsuario.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.buttonCambioUsuario.Size = new System.Drawing.Size(250, 40);
+            this.buttonCambioUsuario.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonCambioUsuario.Size = new System.Drawing.Size(206, 40);
             this.buttonCambioUsuario.TabIndex = 5;
             this.buttonCambioUsuario.Text = "Cambio de usuario";
             this.buttonCambioUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -770,8 +785,8 @@
             this.buttonCambioClave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonCambioClave.Location = new System.Drawing.Point(0, 160);
             this.buttonCambioClave.Name = "buttonCambioClave";
-            this.buttonCambioClave.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.buttonCambioClave.Size = new System.Drawing.Size(250, 40);
+            this.buttonCambioClave.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonCambioClave.Size = new System.Drawing.Size(206, 40);
             this.buttonCambioClave.TabIndex = 4;
             this.buttonCambioClave.Text = "Cambio de clave";
             this.buttonCambioClave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -789,8 +804,8 @@
             this.buttonUsuario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonUsuario.Location = new System.Drawing.Point(0, 120);
             this.buttonUsuario.Name = "buttonUsuario";
-            this.buttonUsuario.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.buttonUsuario.Size = new System.Drawing.Size(250, 40);
+            this.buttonUsuario.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonUsuario.Size = new System.Drawing.Size(206, 40);
             this.buttonUsuario.TabIndex = 3;
             this.buttonUsuario.Text = "Usuarios";
             this.buttonUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -808,8 +823,8 @@
             this.buttonTercero.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonTercero.Location = new System.Drawing.Point(0, 80);
             this.buttonTercero.Name = "buttonTercero";
-            this.buttonTercero.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.buttonTercero.Size = new System.Drawing.Size(250, 40);
+            this.buttonTercero.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonTercero.Size = new System.Drawing.Size(206, 40);
             this.buttonTercero.TabIndex = 2;
             this.buttonTercero.Text = "Terceros";
             this.buttonTercero.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -827,8 +842,8 @@
             this.buttonSucursal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonSucursal.Location = new System.Drawing.Point(0, 40);
             this.buttonSucursal.Name = "buttonSucursal";
-            this.buttonSucursal.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.buttonSucursal.Size = new System.Drawing.Size(250, 40);
+            this.buttonSucursal.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonSucursal.Size = new System.Drawing.Size(206, 40);
             this.buttonSucursal.TabIndex = 1;
             this.buttonSucursal.Text = "Sucursales";
             this.buttonSucursal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -846,8 +861,8 @@
             this.buttonProducto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonProducto.Location = new System.Drawing.Point(0, 0);
             this.buttonProducto.Name = "buttonProducto";
-            this.buttonProducto.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.buttonProducto.Size = new System.Drawing.Size(250, 40);
+            this.buttonProducto.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonProducto.Size = new System.Drawing.Size(206, 40);
             this.buttonProducto.TabIndex = 0;
             this.buttonProducto.Text = "Productos";
             this.buttonProducto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -855,30 +870,85 @@
             this.buttonProducto.UseVisualStyleBackColor = true;
             this.buttonProducto.Click += new System.EventHandler(this.buttonProducto_Click);
             // 
+            // buttonMaximizar
+            // 
+            this.buttonMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonMaximizar.FlatAppearance.BorderSize = 0;
+            this.buttonMaximizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMaximizar.Image = global::Siscad.Properties.Resources.maximizar;
+            this.buttonMaximizar.Location = new System.Drawing.Point(908, 1);
+            this.buttonMaximizar.Name = "buttonMaximizar";
+            this.buttonMaximizar.Size = new System.Drawing.Size(35, 35);
+            this.buttonMaximizar.TabIndex = 5;
+            this.buttonMaximizar.UseVisualStyleBackColor = true;
+            this.buttonMaximizar.Visible = false;
+            this.buttonMaximizar.Click += new System.EventHandler(this.buttonMaximizar_Click);
+            // 
+            // buttonCerrar
+            // 
+            this.buttonCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonCerrar.FlatAppearance.BorderSize = 0;
+            this.buttonCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCerrar.Image = global::Siscad.Properties.Resources.cerrar;
+            this.buttonCerrar.Location = new System.Drawing.Point(949, 1);
+            this.buttonCerrar.Name = "buttonCerrar";
+            this.buttonCerrar.Size = new System.Drawing.Size(35, 35);
+            this.buttonCerrar.TabIndex = 4;
+            this.buttonCerrar.UseVisualStyleBackColor = true;
+            this.buttonCerrar.Click += new System.EventHandler(this.buttonCerrar_Click);
+            // 
+            // buttonRestaurar
+            // 
+            this.buttonRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonRestaurar.FlatAppearance.BorderSize = 0;
+            this.buttonRestaurar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonRestaurar.Image = global::Siscad.Properties.Resources.restaurar;
+            this.buttonRestaurar.Location = new System.Drawing.Point(908, 1);
+            this.buttonRestaurar.Name = "buttonRestaurar";
+            this.buttonRestaurar.Size = new System.Drawing.Size(35, 35);
+            this.buttonRestaurar.TabIndex = 3;
+            this.buttonRestaurar.UseVisualStyleBackColor = true;
+            this.buttonRestaurar.Click += new System.EventHandler(this.buttonRestaurar_Click);
+            // 
+            // buttonMinimizar
+            // 
+            this.buttonMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonMinimizar.FlatAppearance.BorderSize = 0;
+            this.buttonMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMinimizar.Image = global::Siscad.Properties.Resources.minimizar;
+            this.buttonMinimizar.Location = new System.Drawing.Point(867, 1);
+            this.buttonMinimizar.Name = "buttonMinimizar";
+            this.buttonMinimizar.Size = new System.Drawing.Size(35, 35);
+            this.buttonMinimizar.TabIndex = 2;
+            this.buttonMinimizar.UseVisualStyleBackColor = true;
+            this.buttonMinimizar.Click += new System.EventHandler(this.buttonMinimizar_Click);
+            // 
             // buttonMenu
             // 
             this.buttonMenu.FlatAppearance.BorderSize = 0;
             this.buttonMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonMenu.Image = global::Siscad.Properties.Resources.menu;
-            this.buttonMenu.Location = new System.Drawing.Point(12, 3);
+            this.buttonMenu.Location = new System.Drawing.Point(12, 1);
             this.buttonMenu.Name = "buttonMenu";
             this.buttonMenu.Size = new System.Drawing.Size(35, 35);
             this.buttonMenu.TabIndex = 0;
             this.buttonMenu.UseVisualStyleBackColor = true;
             this.buttonMenu.Click += new System.EventHandler(this.buttonMenu_Click);
             // 
-            // frmPrincipal1
+            // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(900, 788);
+            this.ClientSize = new System.Drawing.Size(1000, 700);
             this.Controls.Add(this.panelPanelContenedor);
             this.Controls.Add(this.panelMenuLateral);
             this.Controls.Add(this.panelMenuInferior);
             this.Controls.Add(this.panelMenuSuperior);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmPrincipal1";
-            this.Text = "frmPrincipal1";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "frmPrincipal";
+            this.Text = "Principal";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panelMenuSuperior.ResumeLayout(false);
             this.panelMenuSuperior.PerformLayout();
             this.panelMenuLateral.ResumeLayout(false);
@@ -940,5 +1010,9 @@
         private System.Windows.Forms.Button buttonInfoLaboral;
         private System.Windows.Forms.Button buttonInfoEmpresa;
         private System.Windows.Forms.Button buttonConsultaInformacion;
+        private System.Windows.Forms.Button buttonCerrar;
+        private System.Windows.Forms.Button buttonRestaurar;
+        private System.Windows.Forms.Button buttonMinimizar;
+        private System.Windows.Forms.Button buttonMaximizar;
     }
 }
