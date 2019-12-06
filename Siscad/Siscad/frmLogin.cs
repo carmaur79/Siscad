@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CADSiscad;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -36,12 +37,12 @@ namespace Siscad
             }
             errorProvider1.SetError(txtEmpresa, string.Empty);
 
-            //if (!CADEmpresa.ExisteEmpresa(Convert.ToInt32(txtEmpresa.Text)))
-            //{
-            //    errorProvider1.SetError(txtEmpresa, "No se encuentra el Nit de la empresa, verifíquelo");
-            //    return;
-            //}
-            //errorProvider1.SetError(txtEmpresa, string.Empty);
+            if (!CADEmpresa.ExisteEmpresa(Convert.ToInt32(txtEmpresa.Text)))
+            {
+                errorProvider1.SetError(txtEmpresa, "No se encuentra el Nit de la empresa, verifíquelo");
+                return;
+            }
+            errorProvider1.SetError(txtEmpresa, string.Empty);
 
             if (txtUsuario.Text == string.Empty)
             {
@@ -59,21 +60,21 @@ namespace Siscad
             }
             errorProvider1.SetError(txtClave, string.Empty);
 
-            //if (!CADUsuario.ValidarUsuario(txtUsuario.Text, txtClave.Text))
-            //{
-            //    MessageBox.Show("Usuario o clave no válidos", "Error",
-            //        MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            //    txtEmpresa.Text = string.Empty;
-            //    txtUsuario.Text = string.Empty;
-            //    txtClave.Text = string.Empty;
-            //    txtEmpresa.Focus();
-            //    return;
-            //}
+            if (!CADUsuario.ValidarUsuario(txtUsuario.Text, txtClave.Text))
+            {
+                MessageBox.Show("Usuario o clave no válidos", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                txtEmpresa.Text = string.Empty;
+                txtUsuario.Text = string.Empty;
+                txtClave.Text = string.Empty;
+                txtEmpresa.Focus();
+                return;
+            }
             this.Hide();
 
             frmSaludoUsuario miForm = new frmSaludoUsuario();
-            //miForm.UsuarioLogueado = CADUsuario.GetUsuario(txtUsuario.Text);
-            //miForm.EmpresaLogueada = CADEmpresa.GetEmpresa(Convert.ToInt32(txtEmpresa.Text));
+            miForm.UsuarioLogueado = CADUsuario.GetUsuario(txtUsuario.Text);
+            miForm.EmpresaLogueada = CADEmpresa.GetEmpresa(Convert.ToInt32(txtEmpresa.Text));
             miForm.ShowDialog();
             //CADUsuario.UpdateUltimoIngreso(txtUsuario.Text);
         }

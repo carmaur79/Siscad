@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CADSiscad;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +18,22 @@ namespace Siscad
         {
             InitializeComponent();
             customizeDesign();
+        }
+
+        private CADUsuario usuarioLogueado;
+
+        public CADUsuario UsuarioLogueado
+        {
+            get { return usuarioLogueado; }
+            set { usuarioLogueado = value; }
+        }
+
+        private CADEmpresa empresaLogueada;
+
+        public CADEmpresa EmpresaLogueada
+        {
+            get { return empresaLogueada; }
+            set { empresaLogueada = value; }
         }
 
         #region Funcionalidad de los botones del menú lateral
@@ -513,6 +530,26 @@ namespace Siscad
         private void panelContenedor_MouseClick(object sender, MouseEventArgs e)
         {
             hideSubmenu();
+        }
+
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+            //Información que se muestra en el panel inferior
+            labelEmpresaUsuario.Text = "Empresa: "+ empresaLogueada.razonSocial + "  Usuario: " +usuarioLogueado.nombre + " " 
+                + usuarioLogueado.apellido;
+            labelFechaHora.Text = "  Fecha: " + DateTime.Now.ToShortDateString() + "  Hora: " + DateTime.Now.ToShortTimeString();
+            
+            //Información de alertas a tener en cuenta por la empresa
+            if (CADEmpresa.GetEmpresa(empresaLogueada.idEmpresa).fechaResolucionFacturacion != null)
+            {
+                DateTime vencimientoResolucionDian = CADEmpresa.GetEmpresa(empresaLogueada.idEmpresa).fechaResolucionFacturacion.AddMonths(18);
+                if (CADEmpresa.GetEmpresa(empresaLogueada.idEmpresa).fechaResolucionFacturacion.AddMonths(17) < DateTime.Now)
+                {
+                    MessageBox.Show("La resolución de autorización para facturar debe ser renovada, fecha de vencimiento el día " +
+                        vencimientoResolucionDian.ToShortDateString(), "Atención",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
+                }
+            }
         }
     }
 }

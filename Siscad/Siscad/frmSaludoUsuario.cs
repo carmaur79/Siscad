@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CADSiscad;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,21 +13,23 @@ namespace Siscad
 {
     public partial class frmSaludoUsuario : Form
     {
-        //private CADUsuario usuarioLogueado;
+        private CADUsuario usuarioLogueado;
 
-        //public CADUsuario UsuarioLogueado
-        //{
-        //    get { return usuarioLogueado; }
-        //    set { usuarioLogueado = value; }
-        //}
+        public CADUsuario UsuarioLogueado
+        {
+            get { return usuarioLogueado; }
+            set { usuarioLogueado = value; }
+        }
 
-        //private CADEmpresa empresaLogueada;
+        private CADEmpresa empresaLogueada;
 
-        //public CADEmpresa EmpresaLogueada
-        //{
-        //    get { return empresaLogueada; }
-        //    set { empresaLogueada = value; }
-        //}
+        public CADEmpresa EmpresaLogueada
+        {
+            get { return empresaLogueada; }
+            set { empresaLogueada = value; }
+        }
+
+        int conteo = 0;
 
         //private string idUsuario;
 
@@ -51,36 +54,45 @@ namespace Siscad
 
         private void frmSaludoUsuario_Load(object sender, EventArgs e)
         {
-            //nombreUsuarioLabel.Text = usuarioLogueado.nombre + " " + usuarioLogueado.apellido;
-            //fechaIngresoLabel.Text = usuarioLogueado.ultimoIngreso.ToLongDateString() + " a las " + usuarioLogueado.ultimoIngreso.ToLongTimeString() + " horas";
-            //nombreEmpresaLabel.Text = empresaLogueada.razonSocial;
-            //if (CADUsuario.EstadoUsuario(usuarioLogueado.idUsuario, ("0")))
-            //{
-            //    MessageBox.Show("No tiene permiso para ingresar al sistema, hable con su superior", "Atención",
-            //    MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
-            //    Application.Exit();
-            //}
-
-            //if (CADEmpresa.GetEmpresa(empresaLogueada.idEmpresa).fechaResolucionFacturacion != null)
-            //{
-            //    DateTime vencimientoResolucionDian = CADEmpresa.GetEmpresa(empresaLogueada.idEmpresa).fechaResolucionFacturacion.AddMonths(18);
-            //    if (CADEmpresa.GetEmpresa(empresaLogueada.idEmpresa).fechaResolucionFacturacion.AddMonths(17) < DateTime.Now)
-            //    {
-            //        MessageBox.Show("La resolución de autorización para facturar debe ser renovada, fecha de vencimiento el día " +
-            //            vencimientoResolucionDian.ToShortDateString(), "Atención",
-            //        MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
-            //    }
-            //}
+            //Inicia temporizador
+            this.Opacity = 0.0;
+            timerIniciaSaludo.Start();
+            //Se carga información en el formulario
+            nombreUsuarioLabel.Text = usuarioLogueado.nombre + " " + usuarioLogueado.apellido;
+            fechaIngresoLabel.Text = usuarioLogueado.ultimoIngreso.ToLongDateString() + " a las " + usuarioLogueado.ultimoIngreso.ToLongTimeString() + " horas";
+            nombreEmpresaLabel.Text = empresaLogueada.razonSocial;
+            if (CADUsuario.EstadoUsuario(usuarioLogueado.idUsuario, ("0")))
+            {
+                MessageBox.Show("No tiene permiso para ingresar al sistema, hable con su superior", "Atención",
+                MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
+                Application.Exit();
+            }
         }
 
-        private void aceptarButton_Click(object sender, EventArgs e)
+        private void timerIniciaSaludo_Tick(object sender, EventArgs e)
         {
-            this.Hide();
-            //CADUsuario.UpdateUltimoIngreso(usuarioLogueado.idUsuario);
-            frmPrincipal miForm = new frmPrincipal();
-            //miForm.UsuarioLogueado = this.usuarioLogueado;
-            //miForm.EmpresaLogueada = this.empresaLogueada;
-            miForm.Show();
+            if (this.Opacity < 1) this.Opacity += 0.1;
+            conteo += 1;
+            if(conteo == 100)
+            {
+                timerIniciaSaludo.Stop();
+                timerFinSaludo.Start();
+            }
+        }
+
+        private void timerFinSaludo_Tick(object sender, EventArgs e)
+        {
+            this.Opacity -= 0.1;
+            if(this.Opacity == 0)
+            {
+                timerFinSaludo.Stop();
+                this.Hide();
+                //CADUsuario.UpdateUltimoIngreso(usuarioLogueado.idUsuario);
+                frmPrincipal miForm = new frmPrincipal();
+                miForm.UsuarioLogueado = this.usuarioLogueado;
+                miForm.EmpresaLogueada = this.empresaLogueada;
+                miForm.Show();
+            }
         }
     }
 }

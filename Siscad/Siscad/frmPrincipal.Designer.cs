@@ -80,7 +80,10 @@
             this.buttonArchivo = new System.Windows.Forms.Button();
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            this.labelEmpresaUsuario = new System.Windows.Forms.Label();
+            this.labelFechaHora = new System.Windows.Forms.Label();
             this.panelMenuSuperior.SuspendLayout();
+            this.panelMenuInferior.SuspendLayout();
             this.panelMenuLateral.SuspendLayout();
             this.panelSubMenuInformeReporte.SuspendLayout();
             this.panelSubMenuHerramientaAnexo.SuspendLayout();
@@ -94,8 +97,7 @@
             // 
             // panelMenuSuperior
             // 
-            this.panelMenuSuperior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(26)))), ((int)(((byte)(36)))));
-            this.panelMenuSuperior.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panelMenuSuperior.BackColor = System.Drawing.Color.DarkGray;
             this.panelMenuSuperior.Controls.Add(this.buttonMaximizar);
             this.panelMenuSuperior.Controls.Add(this.buttonCerrar);
             this.panelMenuSuperior.Controls.Add(this.buttonRestaurar);
@@ -116,7 +118,7 @@
             this.buttonMaximizar.FlatAppearance.BorderSize = 0;
             this.buttonMaximizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonMaximizar.Image = global::Siscad.Properties.Resources.maximizar;
-            this.buttonMaximizar.Location = new System.Drawing.Point(658, 1);
+            this.buttonMaximizar.Location = new System.Drawing.Point(662, 1);
             this.buttonMaximizar.Name = "buttonMaximizar";
             this.buttonMaximizar.Size = new System.Drawing.Size(35, 35);
             this.buttonMaximizar.TabIndex = 5;
@@ -130,7 +132,7 @@
             this.buttonCerrar.FlatAppearance.BorderSize = 0;
             this.buttonCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCerrar.Image = global::Siscad.Properties.Resources.cerrar;
-            this.buttonCerrar.Location = new System.Drawing.Point(699, 1);
+            this.buttonCerrar.Location = new System.Drawing.Point(703, 1);
             this.buttonCerrar.Name = "buttonCerrar";
             this.buttonCerrar.Size = new System.Drawing.Size(35, 35);
             this.buttonCerrar.TabIndex = 4;
@@ -143,7 +145,7 @@
             this.buttonRestaurar.FlatAppearance.BorderSize = 0;
             this.buttonRestaurar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonRestaurar.Image = global::Siscad.Properties.Resources.restaurar;
-            this.buttonRestaurar.Location = new System.Drawing.Point(658, 1);
+            this.buttonRestaurar.Location = new System.Drawing.Point(662, 1);
             this.buttonRestaurar.Name = "buttonRestaurar";
             this.buttonRestaurar.Size = new System.Drawing.Size(35, 35);
             this.buttonRestaurar.TabIndex = 3;
@@ -156,7 +158,7 @@
             this.buttonMinimizar.FlatAppearance.BorderSize = 0;
             this.buttonMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonMinimizar.Image = global::Siscad.Properties.Resources.minimizar;
-            this.buttonMinimizar.Location = new System.Drawing.Point(617, 1);
+            this.buttonMinimizar.Location = new System.Drawing.Point(621, 1);
             this.buttonMinimizar.Name = "buttonMinimizar";
             this.buttonMinimizar.Size = new System.Drawing.Size(35, 35);
             this.buttonMinimizar.TabIndex = 2;
@@ -167,7 +169,7 @@
             // 
             this.labelNombreAplicacion.AutoSize = true;
             this.labelNombreAplicacion.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNombreAplicacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.labelNombreAplicacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
             this.labelNombreAplicacion.Location = new System.Drawing.Point(44, 7);
             this.labelNombreAplicacion.Name = "labelNombreAplicacion";
             this.labelNombreAplicacion.Size = new System.Drawing.Size(512, 23);
@@ -190,8 +192,10 @@
             // 
             // panelMenuInferior
             // 
-            this.panelMenuInferior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(26)))), ((int)(((byte)(36)))));
+            this.panelMenuInferior.BackColor = System.Drawing.Color.DarkGray;
             this.panelMenuInferior.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelMenuInferior.Controls.Add(this.labelFechaHora);
+            this.panelMenuInferior.Controls.Add(this.labelEmpresaUsuario);
             this.panelMenuInferior.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelMenuInferior.Location = new System.Drawing.Point(0, 420);
             this.panelMenuInferior.Name = "panelMenuInferior";
@@ -200,7 +204,7 @@
             // 
             // panelMenuLateral
             // 
-            this.panelMenuLateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(26)))), ((int)(((byte)(36)))));
+            this.panelMenuLateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
             this.panelMenuLateral.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelMenuLateral.Controls.Add(this.buttonSalir);
             this.panelMenuLateral.Controls.Add(this.panelSubMenuInformeReporte);
@@ -241,7 +245,7 @@
             // 
             // panelSubMenuInformeReporte
             // 
-            this.panelSubMenuInformeReporte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(44)))));
+            this.panelSubMenuInformeReporte.BackColor = System.Drawing.Color.DarkGray;
             this.panelSubMenuInformeReporte.Controls.Add(this.buttonInfoSiso);
             this.panelSubMenuInformeReporte.Controls.Add(this.buttonInfoComercial);
             this.panelSubMenuInformeReporte.Controls.Add(this.buttonInfoLaboral);
@@ -257,7 +261,7 @@
             this.buttonInfoSiso.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonInfoSiso.FlatAppearance.BorderSize = 0;
             this.buttonInfoSiso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonInfoSiso.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonInfoSiso.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
             this.buttonInfoSiso.Image = global::Siscad.Properties.Resources.infoSiso;
             this.buttonInfoSiso.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonInfoSiso.Location = new System.Drawing.Point(0, 120);
@@ -276,7 +280,7 @@
             this.buttonInfoComercial.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonInfoComercial.FlatAppearance.BorderSize = 0;
             this.buttonInfoComercial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonInfoComercial.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonInfoComercial.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
             this.buttonInfoComercial.Image = global::Siscad.Properties.Resources.infoComercial;
             this.buttonInfoComercial.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonInfoComercial.Location = new System.Drawing.Point(0, 80);
@@ -295,7 +299,7 @@
             this.buttonInfoLaboral.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonInfoLaboral.FlatAppearance.BorderSize = 0;
             this.buttonInfoLaboral.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonInfoLaboral.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonInfoLaboral.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
             this.buttonInfoLaboral.Image = global::Siscad.Properties.Resources.infoLaboral;
             this.buttonInfoLaboral.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonInfoLaboral.Location = new System.Drawing.Point(0, 40);
@@ -314,7 +318,7 @@
             this.buttonInfoEmpresa.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonInfoEmpresa.FlatAppearance.BorderSize = 0;
             this.buttonInfoEmpresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonInfoEmpresa.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonInfoEmpresa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
             this.buttonInfoEmpresa.Image = global::Siscad.Properties.Resources.infoEmpresa;
             this.buttonInfoEmpresa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonInfoEmpresa.Location = new System.Drawing.Point(0, 0);
@@ -349,7 +353,7 @@
             // 
             // panelSubMenuHerramientaAnexo
             // 
-            this.panelSubMenuHerramientaAnexo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(44)))));
+            this.panelSubMenuHerramientaAnexo.BackColor = System.Drawing.Color.DarkGray;
             this.panelSubMenuHerramientaAnexo.Controls.Add(this.buttonAnexoSiso);
             this.panelSubMenuHerramientaAnexo.Controls.Add(this.buttonAnexoRrHh);
             this.panelSubMenuHerramientaAnexo.Controls.Add(this.buttonAnexoTercero);
@@ -367,7 +371,7 @@
             this.buttonAnexoSiso.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonAnexoSiso.FlatAppearance.BorderSize = 0;
             this.buttonAnexoSiso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAnexoSiso.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonAnexoSiso.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
             this.buttonAnexoSiso.Image = global::Siscad.Properties.Resources.anexoSiso;
             this.buttonAnexoSiso.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonAnexoSiso.Location = new System.Drawing.Point(0, 200);
@@ -386,7 +390,7 @@
             this.buttonAnexoRrHh.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonAnexoRrHh.FlatAppearance.BorderSize = 0;
             this.buttonAnexoRrHh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAnexoRrHh.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonAnexoRrHh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
             this.buttonAnexoRrHh.Image = global::Siscad.Properties.Resources.anexoRrHh;
             this.buttonAnexoRrHh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonAnexoRrHh.Location = new System.Drawing.Point(0, 160);
@@ -405,7 +409,7 @@
             this.buttonAnexoTercero.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonAnexoTercero.FlatAppearance.BorderSize = 0;
             this.buttonAnexoTercero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAnexoTercero.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonAnexoTercero.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
             this.buttonAnexoTercero.Image = global::Siscad.Properties.Resources.anexoTercero;
             this.buttonAnexoTercero.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonAnexoTercero.Location = new System.Drawing.Point(0, 120);
@@ -424,7 +428,7 @@
             this.buttonAnexoProducto.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonAnexoProducto.FlatAppearance.BorderSize = 0;
             this.buttonAnexoProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAnexoProducto.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonAnexoProducto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
             this.buttonAnexoProducto.Image = global::Siscad.Properties.Resources.anexoProducto;
             this.buttonAnexoProducto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonAnexoProducto.Location = new System.Drawing.Point(0, 80);
@@ -443,7 +447,7 @@
             this.buttonActividadPendiente.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonActividadPendiente.FlatAppearance.BorderSize = 0;
             this.buttonActividadPendiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonActividadPendiente.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonActividadPendiente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
             this.buttonActividadPendiente.Image = global::Siscad.Properties.Resources.tarea;
             this.buttonActividadPendiente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonActividadPendiente.Location = new System.Drawing.Point(0, 40);
@@ -462,7 +466,7 @@
             this.buttonEmpresa.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonEmpresa.FlatAppearance.BorderSize = 0;
             this.buttonEmpresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonEmpresa.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonEmpresa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
             this.buttonEmpresa.Image = global::Siscad.Properties.Resources.empresa;
             this.buttonEmpresa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonEmpresa.Location = new System.Drawing.Point(0, 0);
@@ -497,7 +501,7 @@
             // 
             // panelSubMenuSiso
             // 
-            this.panelSubMenuSiso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(44)))));
+            this.panelSubMenuSiso.BackColor = System.Drawing.Color.DarkGray;
             this.panelSubMenuSiso.Controls.Add(this.buttonVigilanciaControl);
             this.panelSubMenuSiso.Controls.Add(this.buttonHistorialMedico);
             this.panelSubMenuSiso.Controls.Add(this.buttonIncidenteAccidente);
@@ -512,7 +516,7 @@
             this.buttonVigilanciaControl.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonVigilanciaControl.FlatAppearance.BorderSize = 0;
             this.buttonVigilanciaControl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonVigilanciaControl.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonVigilanciaControl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
             this.buttonVigilanciaControl.Image = global::Siscad.Properties.Resources.vigilancia;
             this.buttonVigilanciaControl.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonVigilanciaControl.Location = new System.Drawing.Point(0, 80);
@@ -531,7 +535,7 @@
             this.buttonHistorialMedico.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonHistorialMedico.FlatAppearance.BorderSize = 0;
             this.buttonHistorialMedico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonHistorialMedico.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonHistorialMedico.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
             this.buttonHistorialMedico.Image = global::Siscad.Properties.Resources.historialMedico;
             this.buttonHistorialMedico.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonHistorialMedico.Location = new System.Drawing.Point(0, 40);
@@ -550,7 +554,7 @@
             this.buttonIncidenteAccidente.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonIncidenteAccidente.FlatAppearance.BorderSize = 0;
             this.buttonIncidenteAccidente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonIncidenteAccidente.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonIncidenteAccidente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
             this.buttonIncidenteAccidente.Image = global::Siscad.Properties.Resources.incidenteAccidente;
             this.buttonIncidenteAccidente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonIncidenteAccidente.Location = new System.Drawing.Point(0, 0);
@@ -585,7 +589,7 @@
             // 
             // panelSubMenuRrHh
             // 
-            this.panelSubMenuRrHh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(44)))));
+            this.panelSubMenuRrHh.BackColor = System.Drawing.Color.DarkGray;
             this.panelSubMenuRrHh.Controls.Add(this.buttonNomina);
             this.panelSubMenuRrHh.Controls.Add(this.buttonContrato);
             this.panelSubMenuRrHh.Controls.Add(this.buttonAfiliacion);
@@ -600,7 +604,7 @@
             this.buttonNomina.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonNomina.FlatAppearance.BorderSize = 0;
             this.buttonNomina.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonNomina.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonNomina.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
             this.buttonNomina.Image = global::Siscad.Properties.Resources.nomina;
             this.buttonNomina.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonNomina.Location = new System.Drawing.Point(0, 80);
@@ -619,7 +623,7 @@
             this.buttonContrato.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonContrato.FlatAppearance.BorderSize = 0;
             this.buttonContrato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonContrato.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonContrato.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
             this.buttonContrato.Image = global::Siscad.Properties.Resources.contrato;
             this.buttonContrato.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonContrato.Location = new System.Drawing.Point(0, 40);
@@ -638,7 +642,7 @@
             this.buttonAfiliacion.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonAfiliacion.FlatAppearance.BorderSize = 0;
             this.buttonAfiliacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAfiliacion.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonAfiliacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
             this.buttonAfiliacion.Image = global::Siscad.Properties.Resources.afiliacion;
             this.buttonAfiliacion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonAfiliacion.Location = new System.Drawing.Point(0, 0);
@@ -673,7 +677,7 @@
             // 
             // panelSubMenuComercio
             // 
-            this.panelSubMenuComercio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(44)))));
+            this.panelSubMenuComercio.BackColor = System.Drawing.Color.DarkGray;
             this.panelSubMenuComercio.Controls.Add(this.buttonDevolucion);
             this.panelSubMenuComercio.Controls.Add(this.buttonTraslado);
             this.panelSubMenuComercio.Controls.Add(this.buttonSalida);
@@ -690,7 +694,7 @@
             this.buttonDevolucion.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonDevolucion.FlatAppearance.BorderSize = 0;
             this.buttonDevolucion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDevolucion.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonDevolucion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
             this.buttonDevolucion.Image = global::Siscad.Properties.Resources.devolucion;
             this.buttonDevolucion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonDevolucion.Location = new System.Drawing.Point(0, 160);
@@ -709,7 +713,7 @@
             this.buttonTraslado.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonTraslado.FlatAppearance.BorderSize = 0;
             this.buttonTraslado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonTraslado.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonTraslado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
             this.buttonTraslado.Image = global::Siscad.Properties.Resources.traslado;
             this.buttonTraslado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonTraslado.Location = new System.Drawing.Point(0, 120);
@@ -728,7 +732,7 @@
             this.buttonSalida.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonSalida.FlatAppearance.BorderSize = 0;
             this.buttonSalida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSalida.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonSalida.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
             this.buttonSalida.Image = global::Siscad.Properties.Resources.salida;
             this.buttonSalida.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonSalida.Location = new System.Drawing.Point(0, 80);
@@ -747,7 +751,7 @@
             this.buttonCompra.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonCompra.FlatAppearance.BorderSize = 0;
             this.buttonCompra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCompra.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonCompra.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
             this.buttonCompra.Image = global::Siscad.Properties.Resources.compra;
             this.buttonCompra.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonCompra.Location = new System.Drawing.Point(0, 40);
@@ -766,7 +770,7 @@
             this.buttonVenta.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonVenta.FlatAppearance.BorderSize = 0;
             this.buttonVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonVenta.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonVenta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
             this.buttonVenta.Image = global::Siscad.Properties.Resources.venta;
             this.buttonVenta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonVenta.Location = new System.Drawing.Point(0, 0);
@@ -801,7 +805,7 @@
             // 
             // panelSubMenuArchivo
             // 
-            this.panelSubMenuArchivo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(47)))), ((int)(((byte)(44)))));
+            this.panelSubMenuArchivo.BackColor = System.Drawing.Color.DarkGray;
             this.panelSubMenuArchivo.Controls.Add(this.buttonCambioUsuario);
             this.panelSubMenuArchivo.Controls.Add(this.buttonCambioClave);
             this.panelSubMenuArchivo.Controls.Add(this.buttonUsuario);
@@ -819,7 +823,7 @@
             this.buttonCambioUsuario.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonCambioUsuario.FlatAppearance.BorderSize = 0;
             this.buttonCambioUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCambioUsuario.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonCambioUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
             this.buttonCambioUsuario.Image = global::Siscad.Properties.Resources.cambioUsuario;
             this.buttonCambioUsuario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonCambioUsuario.Location = new System.Drawing.Point(0, 200);
@@ -838,7 +842,7 @@
             this.buttonCambioClave.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonCambioClave.FlatAppearance.BorderSize = 0;
             this.buttonCambioClave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCambioClave.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonCambioClave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
             this.buttonCambioClave.Image = global::Siscad.Properties.Resources.cambioClave;
             this.buttonCambioClave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonCambioClave.Location = new System.Drawing.Point(0, 160);
@@ -857,7 +861,7 @@
             this.buttonUsuario.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonUsuario.FlatAppearance.BorderSize = 0;
             this.buttonUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonUsuario.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
             this.buttonUsuario.Image = global::Siscad.Properties.Resources.usuario;
             this.buttonUsuario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonUsuario.Location = new System.Drawing.Point(0, 120);
@@ -876,7 +880,7 @@
             this.buttonTercero.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonTercero.FlatAppearance.BorderSize = 0;
             this.buttonTercero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonTercero.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonTercero.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
             this.buttonTercero.Image = global::Siscad.Properties.Resources.tercero;
             this.buttonTercero.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonTercero.Location = new System.Drawing.Point(0, 80);
@@ -895,7 +899,7 @@
             this.buttonSucursal.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonSucursal.FlatAppearance.BorderSize = 0;
             this.buttonSucursal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSucursal.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonSucursal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
             this.buttonSucursal.Image = global::Siscad.Properties.Resources.sucursal;
             this.buttonSucursal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonSucursal.Location = new System.Drawing.Point(0, 40);
@@ -914,7 +918,7 @@
             this.buttonProducto.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonProducto.FlatAppearance.BorderSize = 0;
             this.buttonProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonProducto.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonProducto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
             this.buttonProducto.Image = global::Siscad.Properties.Resources.producto;
             this.buttonProducto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonProducto.Location = new System.Drawing.Point(0, 0);
@@ -949,7 +953,7 @@
             // 
             // panelContenedor
             // 
-            this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(26)))), ((int)(((byte)(36)))));
+            this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
             this.panelContenedor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelContenedor.Controls.Add(this.pictureBoxLogo);
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -963,13 +967,34 @@
             // 
             this.pictureBoxLogo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBoxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxLogo.Image = global::Siscad.Properties.Resources.Logo_901172515;
-            this.pictureBoxLogo.Location = new System.Drawing.Point(76, 71);
+            this.pictureBoxLogo.Image = global::Siscad.Properties.Resources.LogoSiscad;
+            this.pictureBoxLogo.Location = new System.Drawing.Point(96, 126);
             this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(383, 225);
+            this.pictureBoxLogo.Size = new System.Drawing.Size(320, 120);
             this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxLogo.TabIndex = 0;
             this.pictureBoxLogo.TabStop = false;
+            // 
+            // labelEmpresaUsuario
+            // 
+            this.labelEmpresaUsuario.AutoSize = true;
+            this.labelEmpresaUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
+            this.labelEmpresaUsuario.Location = new System.Drawing.Point(11, 7);
+            this.labelEmpresaUsuario.Name = "labelEmpresaUsuario";
+            this.labelEmpresaUsuario.Size = new System.Drawing.Size(16, 13);
+            this.labelEmpresaUsuario.TabIndex = 0;
+            this.labelEmpresaUsuario.Text = "...";
+            // 
+            // labelFechaHora
+            // 
+            this.labelFechaHora.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelFechaHora.AutoSize = true;
+            this.labelFechaHora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
+            this.labelFechaHora.Location = new System.Drawing.Point(553, 7);
+            this.labelFechaHora.Name = "labelFechaHora";
+            this.labelFechaHora.Size = new System.Drawing.Size(16, 13);
+            this.labelFechaHora.TabIndex = 1;
+            this.labelFechaHora.Text = "...";
             // 
             // frmPrincipal
             // 
@@ -989,8 +1014,11 @@
             this.Text = "Principal";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmPrincipal_FormClosing);
+            this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.panelMenuSuperior.ResumeLayout(false);
             this.panelMenuSuperior.PerformLayout();
+            this.panelMenuInferior.ResumeLayout(false);
+            this.panelMenuInferior.PerformLayout();
             this.panelMenuLateral.ResumeLayout(false);
             this.panelSubMenuInformeReporte.ResumeLayout(false);
             this.panelSubMenuHerramientaAnexo.ResumeLayout(false);
@@ -1057,5 +1085,7 @@
         private System.Windows.Forms.Button buttonMinimizar;
         private System.Windows.Forms.Button buttonMaximizar;
         private System.Windows.Forms.PictureBox pictureBoxLogo;
+        private System.Windows.Forms.Label labelEmpresaUsuario;
+        private System.Windows.Forms.Label labelFechaHora;
     }
 }

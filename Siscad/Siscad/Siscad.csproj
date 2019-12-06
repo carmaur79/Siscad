@@ -511,5 +511,14 @@
   <ItemGroup>
     <None Include="Resources\ultimoRegistro.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CADSiscad\CADSiscad.csproj">
+      <Project>{3dc61bf4-9219-408e-b490-74704d6fbffb}</Project>
+      <Name>CADSiscad</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoSiscad.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

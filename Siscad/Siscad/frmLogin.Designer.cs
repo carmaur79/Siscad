@@ -31,8 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.lblFecha = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.labelTitulo = new System.Windows.Forms.Label();
+            this.labelNombreAplicacion = new System.Windows.Forms.Label();
             this.txtEmpresa = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnAceptar = new System.Windows.Forms.Button();
@@ -42,9 +42,9 @@
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblFecha
@@ -52,41 +52,41 @@
             this.lblFecha.AutoSize = true;
             this.lblFecha.BackColor = System.Drawing.Color.Transparent;
             this.lblFecha.ForeColor = System.Drawing.Color.DarkOrange;
-            this.lblFecha.Location = new System.Drawing.Point(29, 332);
+            this.lblFecha.Location = new System.Drawing.Point(108, 316);
             this.lblFecha.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(0, 13);
             this.lblFecha.TabIndex = 29;
             // 
-            // label5
+            // labelTitulo
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Algerian", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label5.Location = new System.Drawing.Point(177, 31);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(256, 75);
-            this.label5.TabIndex = 28;
-            this.label5.Text = "SISCAD";
+            this.labelTitulo.AutoSize = true;
+            this.labelTitulo.BackColor = System.Drawing.Color.Transparent;
+            this.labelTitulo.Font = new System.Drawing.Font("Algerian", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitulo.ForeColor = System.Drawing.Color.DarkOrange;
+            this.labelTitulo.Location = new System.Drawing.Point(225, 73);
+            this.labelTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelTitulo.Name = "labelTitulo";
+            this.labelTitulo.Size = new System.Drawing.Size(153, 45);
+            this.labelTitulo.TabIndex = 28;
+            this.labelTitulo.Text = "SISCAD";
             // 
-            // label4
+            // labelNombreAplicacion
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label4.Location = new System.Drawing.Point(26, 289);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(542, 32);
-            this.label4.TabIndex = 27;
-            this.label4.Text = "Sistema Integral en Seguridad Social, Comercial y Administrativo";
+            this.labelNombreAplicacion.AutoSize = true;
+            this.labelNombreAplicacion.BackColor = System.Drawing.Color.Transparent;
+            this.labelNombreAplicacion.Font = new System.Drawing.Font("Agency FB", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNombreAplicacion.ForeColor = System.Drawing.Color.DarkOrange;
+            this.labelNombreAplicacion.Location = new System.Drawing.Point(107, 288);
+            this.labelNombreAplicacion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelNombreAplicacion.Name = "labelNombreAplicacion";
+            this.labelNombreAplicacion.Size = new System.Drawing.Size(385, 24);
+            this.labelNombreAplicacion.TabIndex = 27;
+            this.labelNombreAplicacion.Text = "Sistema Integral en Seguridad Social, Comercial y Administrativo";
             // 
             // txtEmpresa
             // 
-            this.txtEmpresa.Location = new System.Drawing.Point(86, 150);
+            this.txtEmpresa.Location = new System.Drawing.Point(207, 161);
             this.txtEmpresa.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmpresa.Name = "txtEmpresa";
             this.txtEmpresa.Size = new System.Drawing.Size(189, 20);
@@ -98,7 +98,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label3.Location = new System.Drawing.Point(23, 153);
+            this.label3.Location = new System.Drawing.Point(144, 164);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 13);
@@ -107,12 +107,12 @@
             // 
             // btnAceptar
             // 
-            this.btnAceptar.BackColor = System.Drawing.Color.Black;
+            this.btnAceptar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(47)))), ((int)(((byte)(66)))));
             this.btnAceptar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
             this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAceptar.Font = new System.Drawing.Font("Edwardian Script ITC", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptar.ForeColor = System.Drawing.Color.SeaShell;
-            this.btnAceptar.Location = new System.Drawing.Point(86, 218);
+            this.btnAceptar.ForeColor = System.Drawing.Color.DarkGray;
+            this.btnAceptar.Location = new System.Drawing.Point(207, 229);
             this.btnAceptar.Margin = new System.Windows.Forms.Padding(2);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(93, 37);
@@ -125,13 +125,13 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.BackColor = System.Drawing.Color.Black;
+            this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(47)))), ((int)(((byte)(66)))));
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Edwardian Script ITC", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.ForeColor = System.Drawing.Color.SeaShell;
-            this.btnCancelar.Location = new System.Drawing.Point(181, 218);
+            this.btnCancelar.ForeColor = System.Drawing.Color.DarkGray;
+            this.btnCancelar.Location = new System.Drawing.Point(302, 229);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(93, 37);
@@ -144,7 +144,7 @@
             // 
             // txtClave
             // 
-            this.txtClave.Location = new System.Drawing.Point(86, 196);
+            this.txtClave.Location = new System.Drawing.Point(207, 207);
             this.txtClave.Margin = new System.Windows.Forms.Padding(2);
             this.txtClave.Name = "txtClave";
             this.txtClave.PasswordChar = '*';
@@ -158,7 +158,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label2.Location = new System.Drawing.Point(39, 196);
+            this.label2.Location = new System.Drawing.Point(160, 207);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 13);
@@ -167,7 +167,7 @@
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(86, 173);
+            this.txtUsuario.Location = new System.Drawing.Point(207, 184);
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(2);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(189, 20);
@@ -179,7 +179,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label1.Location = new System.Drawing.Point(28, 173);
+            this.label1.Location = new System.Drawing.Point(149, 184);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 13);
@@ -190,30 +190,39 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // pictureBox1
+            // panel1
             // 
-            this.pictureBox1.Image = global::Siscad.Properties.Resources.Logo_901172515;
-            this.pictureBox1.Location = new System.Drawing.Point(329, 150);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(231, 109);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 30;
-            this.pictureBox1.TabStop = false;
+            this.panel1.BackColor = System.Drawing.Color.DarkGray;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(600, 30);
+            this.panel1.TabIndex = 30;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.DarkGray;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 370);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(600, 30);
+            this.panel2.TabIndex = 31;
             // 
             // frmLogin
             // 
             this.AcceptButton = this.btnAceptar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(26)))), ((int)(((byte)(36)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CancelButton = this.btnCancelar;
             this.ClientSize = new System.Drawing.Size(600, 400);
             this.ControlBox = false;
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblFecha);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.labelTitulo);
+            this.Controls.Add(this.labelNombreAplicacion);
             this.Controls.Add(this.txtEmpresa);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnAceptar);
@@ -229,7 +238,6 @@
             this.Text = "frmLogin";
             this.Load += new System.EventHandler(this.frmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -238,8 +246,8 @@
         #endregion
 
         private System.Windows.Forms.Label lblFecha;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label labelTitulo;
+        private System.Windows.Forms.Label labelNombreAplicacion;
         private System.Windows.Forms.TextBox txtEmpresa;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnAceptar;
@@ -249,6 +257,7 @@
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ErrorProvider errorProvider1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }
