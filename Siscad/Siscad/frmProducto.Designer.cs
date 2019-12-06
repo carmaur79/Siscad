@@ -46,7 +46,7 @@
             // 
             this.buttonFormBorrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonFormBorrar.Image = global::Siscad.Properties.Resources.borrar;
-            this.buttonFormBorrar.Location = new System.Drawing.Point(464, 9);
+            this.buttonFormBorrar.Location = new System.Drawing.Point(464, 378);
             this.buttonFormBorrar.Name = "buttonFormBorrar";
             this.buttonFormBorrar.Size = new System.Drawing.Size(60, 60);
             this.buttonFormBorrar.TabIndex = 13;
@@ -60,7 +60,7 @@
             // 
             this.buttonFormEditar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonFormEditar.Image = global::Siscad.Properties.Resources.editar;
-            this.buttonFormEditar.Location = new System.Drawing.Point(398, 9);
+            this.buttonFormEditar.Location = new System.Drawing.Point(398, 378);
             this.buttonFormEditar.Name = "buttonFormEditar";
             this.buttonFormEditar.Size = new System.Drawing.Size(60, 60);
             this.buttonFormEditar.TabIndex = 12;
@@ -74,7 +74,7 @@
             // 
             this.buttonFormNuevo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonFormNuevo.Image = global::Siscad.Properties.Resources.nuevo;
-            this.buttonFormNuevo.Location = new System.Drawing.Point(332, 9);
+            this.buttonFormNuevo.Location = new System.Drawing.Point(332, 378);
             this.buttonFormNuevo.Name = "buttonFormNuevo";
             this.buttonFormNuevo.Size = new System.Drawing.Size(60, 60);
             this.buttonFormNuevo.TabIndex = 11;
@@ -88,7 +88,7 @@
             // 
             this.buttonFormBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonFormBuscar.Image = global::Siscad.Properties.Resources.buscar;
-            this.buttonFormBuscar.Location = new System.Drawing.Point(530, 9);
+            this.buttonFormBuscar.Location = new System.Drawing.Point(530, 378);
             this.buttonFormBuscar.Name = "buttonFormBuscar";
             this.buttonFormBuscar.Size = new System.Drawing.Size(60, 60);
             this.buttonFormBuscar.TabIndex = 10;
@@ -102,7 +102,7 @@
             // 
             this.buttonFormGuardar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonFormGuardar.Image = global::Siscad.Properties.Resources.guardar;
-            this.buttonFormGuardar.Location = new System.Drawing.Point(596, 9);
+            this.buttonFormGuardar.Location = new System.Drawing.Point(596, 378);
             this.buttonFormGuardar.Name = "buttonFormGuardar";
             this.buttonFormGuardar.Size = new System.Drawing.Size(60, 60);
             this.buttonFormGuardar.TabIndex = 9;
@@ -116,7 +116,7 @@
             // 
             this.buttonFormCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonFormCancelar.Image = global::Siscad.Properties.Resources.cancelar;
-            this.buttonFormCancelar.Location = new System.Drawing.Point(662, 9);
+            this.buttonFormCancelar.Location = new System.Drawing.Point(662, 378);
             this.buttonFormCancelar.Name = "buttonFormCancelar";
             this.buttonFormCancelar.Size = new System.Drawing.Size(60, 60);
             this.buttonFormCancelar.TabIndex = 8;
@@ -130,7 +130,7 @@
             // 
             this.buttonFormCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonFormCerrar.Image = global::Siscad.Properties.Resources.salir;
-            this.buttonFormCerrar.Location = new System.Drawing.Point(728, 9);
+            this.buttonFormCerrar.Location = new System.Drawing.Point(728, 378);
             this.buttonFormCerrar.Name = "buttonFormCerrar";
             this.buttonFormCerrar.Size = new System.Drawing.Size(60, 60);
             this.buttonFormCerrar.TabIndex = 7;
@@ -153,8 +153,9 @@
             // 
             // buttonUltimoRegistro
             // 
+            this.buttonUltimoRegistro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonUltimoRegistro.Image = global::Siscad.Properties.Resources.ultimoRegistro;
-            this.buttonUltimoRegistro.Location = new System.Drawing.Point(140, 34);
+            this.buttonUltimoRegistro.Location = new System.Drawing.Point(140, 403);
             this.buttonUltimoRegistro.Name = "buttonUltimoRegistro";
             this.buttonUltimoRegistro.Size = new System.Drawing.Size(35, 35);
             this.buttonUltimoRegistro.TabIndex = 22;
@@ -165,8 +166,9 @@
             // 
             // buttonSiguienteRegistro
             // 
+            this.buttonSiguienteRegistro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonSiguienteRegistro.Image = global::Siscad.Properties.Resources.siguienteRegistro;
-            this.buttonSiguienteRegistro.Location = new System.Drawing.Point(99, 34);
+            this.buttonSiguienteRegistro.Location = new System.Drawing.Point(99, 403);
             this.buttonSiguienteRegistro.Name = "buttonSiguienteRegistro";
             this.buttonSiguienteRegistro.Size = new System.Drawing.Size(35, 35);
             this.buttonSiguienteRegistro.TabIndex = 21;
@@ -177,8 +179,9 @@
             // 
             // buttonAnteriorRegistro
             // 
+            this.buttonAnteriorRegistro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonAnteriorRegistro.Image = global::Siscad.Properties.Resources.anteriorRegistro;
-            this.buttonAnteriorRegistro.Location = new System.Drawing.Point(58, 34);
+            this.buttonAnteriorRegistro.Location = new System.Drawing.Point(58, 403);
             this.buttonAnteriorRegistro.Name = "buttonAnteriorRegistro";
             this.buttonAnteriorRegistro.Size = new System.Drawing.Size(35, 35);
             this.buttonAnteriorRegistro.TabIndex = 20;
@@ -189,8 +192,9 @@
             // 
             // buttonPrimerRegistro
             // 
+            this.buttonPrimerRegistro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonPrimerRegistro.Image = global::Siscad.Properties.Resources.primerRegistro;
-            this.buttonPrimerRegistro.Location = new System.Drawing.Point(17, 34);
+            this.buttonPrimerRegistro.Location = new System.Drawing.Point(17, 403);
             this.buttonPrimerRegistro.Name = "buttonPrimerRegistro";
             this.buttonPrimerRegistro.Size = new System.Drawing.Size(35, 35);
             this.buttonPrimerRegistro.TabIndex = 19;

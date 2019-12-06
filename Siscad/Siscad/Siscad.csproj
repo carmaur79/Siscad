@@ -49,6 +49,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DSSiscad.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSSiscad.xsd</DependentUpon>
+    </Compile>
     <Compile Include="frmActividadPendiente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -331,6 +336,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="DSSiscad.xsc">
+      <DependentUpon>DSSiscad.xsd</DependentUpon>
+    </None>
+    <None Include="DSSiscad.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSSiscad.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSSiscad.xss">
+      <DependentUpon>DSSiscad.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

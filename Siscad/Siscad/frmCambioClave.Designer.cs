@@ -37,7 +37,7 @@
             // 
             this.buttonFormCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonFormCancelar.Image = global::Siscad.Properties.Resources.cancelar;
-            this.buttonFormCancelar.Location = new System.Drawing.Point(662, 9);
+            this.buttonFormCancelar.Location = new System.Drawing.Point(662, 378);
             this.buttonFormCancelar.Name = "buttonFormCancelar";
             this.buttonFormCancelar.Size = new System.Drawing.Size(60, 60);
             this.buttonFormCancelar.TabIndex = 1;
@@ -50,7 +50,7 @@
             // 
             this.buttonFormCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonFormCerrar.Image = global::Siscad.Properties.Resources.salir;
-            this.buttonFormCerrar.Location = new System.Drawing.Point(728, 9);
+            this.buttonFormCerrar.Location = new System.Drawing.Point(728, 378);
             this.buttonFormCerrar.Name = "buttonFormCerrar";
             this.buttonFormCerrar.Size = new System.Drawing.Size(60, 60);
             this.buttonFormCerrar.TabIndex = 0;
@@ -63,6 +63,7 @@
             // 
             this.labelNombreFormulario.AutoSize = true;
             this.labelNombreFormulario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNombreFormulario.ForeColor = System.Drawing.SystemColors.Control;
             this.labelNombreFormulario.Location = new System.Drawing.Point(12, 9);
             this.labelNombreFormulario.Name = "labelNombreFormulario";
             this.labelNombreFormulario.Size = new System.Drawing.Size(211, 25);
@@ -73,7 +74,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(26)))), ((int)(((byte)(36)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.labelNombreFormulario);
             this.Controls.Add(this.buttonFormCancelar);
