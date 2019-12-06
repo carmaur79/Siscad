@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace Siscad
 {
-    public partial class frmTercero : Form
+    public partial class frmSucursal : Form
     {
-        public frmTercero()
+        public frmSucursal()
         {
             InitializeComponent();
         }
 
-        private void buttonFormBorrar_Click(object sender, EventArgs e)
+        private void buttonFormCerrar_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void buttonFormEditar_Click(object sender, EventArgs e)
@@ -47,9 +47,9 @@ namespace Siscad
 
         }
 
-        private void buttonFormCerrar_Click(object sender, EventArgs e)
+        private void buttonFormBorrar_Click(object sender, EventArgs e)
         {
-            this.Close();
+
         }
 
         private void buttonPrimerRegistro_Click(object sender, EventArgs e)

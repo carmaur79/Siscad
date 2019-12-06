@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,6 +19,7 @@ namespace Siscad
             customizeDesign();
         }
 
+        #region Funcionalidad de los botones del menú lateral
         private void customizeDesign()
         {
             panelSubMenuArchivo.Visible = false;
@@ -28,7 +30,7 @@ namespace Siscad
             panelSubMenuInformeReporte.Visible = false;
         }
 
-        private void hideSubmenu()
+        public void hideSubmenu()
         {
             if (panelSubMenuArchivo.Visible == true)
                 panelSubMenuArchivo.Visible = false;
@@ -57,211 +59,338 @@ namespace Siscad
             }
         }
 
+        public void minimizarMenuLateral()
+        {
+            buttonArchivo.Text = string.Empty;
+            buttonComercio.Text = string.Empty;
+            buttonRrHh.Text = string.Empty;
+            buttonSiso.Text = string.Empty;
+            buttonHerramientaAnexo.Text = string.Empty;
+            buttonConsultaInformacion.Text = string.Empty;
+            buttonSalir.Text = string.Empty;
+            panelMenuLateral.Width = 43;
+        }
+
+        private void restaurarMenuLateral()
+        {
+            panelMenuLateral.Width = 210;
+            buttonArchivo.Text = "Archivo";
+            buttonComercio.Text = "Comercio";
+            buttonRrHh.Text = "Recursos humanos";
+            buttonSiso.Text = "Salud ocupacional";
+            buttonHerramientaAnexo.Text = "Herramientas y anexos";
+            buttonConsultaInformacion.Text = "Consulta de información";
+            buttonSalir.Text = "Salir";
+        }
+        #endregion
+
+        #region Botones del menú lateral
         private void buttonArchivo_Click(object sender, EventArgs e)
         {
-            showSubmenu(panelSubMenuArchivo);
+            if (panelMenuLateral.Width != 210)
+            {
+                restaurarMenuLateral();
+            }
+            else
+            {
+                showSubmenu(panelSubMenuArchivo);
+            }
         }
 
         private void buttonProducto_Click(object sender, EventArgs e)
         {
             //mi código
+            abrirFormulario<frmProducto>();
             hideSubmenu();
+            minimizarMenuLateral();
         }
 
         private void buttonSucursal_Click(object sender, EventArgs e)
         {
             //mi código
+            abrirFormulario<frmSucursal>();
             hideSubmenu();
+            minimizarMenuLateral();
         }
 
         private void buttonTercero_Click(object sender, EventArgs e)
         {
             //mi código
+            abrirFormulario<frmTercero>();
             hideSubmenu();
+            minimizarMenuLateral();
         }
 
         private void buttonUsuario_Click(object sender, EventArgs e)
         {
             //mi código
+            abrirFormulario<frmUsuario>();
             hideSubmenu();
+            minimizarMenuLateral();
         }
 
         private void buttonCambioClave_Click(object sender, EventArgs e)
         {
             //mi código
+            abrirFormulario<frmCambioClave>();
             hideSubmenu();
+            minimizarMenuLateral();
         }
 
         private void buttonCambioUsuario_Click(object sender, EventArgs e)
         {
             //mi código
+            abrirFormulario<frmCambioUsuario>();
             hideSubmenu();
+            minimizarMenuLateral();
         }
 
         private void buttonComercio_Click(object sender, EventArgs e)
         {
-            showSubmenu(panelSubMenuComercio);
+            if (panelMenuLateral.Width != 210)
+            {
+                restaurarMenuLateral();
+            }
+            else
+            {
+                showSubmenu(panelSubMenuComercio);
+            }
         }
 
         private void buttonVenta_Click(object sender, EventArgs e)
         {
             //mi código
+            abrirFormulario<frmVenta>();
             hideSubmenu();
+            minimizarMenuLateral();
         }
 
         private void buttonCompra_Click(object sender, EventArgs e)
         {
             //mi código
+            abrirFormulario<frmCompra>();
             hideSubmenu();
+            minimizarMenuLateral();
         }
 
         private void buttonSalida_Click(object sender, EventArgs e)
         {
             //mi código
+            abrirFormulario<frmSalida>();
             hideSubmenu();
+            minimizarMenuLateral();
         }
 
         private void buttonTraslado_Click(object sender, EventArgs e)
         {
             //mi código
+            abrirFormulario<frmTraslado>();
             hideSubmenu();
+            minimizarMenuLateral();
         }
 
         private void buttonDevolucion_Click(object sender, EventArgs e)
         {
             //mi código
+            abrirFormulario<frmDevolucion>();
             hideSubmenu();
+            minimizarMenuLateral();
         }
 
         private void buttonRrHh_Click(object sender, EventArgs e)
         {
-            showSubmenu(panelSubMenuRrHh);
+            if (panelMenuLateral.Width != 210)
+            {
+                restaurarMenuLateral();
+            }
+            else
+            {
+                showSubmenu(panelSubMenuRrHh);
+            }
         }
 
         private void buttonAfiliacion_Click(object sender, EventArgs e)
         {
             //mi código
+            abrirFormulario<frmAfiliacion>();
             hideSubmenu();
+            minimizarMenuLateral();
         }
 
         private void buttonContrato_Click(object sender, EventArgs e)
         {
             //mi código
-            hideSubmenu();
+            abrirFormulario<frmContrato>();
+            hideSubmenu(); 
+            minimizarMenuLateral();
         }
 
         private void buttonNomina_Click(object sender, EventArgs e)
         {
             //mi código
+            abrirFormulario<frmNomina>();
             hideSubmenu();
+            minimizarMenuLateral();
         }
 
         private void buttonSiso_Click(object sender, EventArgs e)
         {
-            showSubmenu(panelSubMenuSiso);
+            if (panelMenuLateral.Width != 210)
+            {
+                restaurarMenuLateral();
+            }
+            else
+            {
+                showSubmenu(panelSubMenuSiso);
+            }
         }
 
         private void buttonIncidenteAccidente_Click(object sender, EventArgs e)
         {
             //mi código
+            abrirFormulario<frmIncidenteAccidente>();
             hideSubmenu();
+            minimizarMenuLateral();
         }
 
         private void buttonHistorialMedico_Click(object sender, EventArgs e)
         {
             //mi código
+            abrirFormulario<frmHistorialMedico>();
             hideSubmenu();
+            minimizarMenuLateral();
         }
 
         private void buttonVigilanciaControl_Click(object sender, EventArgs e)
         {
             //mi código
+            abrirFormulario<frmVigilanciaControl>();
             hideSubmenu();
+            minimizarMenuLateral();
         }
 
         private void buttonHerramientaAnexo_Click(object sender, EventArgs e)
         {
-            showSubmenu(panelSubMenuHerramientaAnexo);
+            if (panelMenuLateral.Width != 210)
+            {
+                restaurarMenuLateral();
+            }
+            else
+            {
+                showSubmenu(panelSubMenuHerramientaAnexo);
+            }
         }
 
         private void buttonEmpresa_Click(object sender, EventArgs e)
         {
             //mi código
+            abrirFormulario<frmEmpresa>();
             hideSubmenu();
+            minimizarMenuLateral();
         }
 
         private void buttonActividadPendiente_Click(object sender, EventArgs e)
         {
             //mi código
+            abrirFormulario<frmActividadPendiente>();
             hideSubmenu();
+            minimizarMenuLateral();
         }
 
         private void buttonAnexoProducto_Click(object sender, EventArgs e)
         {
             //mi código
+            abrirFormulario<frmAnexoProducto>();
             hideSubmenu();
+            minimizarMenuLateral();
         }
 
         private void buttonAnexoTercero_Click(object sender, EventArgs e)
         {
             //mi código
+            abrirFormulario<frmAnexoTercero>();
             hideSubmenu();
+            minimizarMenuLateral();
         }
 
         private void buttonAnexoRrHh_Click(object sender, EventArgs e)
         {
             //mi código
+            abrirFormulario<frmAnexoRrHh>();
             hideSubmenu();
+            minimizarMenuLateral();
         }
 
         private void buttonAnexoSiso_Click(object sender, EventArgs e)
         {
             //mi código
+            abrirFormulario<frmAnexoSiso>();
             hideSubmenu();
+            minimizarMenuLateral();
         }
 
         private void buttonConsultaInformacion_Click(object sender, EventArgs e)
         {
-            showSubmenu(panelSubMenuInformeReporte);
+            if (panelMenuLateral.Width != 210)
+            {
+                restaurarMenuLateral();
+            }
+            else
+            {
+                showSubmenu(panelSubMenuInformeReporte);
+            }
         }
 
         private void buttonInfoEmpresa_Click(object sender, EventArgs e)
         {
             //mi código
+            abrirFormulario<frmInfoEmpresa>();
             hideSubmenu();
+            minimizarMenuLateral();
         }
 
         private void buttonInfoLaboral_Click(object sender, EventArgs e)
         {
             //mi código
+            abrirFormulario<frmInfoLaboral>();
             hideSubmenu();
+            minimizarMenuLateral();
         }
 
         private void buttonInfoComercial_Click(object sender, EventArgs e)
         {
             //mi código
+            abrirFormulario<frmInfoComercial>();
             hideSubmenu();
+            minimizarMenuLateral();
         }
 
         private void buttonInfoSiso_Click(object sender, EventArgs e)
         {
             //mi código
+            abrirFormulario<frmInfoSiso>();
             hideSubmenu();
+            minimizarMenuLateral();
         }
 
         private void buttonSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
+        #endregion
 
+        #region Botones y funcionalidades del menú superior
         private void buttonMenu_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void frmPrincipal1_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Application.Exit();
+            if(panelMenuLateral.Width==210)
+            {
+                hideSubmenu();
+                minimizarMenuLateral();
+            }
+            else 
+            {
+                restaurarMenuLateral();
+            }
         }
 
         private void buttonCerrar_Click(object sender, EventArgs e)
@@ -271,21 +400,119 @@ namespace Siscad
 
         private void buttonRestaurar_Click(object sender, EventArgs e)
         {
-            WindowState = FormWindowState.Normal;
-            buttonMaximizar.Visible = true;
-            buttonRestaurar.Visible = false;
+            restaurarVentana();
         }
 
         private void buttonMaximizar_Click(object sender, EventArgs e)
+        {
+            maximizarVentana();
+        }
+
+        private void buttonMinimizar_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
+        private void frmPrincipal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        //Librerías y código necesarios para arrastrar formulario
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
+        private void arrastrarForm()
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+            if (WindowState == FormWindowState.Normal)
+            {
+                buttonMaximizar.Visible = true;
+                buttonRestaurar.Visible = false;
+            }
+        }
+
+        private void panelMenuSuperior_MouseMove(object sender, MouseEventArgs e)
+        {
+            arrastrarForm();
+        }
+
+        private void labelNombreAplicacion_MouseMove(object sender, MouseEventArgs e)
+        {
+            arrastrarForm();
+        }
+
+        private void maximizarVentana()
         {
             WindowState = FormWindowState.Maximized;
             buttonMaximizar.Visible = false;
             buttonRestaurar.Visible = true;
         }
 
-        private void buttonMinimizar_Click(object sender, EventArgs e)
+        private void restaurarVentana()
         {
-            WindowState = FormWindowState.Minimized;
+            WindowState = FormWindowState.Normal;
+            buttonMaximizar.Visible = true;
+            buttonRestaurar.Visible = false;
+        }
+
+        private void labelNombreAplicacion_DoubleClick(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+                maximizarVentana();
+            }
+            else
+            {
+                restaurarVentana();
+            }
+        }
+
+        private void panelMenuSuperior_DoubleClick(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+                maximizarVentana();
+            }
+            else
+            {
+                restaurarVentana();
+            }
+        }
+        #endregion
+
+        //Método para abrir formularios dentro del panel
+        private void abrirFormulario<miForm>() where miForm: Form, new()
+        {
+            Form formulario;
+            //Busca en la colección el formulario
+            formulario = panelContenedor.Controls.OfType<miForm>().FirstOrDefault();
+            //Si el formulario/instancia no existe
+            if(formulario==null)
+            {
+                formulario = new miForm();
+                formulario.TopLevel = false;
+                formulario.FormBorderStyle = FormBorderStyle.None;
+                formulario.Dock = DockStyle.Fill;
+                panelContenedor.Controls.Add(formulario);
+                panelContenedor.Tag = formulario;
+                formulario.Show();
+                formulario.BringToFront();
+            }
+            //Si el formulario/instancia existe
+            else
+            {
+                formulario.BringToFront();
+            }
+        }
+
+        private void panelContenedor_MouseClick(object sender, MouseEventArgs e)
+        {
+            hideSubmenu();
         }
     }
 }

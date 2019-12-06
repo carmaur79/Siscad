@@ -1,6 +1,6 @@
 ﻿namespace Siscad
 {
-    partial class frmTercero
+    partial class frmProducto
     {
         /// <summary>
         /// Required designer variable.
@@ -28,11 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelNombreFormulario = new System.Windows.Forms.Label();
-            this.buttonUltimoRegistro = new System.Windows.Forms.Button();
-            this.buttonSiguienteRegistro = new System.Windows.Forms.Button();
-            this.buttonAnteriorRegistro = new System.Windows.Forms.Button();
-            this.buttonPrimerRegistro = new System.Windows.Forms.Button();
             this.buttonFormBorrar = new System.Windows.Forms.Button();
             this.buttonFormEditar = new System.Windows.Forms.Button();
             this.buttonFormNuevo = new System.Windows.Forms.Button();
@@ -40,70 +35,16 @@
             this.buttonFormGuardar = new System.Windows.Forms.Button();
             this.buttonFormCancelar = new System.Windows.Forms.Button();
             this.buttonFormCerrar = new System.Windows.Forms.Button();
+            this.labelNombreFormulario = new System.Windows.Forms.Label();
+            this.buttonUltimoRegistro = new System.Windows.Forms.Button();
+            this.buttonSiguienteRegistro = new System.Windows.Forms.Button();
+            this.buttonAnteriorRegistro = new System.Windows.Forms.Button();
+            this.buttonPrimerRegistro = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // labelNombreFormulario
-            // 
-            this.labelNombreFormulario.AutoSize = true;
-            this.labelNombreFormulario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNombreFormulario.ForeColor = System.Drawing.SystemColors.Control;
-            this.labelNombreFormulario.Location = new System.Drawing.Point(12, 9);
-            this.labelNombreFormulario.Name = "labelNombreFormulario";
-            this.labelNombreFormulario.Size = new System.Drawing.Size(130, 25);
-            this.labelNombreFormulario.TabIndex = 14;
-            this.labelNombreFormulario.Text = "TERCEROS";
-            // 
-            // buttonUltimoRegistro
-            // 
-            this.buttonUltimoRegistro.Image = global::Siscad.Properties.Resources.ultimoRegistro;
-            this.buttonUltimoRegistro.Location = new System.Drawing.Point(140, 34);
-            this.buttonUltimoRegistro.Name = "buttonUltimoRegistro";
-            this.buttonUltimoRegistro.Size = new System.Drawing.Size(35, 35);
-            this.buttonUltimoRegistro.TabIndex = 18;
-            this.buttonUltimoRegistro.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonUltimoRegistro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.buttonUltimoRegistro.UseVisualStyleBackColor = true;
-            this.buttonUltimoRegistro.Click += new System.EventHandler(this.buttonUltimoRegistro_Click);
-            // 
-            // buttonSiguienteRegistro
-            // 
-            this.buttonSiguienteRegistro.Image = global::Siscad.Properties.Resources.siguienteRegistro;
-            this.buttonSiguienteRegistro.Location = new System.Drawing.Point(99, 34);
-            this.buttonSiguienteRegistro.Name = "buttonSiguienteRegistro";
-            this.buttonSiguienteRegistro.Size = new System.Drawing.Size(35, 35);
-            this.buttonSiguienteRegistro.TabIndex = 17;
-            this.buttonSiguienteRegistro.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonSiguienteRegistro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.buttonSiguienteRegistro.UseVisualStyleBackColor = true;
-            this.buttonSiguienteRegistro.Click += new System.EventHandler(this.buttonSiguienteRegistro_Click);
-            // 
-            // buttonAnteriorRegistro
-            // 
-            this.buttonAnteriorRegistro.Image = global::Siscad.Properties.Resources.anteriorRegistro;
-            this.buttonAnteriorRegistro.Location = new System.Drawing.Point(58, 34);
-            this.buttonAnteriorRegistro.Name = "buttonAnteriorRegistro";
-            this.buttonAnteriorRegistro.Size = new System.Drawing.Size(35, 35);
-            this.buttonAnteriorRegistro.TabIndex = 16;
-            this.buttonAnteriorRegistro.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonAnteriorRegistro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.buttonAnteriorRegistro.UseVisualStyleBackColor = true;
-            this.buttonAnteriorRegistro.Click += new System.EventHandler(this.buttonAnteriorRegistro_Click);
-            // 
-            // buttonPrimerRegistro
-            // 
-            this.buttonPrimerRegistro.Image = global::Siscad.Properties.Resources.primerRegistro;
-            this.buttonPrimerRegistro.Location = new System.Drawing.Point(17, 34);
-            this.buttonPrimerRegistro.Name = "buttonPrimerRegistro";
-            this.buttonPrimerRegistro.Size = new System.Drawing.Size(35, 35);
-            this.buttonPrimerRegistro.TabIndex = 15;
-            this.buttonPrimerRegistro.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonPrimerRegistro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.buttonPrimerRegistro.UseVisualStyleBackColor = true;
-            this.buttonPrimerRegistro.Click += new System.EventHandler(this.buttonPrimerRegistro_Click);
             // 
             // buttonFormBorrar
             // 
-            this.buttonFormBorrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonFormBorrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonFormBorrar.Image = global::Siscad.Properties.Resources.borrar;
             this.buttonFormBorrar.Location = new System.Drawing.Point(464, 9);
             this.buttonFormBorrar.Name = "buttonFormBorrar";
@@ -117,7 +58,7 @@
             // 
             // buttonFormEditar
             // 
-            this.buttonFormEditar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonFormEditar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonFormEditar.Image = global::Siscad.Properties.Resources.editar;
             this.buttonFormEditar.Location = new System.Drawing.Point(398, 9);
             this.buttonFormEditar.Name = "buttonFormEditar";
@@ -131,7 +72,7 @@
             // 
             // buttonFormNuevo
             // 
-            this.buttonFormNuevo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonFormNuevo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonFormNuevo.Image = global::Siscad.Properties.Resources.nuevo;
             this.buttonFormNuevo.Location = new System.Drawing.Point(332, 9);
             this.buttonFormNuevo.Name = "buttonFormNuevo";
@@ -145,7 +86,7 @@
             // 
             // buttonFormBuscar
             // 
-            this.buttonFormBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonFormBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonFormBuscar.Image = global::Siscad.Properties.Resources.buscar;
             this.buttonFormBuscar.Location = new System.Drawing.Point(530, 9);
             this.buttonFormBuscar.Name = "buttonFormBuscar";
@@ -159,7 +100,7 @@
             // 
             // buttonFormGuardar
             // 
-            this.buttonFormGuardar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonFormGuardar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonFormGuardar.Image = global::Siscad.Properties.Resources.guardar;
             this.buttonFormGuardar.Location = new System.Drawing.Point(596, 9);
             this.buttonFormGuardar.Name = "buttonFormGuardar";
@@ -173,7 +114,7 @@
             // 
             // buttonFormCancelar
             // 
-            this.buttonFormCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonFormCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonFormCancelar.Image = global::Siscad.Properties.Resources.cancelar;
             this.buttonFormCancelar.Location = new System.Drawing.Point(662, 9);
             this.buttonFormCancelar.Name = "buttonFormCancelar";
@@ -187,7 +128,7 @@
             // 
             // buttonFormCerrar
             // 
-            this.buttonFormCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonFormCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonFormCerrar.Image = global::Siscad.Properties.Resources.salir;
             this.buttonFormCerrar.Location = new System.Drawing.Point(728, 9);
             this.buttonFormCerrar.Name = "buttonFormCerrar";
@@ -199,7 +140,66 @@
             this.buttonFormCerrar.UseVisualStyleBackColor = true;
             this.buttonFormCerrar.Click += new System.EventHandler(this.buttonFormCerrar_Click);
             // 
-            // frmTercero
+            // labelNombreFormulario
+            // 
+            this.labelNombreFormulario.AutoSize = true;
+            this.labelNombreFormulario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNombreFormulario.ForeColor = System.Drawing.SystemColors.Control;
+            this.labelNombreFormulario.Location = new System.Drawing.Point(12, 9);
+            this.labelNombreFormulario.Name = "labelNombreFormulario";
+            this.labelNombreFormulario.Size = new System.Drawing.Size(149, 25);
+            this.labelNombreFormulario.TabIndex = 16;
+            this.labelNombreFormulario.Text = "PRODUCTOS";
+            // 
+            // buttonUltimoRegistro
+            // 
+            this.buttonUltimoRegistro.Image = global::Siscad.Properties.Resources.ultimoRegistro;
+            this.buttonUltimoRegistro.Location = new System.Drawing.Point(140, 34);
+            this.buttonUltimoRegistro.Name = "buttonUltimoRegistro";
+            this.buttonUltimoRegistro.Size = new System.Drawing.Size(35, 35);
+            this.buttonUltimoRegistro.TabIndex = 22;
+            this.buttonUltimoRegistro.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonUltimoRegistro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.buttonUltimoRegistro.UseVisualStyleBackColor = true;
+            this.buttonUltimoRegistro.Click += new System.EventHandler(this.buttonUltimoRegistro_Click);
+            // 
+            // buttonSiguienteRegistro
+            // 
+            this.buttonSiguienteRegistro.Image = global::Siscad.Properties.Resources.siguienteRegistro;
+            this.buttonSiguienteRegistro.Location = new System.Drawing.Point(99, 34);
+            this.buttonSiguienteRegistro.Name = "buttonSiguienteRegistro";
+            this.buttonSiguienteRegistro.Size = new System.Drawing.Size(35, 35);
+            this.buttonSiguienteRegistro.TabIndex = 21;
+            this.buttonSiguienteRegistro.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonSiguienteRegistro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.buttonSiguienteRegistro.UseVisualStyleBackColor = true;
+            this.buttonSiguienteRegistro.Click += new System.EventHandler(this.buttonSiguienteRegistro_Click);
+            // 
+            // buttonAnteriorRegistro
+            // 
+            this.buttonAnteriorRegistro.Image = global::Siscad.Properties.Resources.anteriorRegistro;
+            this.buttonAnteriorRegistro.Location = new System.Drawing.Point(58, 34);
+            this.buttonAnteriorRegistro.Name = "buttonAnteriorRegistro";
+            this.buttonAnteriorRegistro.Size = new System.Drawing.Size(35, 35);
+            this.buttonAnteriorRegistro.TabIndex = 20;
+            this.buttonAnteriorRegistro.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonAnteriorRegistro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.buttonAnteriorRegistro.UseVisualStyleBackColor = true;
+            this.buttonAnteriorRegistro.Click += new System.EventHandler(this.buttonAnteriorRegistro_Click);
+            // 
+            // buttonPrimerRegistro
+            // 
+            this.buttonPrimerRegistro.Image = global::Siscad.Properties.Resources.primerRegistro;
+            this.buttonPrimerRegistro.Location = new System.Drawing.Point(17, 34);
+            this.buttonPrimerRegistro.Name = "buttonPrimerRegistro";
+            this.buttonPrimerRegistro.Size = new System.Drawing.Size(35, 35);
+            this.buttonPrimerRegistro.TabIndex = 19;
+            this.buttonPrimerRegistro.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonPrimerRegistro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.buttonPrimerRegistro.UseVisualStyleBackColor = true;
+            this.buttonPrimerRegistro.Click += new System.EventHandler(this.buttonPrimerRegistro_Click);
+            // 
+            // frmProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -218,8 +218,8 @@
             this.Controls.Add(this.buttonFormCancelar);
             this.Controls.Add(this.buttonFormCerrar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmTercero";
-            this.Text = "frmTercero";
+            this.Name = "frmProducto";
+            this.Text = "frmProducto";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -235,9 +235,9 @@
         private System.Windows.Forms.Button buttonFormCancelar;
         private System.Windows.Forms.Button buttonFormCerrar;
         private System.Windows.Forms.Label labelNombreFormulario;
-        private System.Windows.Forms.Button buttonPrimerRegistro;
-        private System.Windows.Forms.Button buttonAnteriorRegistro;
-        private System.Windows.Forms.Button buttonSiguienteRegistro;
         private System.Windows.Forms.Button buttonUltimoRegistro;
+        private System.Windows.Forms.Button buttonSiguienteRegistro;
+        private System.Windows.Forms.Button buttonAnteriorRegistro;
+        private System.Windows.Forms.Button buttonPrimerRegistro;
     }
 }

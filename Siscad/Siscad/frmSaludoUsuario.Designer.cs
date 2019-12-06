@@ -34,7 +34,6 @@
             this.textoIngresoLabel = new System.Windows.Forms.Label();
             this.fechaIngresoLabel = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.nombreEmpresaLabel = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
@@ -45,7 +44,7 @@
             this.saludoLabel.AutoSize = true;
             this.saludoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saludoLabel.ForeColor = System.Drawing.Color.DarkOrange;
-            this.saludoLabel.Location = new System.Drawing.Point(15, 252);
+            this.saludoLabel.Location = new System.Drawing.Point(14, 109);
             this.saludoLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.saludoLabel.Name = "saludoLabel";
             this.saludoLabel.Size = new System.Drawing.Size(449, 18);
@@ -58,7 +57,7 @@
             this.aceptarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.aceptarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aceptarButton.ForeColor = System.Drawing.Color.White;
-            this.aceptarButton.Location = new System.Drawing.Point(624, 368);
+            this.aceptarButton.Location = new System.Drawing.Point(386, 234);
             this.aceptarButton.Margin = new System.Windows.Forms.Padding(2);
             this.aceptarButton.Name = "aceptarButton";
             this.aceptarButton.Size = new System.Drawing.Size(77, 30);
@@ -72,7 +71,7 @@
             this.nombreUsuarioLabel.AutoSize = true;
             this.nombreUsuarioLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.nombreUsuarioLabel.ForeColor = System.Drawing.Color.DarkOrange;
-            this.nombreUsuarioLabel.Location = new System.Drawing.Point(15, 196);
+            this.nombreUsuarioLabel.Location = new System.Drawing.Point(14, 53);
             this.nombreUsuarioLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nombreUsuarioLabel.Name = "nombreUsuarioLabel";
             this.nombreUsuarioLabel.Size = new System.Drawing.Size(23, 18);
@@ -84,7 +83,7 @@
             this.textoIngresoLabel.AutoSize = true;
             this.textoIngresoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textoIngresoLabel.ForeColor = System.Drawing.Color.DarkOrange;
-            this.textoIngresoLabel.Location = new System.Drawing.Point(15, 302);
+            this.textoIngresoLabel.Location = new System.Drawing.Point(14, 159);
             this.textoIngresoLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.textoIngresoLabel.Name = "textoIngresoLabel";
             this.textoIngresoLabel.Size = new System.Drawing.Size(256, 18);
@@ -96,7 +95,7 @@
             this.fechaIngresoLabel.AutoSize = true;
             this.fechaIngresoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fechaIngresoLabel.ForeColor = System.Drawing.Color.DarkOrange;
-            this.fechaIngresoLabel.Location = new System.Drawing.Point(15, 327);
+            this.fechaIngresoLabel.Location = new System.Drawing.Point(14, 184);
             this.fechaIngresoLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.fechaIngresoLabel.Name = "fechaIngresoLabel";
             this.fechaIngresoLabel.Size = new System.Drawing.Size(20, 18);
@@ -106,7 +105,6 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.nombreEmpresaLabel);
             this.groupBox1.Controls.Add(this.saludoLabel);
@@ -116,33 +114,20 @@
             this.groupBox1.Controls.Add(this.fechaIngresoLabel);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.groupBox1.Location = new System.Drawing.Point(39, 14);
+            this.groupBox1.Location = new System.Drawing.Point(39, 38);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(722, 423);
+            this.groupBox1.Size = new System.Drawing.Size(503, 288);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Algerian", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label5.Location = new System.Drawing.Point(119, 52);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(256, 75);
-            this.label5.TabIndex = 18;
-            this.label5.Text = "SISCAD";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label1.Location = new System.Drawing.Point(15, 167);
+            this.label1.Location = new System.Drawing.Point(14, 24);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 18);
@@ -154,7 +139,7 @@
             this.nombreEmpresaLabel.AutoSize = true;
             this.nombreEmpresaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nombreEmpresaLabel.ForeColor = System.Drawing.Color.DarkOrange;
-            this.nombreEmpresaLabel.Location = new System.Drawing.Point(15, 277);
+            this.nombreEmpresaLabel.Location = new System.Drawing.Point(14, 134);
             this.nombreEmpresaLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nombreEmpresaLabel.Name = "nombreEmpresaLabel";
             this.nombreEmpresaLabel.Size = new System.Drawing.Size(23, 18);
@@ -166,9 +151,9 @@
             this.AcceptButton = this.aceptarButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Siscad.Properties.Resources.fondo2;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(26)))), ((int)(((byte)(36)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(588, 373);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmSaludoUsuario";
@@ -189,7 +174,6 @@
         private System.Windows.Forms.Label textoIngresoLabel;
         private System.Windows.Forms.Label fechaIngresoLabel;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label nombreEmpresaLabel;
     }
