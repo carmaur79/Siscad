@@ -42,7 +42,7 @@
             // 
             this.labelNombreFormulario.AutoSize = true;
             this.labelNombreFormulario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNombreFormulario.ForeColor = System.Drawing.SystemColors.Control;
+            this.labelNombreFormulario.ForeColor = System.Drawing.Color.DarkGray;
             this.labelNombreFormulario.Location = new System.Drawing.Point(12, 11);
             this.labelNombreFormulario.Name = "labelNombreFormulario";
             this.labelNombreFormulario.Size = new System.Drawing.Size(322, 25);
@@ -52,11 +52,12 @@
             // buttonFormBorrar
             // 
             this.buttonFormBorrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonFormBorrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
             this.buttonFormBorrar.Image = global::Siscad.Properties.Resources.borrar;
-            this.buttonFormBorrar.Location = new System.Drawing.Point(464, 380);
+            this.buttonFormBorrar.Location = new System.Drawing.Point(414, 378);
             this.buttonFormBorrar.Name = "buttonFormBorrar";
             this.buttonFormBorrar.Size = new System.Drawing.Size(60, 60);
-            this.buttonFormBorrar.TabIndex = 45;
+            this.buttonFormBorrar.TabIndex = 56;
             this.buttonFormBorrar.Text = "Borrar";
             this.buttonFormBorrar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonFormBorrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -65,11 +66,12 @@
             // buttonFormEditar
             // 
             this.buttonFormEditar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonFormEditar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
             this.buttonFormEditar.Image = global::Siscad.Properties.Resources.editar;
-            this.buttonFormEditar.Location = new System.Drawing.Point(398, 380);
+            this.buttonFormEditar.Location = new System.Drawing.Point(348, 378);
             this.buttonFormEditar.Name = "buttonFormEditar";
             this.buttonFormEditar.Size = new System.Drawing.Size(60, 60);
-            this.buttonFormEditar.TabIndex = 44;
+            this.buttonFormEditar.TabIndex = 55;
             this.buttonFormEditar.Text = "Editar";
             this.buttonFormEditar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonFormEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -78,11 +80,12 @@
             // buttonFormNuevo
             // 
             this.buttonFormNuevo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonFormNuevo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
             this.buttonFormNuevo.Image = global::Siscad.Properties.Resources.nuevo;
-            this.buttonFormNuevo.Location = new System.Drawing.Point(332, 380);
+            this.buttonFormNuevo.Location = new System.Drawing.Point(282, 378);
             this.buttonFormNuevo.Name = "buttonFormNuevo";
             this.buttonFormNuevo.Size = new System.Drawing.Size(60, 60);
-            this.buttonFormNuevo.TabIndex = 43;
+            this.buttonFormNuevo.TabIndex = 54;
             this.buttonFormNuevo.Text = "Nuevo";
             this.buttonFormNuevo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonFormNuevo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -91,11 +94,12 @@
             // buttonFormBuscar
             // 
             this.buttonFormBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonFormBuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
             this.buttonFormBuscar.Image = global::Siscad.Properties.Resources.buscar;
-            this.buttonFormBuscar.Location = new System.Drawing.Point(530, 380);
+            this.buttonFormBuscar.Location = new System.Drawing.Point(480, 378);
             this.buttonFormBuscar.Name = "buttonFormBuscar";
             this.buttonFormBuscar.Size = new System.Drawing.Size(60, 60);
-            this.buttonFormBuscar.TabIndex = 42;
+            this.buttonFormBuscar.TabIndex = 53;
             this.buttonFormBuscar.Text = "Buscar";
             this.buttonFormBuscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonFormBuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -104,11 +108,12 @@
             // buttonFormGuardar
             // 
             this.buttonFormGuardar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonFormGuardar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
             this.buttonFormGuardar.Image = global::Siscad.Properties.Resources.guardar;
-            this.buttonFormGuardar.Location = new System.Drawing.Point(596, 380);
+            this.buttonFormGuardar.Location = new System.Drawing.Point(546, 378);
             this.buttonFormGuardar.Name = "buttonFormGuardar";
             this.buttonFormGuardar.Size = new System.Drawing.Size(60, 60);
-            this.buttonFormGuardar.TabIndex = 41;
+            this.buttonFormGuardar.TabIndex = 52;
             this.buttonFormGuardar.Text = "Guardar";
             this.buttonFormGuardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonFormGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -117,11 +122,12 @@
             // buttonFormCancelar
             // 
             this.buttonFormCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonFormCancelar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
             this.buttonFormCancelar.Image = global::Siscad.Properties.Resources.cancelar;
-            this.buttonFormCancelar.Location = new System.Drawing.Point(662, 380);
+            this.buttonFormCancelar.Location = new System.Drawing.Point(612, 378);
             this.buttonFormCancelar.Name = "buttonFormCancelar";
             this.buttonFormCancelar.Size = new System.Drawing.Size(60, 60);
-            this.buttonFormCancelar.TabIndex = 40;
+            this.buttonFormCancelar.TabIndex = 51;
             this.buttonFormCancelar.Text = "Cancelar";
             this.buttonFormCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonFormCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -130,24 +136,23 @@
             // buttonFormCerrar
             // 
             this.buttonFormCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonFormCerrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
             this.buttonFormCerrar.Image = global::Siscad.Properties.Resources.salir;
-            this.buttonFormCerrar.Location = new System.Drawing.Point(728, 380);
+            this.buttonFormCerrar.Location = new System.Drawing.Point(678, 378);
             this.buttonFormCerrar.Name = "buttonFormCerrar";
             this.buttonFormCerrar.Size = new System.Drawing.Size(60, 60);
-            this.buttonFormCerrar.TabIndex = 39;
+            this.buttonFormCerrar.TabIndex = 50;
             this.buttonFormCerrar.Text = "Cerrar";
             this.buttonFormCerrar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonFormCerrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.buttonFormCerrar.UseVisualStyleBackColor = true;
-            this.buttonFormCerrar.Click += new System.EventHandler(this.buttonFormCerrar_Click);
             // 
             // frmInfoComercial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(26)))), ((int)(((byte)(36)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.labelNombreFormulario);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
+            this.ClientSize = new System.Drawing.Size(750, 450);
             this.Controls.Add(this.buttonFormBorrar);
             this.Controls.Add(this.buttonFormEditar);
             this.Controls.Add(this.buttonFormNuevo);
@@ -155,6 +160,7 @@
             this.Controls.Add(this.buttonFormGuardar);
             this.Controls.Add(this.buttonFormCancelar);
             this.Controls.Add(this.buttonFormCerrar);
+            this.Controls.Add(this.labelNombreFormulario);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmInfoComercial";
             this.Text = "frmInfoComercial";

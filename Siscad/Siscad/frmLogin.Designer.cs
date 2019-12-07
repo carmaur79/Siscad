@@ -52,7 +52,7 @@
             this.lblFecha.AutoSize = true;
             this.lblFecha.BackColor = System.Drawing.Color.Transparent;
             this.lblFecha.ForeColor = System.Drawing.Color.DarkOrange;
-            this.lblFecha.Location = new System.Drawing.Point(108, 316);
+            this.lblFecha.Location = new System.Drawing.Point(67, 316);
             this.lblFecha.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(0, 13);
@@ -64,7 +64,7 @@
             this.labelTitulo.BackColor = System.Drawing.Color.Transparent;
             this.labelTitulo.Font = new System.Drawing.Font("Algerian", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitulo.ForeColor = System.Drawing.Color.DarkOrange;
-            this.labelTitulo.Location = new System.Drawing.Point(225, 73);
+            this.labelTitulo.Location = new System.Drawing.Point(222, 83);
             this.labelTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTitulo.Name = "labelTitulo";
             this.labelTitulo.Size = new System.Drawing.Size(153, 45);
@@ -75,12 +75,12 @@
             // 
             this.labelNombreAplicacion.AutoSize = true;
             this.labelNombreAplicacion.BackColor = System.Drawing.Color.Transparent;
-            this.labelNombreAplicacion.Font = new System.Drawing.Font("Agency FB", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNombreAplicacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNombreAplicacion.ForeColor = System.Drawing.Color.DarkOrange;
-            this.labelNombreAplicacion.Location = new System.Drawing.Point(107, 288);
+            this.labelNombreAplicacion.Location = new System.Drawing.Point(67, 278);
             this.labelNombreAplicacion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelNombreAplicacion.Name = "labelNombreAplicacion";
-            this.labelNombreAplicacion.Size = new System.Drawing.Size(385, 24);
+            this.labelNombreAplicacion.Size = new System.Drawing.Size(463, 20);
             this.labelNombreAplicacion.TabIndex = 27;
             this.labelNombreAplicacion.Text = "Sistema Integral en Seguridad Social, Comercial y Administrativo";
             // 
