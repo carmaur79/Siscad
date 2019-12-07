@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Siscad
 {
-    public partial class frmAnexoSiso : Form
+    public partial class frmAnexoSiso : BaseCrud
     {
         public frmAnexoSiso()
         {
             InitializeComponent();
-        }
-
-        private void buttonFormCerrar_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

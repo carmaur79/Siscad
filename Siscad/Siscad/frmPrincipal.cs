@@ -392,7 +392,11 @@ namespace Siscad
 
         private void buttonSalir_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            if(MessageBox.Show("¿Desea cerrar la aplicación?", "Aviso", MessageBoxButtons.YesNo, 
+                MessageBoxIcon.Question, MessageBoxDefaultButton.Button2)== DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
         #endregion
 

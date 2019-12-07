@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Siscad
 {
-    public partial class frmInfoLaboral : Form
+    public partial class frmInfoLaboral : BaseInforme
     {
         public frmInfoLaboral()
         {
             InitializeComponent();
-        }
-
-        private void buttonFormCerrar_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

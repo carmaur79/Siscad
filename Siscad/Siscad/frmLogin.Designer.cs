@@ -91,7 +91,7 @@
             this.txtEmpresa.Name = "txtEmpresa";
             this.txtEmpresa.Size = new System.Drawing.Size(189, 20);
             this.txtEmpresa.TabIndex = 20;
-            this.txtEmpresa.Text = "900806614";
+            this.txtEmpresa.Text = "900948447";
             // 
             // label3
             // 

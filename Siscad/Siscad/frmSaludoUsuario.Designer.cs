@@ -37,9 +37,9 @@
             this.nombreEmpresaLabel = new System.Windows.Forms.Label();
             this.panelTitulo = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timerIniciaSaludo = new System.Windows.Forms.Timer(this.components);
             this.timerFinSaludo = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelTitulo.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -111,12 +111,12 @@
             // nombreEmpresaLabel
             // 
             this.nombreEmpresaLabel.AutoSize = true;
-            this.nombreEmpresaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nombreEmpresaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nombreEmpresaLabel.ForeColor = System.Drawing.Color.DarkGray;
-            this.nombreEmpresaLabel.Location = new System.Drawing.Point(11, 12);
+            this.nombreEmpresaLabel.Location = new System.Drawing.Point(11, 16);
             this.nombreEmpresaLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nombreEmpresaLabel.Name = "nombreEmpresaLabel";
-            this.nombreEmpresaLabel.Size = new System.Drawing.Size(34, 29);
+            this.nombreEmpresaLabel.Size = new System.Drawing.Size(30, 25);
             this.nombreEmpresaLabel.TabIndex = 2;
             this.nombreEmpresaLabel.Text = "...";
             // 
@@ -141,16 +141,6 @@
             this.panel1.Size = new System.Drawing.Size(160, 290);
             this.panel1.TabIndex = 7;
             // 
-            // timerIniciaSaludo
-            // 
-            this.timerIniciaSaludo.Interval = 40;
-            this.timerIniciaSaludo.Tick += new System.EventHandler(this.timerIniciaSaludo_Tick);
-            // 
-            // timerFinSaludo
-            // 
-            this.timerFinSaludo.Interval = 40;
-            this.timerFinSaludo.Tick += new System.EventHandler(this.timerFinSaludo_Tick);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Siscad.Properties.Resources.LogoSiscad;
@@ -160,6 +150,16 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
+            // 
+            // timerIniciaSaludo
+            // 
+            this.timerIniciaSaludo.Interval = 40;
+            this.timerIniciaSaludo.Tick += new System.EventHandler(this.timerIniciaSaludo_Tick);
+            // 
+            // timerFinSaludo
+            // 
+            this.timerFinSaludo.Interval = 40;
+            this.timerFinSaludo.Tick += new System.EventHandler(this.timerFinSaludo_Tick);
             // 
             // frmSaludoUsuario
             // 

@@ -37,6 +37,8 @@
             this.labelNombreAplicacion = new System.Windows.Forms.Label();
             this.buttonMenu = new System.Windows.Forms.Button();
             this.panelMenuInferior = new System.Windows.Forms.Panel();
+            this.labelFechaHora = new System.Windows.Forms.Label();
+            this.labelEmpresaUsuario = new System.Windows.Forms.Label();
             this.panelMenuLateral = new System.Windows.Forms.Panel();
             this.buttonSalir = new System.Windows.Forms.Button();
             this.panelSubMenuInformeReporte = new System.Windows.Forms.Panel();
@@ -80,8 +82,6 @@
             this.buttonArchivo = new System.Windows.Forms.Button();
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
-            this.labelEmpresaUsuario = new System.Windows.Forms.Label();
-            this.labelFechaHora = new System.Windows.Forms.Label();
             this.panelMenuSuperior.SuspendLayout();
             this.panelMenuInferior.SuspendLayout();
             this.panelMenuLateral.SuspendLayout();
@@ -201,6 +201,27 @@
             this.panelMenuInferior.Name = "panelMenuInferior";
             this.panelMenuInferior.Size = new System.Drawing.Size(750, 30);
             this.panelMenuInferior.TabIndex = 1;
+            // 
+            // labelFechaHora
+            // 
+            this.labelFechaHora.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelFechaHora.AutoSize = true;
+            this.labelFechaHora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
+            this.labelFechaHora.Location = new System.Drawing.Point(553, 7);
+            this.labelFechaHora.Name = "labelFechaHora";
+            this.labelFechaHora.Size = new System.Drawing.Size(16, 13);
+            this.labelFechaHora.TabIndex = 1;
+            this.labelFechaHora.Text = "...";
+            // 
+            // labelEmpresaUsuario
+            // 
+            this.labelEmpresaUsuario.AutoSize = true;
+            this.labelEmpresaUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
+            this.labelEmpresaUsuario.Location = new System.Drawing.Point(11, 7);
+            this.labelEmpresaUsuario.Name = "labelEmpresaUsuario";
+            this.labelEmpresaUsuario.Size = new System.Drawing.Size(16, 13);
+            this.labelEmpresaUsuario.TabIndex = 0;
+            this.labelEmpresaUsuario.Text = "...";
             // 
             // panelMenuLateral
             // 
@@ -974,27 +995,6 @@
             this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxLogo.TabIndex = 0;
             this.pictureBoxLogo.TabStop = false;
-            // 
-            // labelEmpresaUsuario
-            // 
-            this.labelEmpresaUsuario.AutoSize = true;
-            this.labelEmpresaUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
-            this.labelEmpresaUsuario.Location = new System.Drawing.Point(11, 7);
-            this.labelEmpresaUsuario.Name = "labelEmpresaUsuario";
-            this.labelEmpresaUsuario.Size = new System.Drawing.Size(16, 13);
-            this.labelEmpresaUsuario.TabIndex = 0;
-            this.labelEmpresaUsuario.Text = "...";
-            // 
-            // labelFechaHora
-            // 
-            this.labelFechaHora.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelFechaHora.AutoSize = true;
-            this.labelFechaHora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
-            this.labelFechaHora.Location = new System.Drawing.Point(553, 7);
-            this.labelFechaHora.Name = "labelFechaHora";
-            this.labelFechaHora.Size = new System.Drawing.Size(16, 13);
-            this.labelFechaHora.TabIndex = 1;
-            this.labelFechaHora.Text = "...";
             // 
             // frmPrincipal
             // 

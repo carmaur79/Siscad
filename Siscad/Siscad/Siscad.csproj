@@ -90,6 +90,18 @@
     <Compile Include="frmAnexoTercero.Designer.cs">
       <DependentUpon>frmAnexoTercero.cs</DependentUpon>
     </Compile>
+    <Compile Include="BaseCrud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseCrud.Designer.cs">
+      <DependentUpon>BaseCrud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseInforme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseInforme.Designer.cs">
+      <DependentUpon>BaseInforme.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCambioClave.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -253,6 +265,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAnexoTercero.resx">
       <DependentUpon>frmAnexoTercero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseCrud.resx">
+      <DependentUpon>BaseCrud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseInforme.resx">
+      <DependentUpon>BaseInforme.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCambioClave.resx">
       <DependentUpon>frmCambioClave.cs</DependentUpon>
