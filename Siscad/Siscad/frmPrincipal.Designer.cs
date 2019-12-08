@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.panelMenuSuperior = new System.Windows.Forms.Panel();
             this.buttonMaximizar = new System.Windows.Forms.Button();
@@ -82,6 +83,7 @@
             this.buttonArchivo = new System.Windows.Forms.Button();
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            this.horaFecha = new System.Windows.Forms.Timer(this.components);
             this.panelMenuSuperior.SuspendLayout();
             this.panelMenuInferior.SuspendLayout();
             this.panelMenuLateral.SuspendLayout();
@@ -207,7 +209,7 @@
             this.labelFechaHora.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelFechaHora.AutoSize = true;
             this.labelFechaHora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
-            this.labelFechaHora.Location = new System.Drawing.Point(553, 7);
+            this.labelFechaHora.Location = new System.Drawing.Point(499, 7);
             this.labelFechaHora.Name = "labelFechaHora";
             this.labelFechaHora.Size = new System.Drawing.Size(16, 13);
             this.labelFechaHora.TabIndex = 1;
@@ -996,6 +998,11 @@
             this.pictureBoxLogo.TabIndex = 0;
             this.pictureBoxLogo.TabStop = false;
             // 
+            // horaFecha
+            // 
+            this.horaFecha.Enabled = true;
+            this.horaFecha.Tick += new System.EventHandler(this.horaFecha_Tick);
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1087,5 +1094,6 @@
         private System.Windows.Forms.PictureBox pictureBoxLogo;
         private System.Windows.Forms.Label labelEmpresaUsuario;
         private System.Windows.Forms.Label labelFechaHora;
+        private System.Windows.Forms.Timer horaFecha;
     }
 }

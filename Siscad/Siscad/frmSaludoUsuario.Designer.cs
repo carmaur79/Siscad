@@ -153,12 +153,12 @@
             // 
             // timerIniciaSaludo
             // 
-            this.timerIniciaSaludo.Interval = 40;
+            this.timerIniciaSaludo.Interval = 30;
             this.timerIniciaSaludo.Tick += new System.EventHandler(this.timerIniciaSaludo_Tick);
             // 
             // timerFinSaludo
             // 
-            this.timerFinSaludo.Interval = 40;
+            this.timerFinSaludo.Interval = 30;
             this.timerFinSaludo.Tick += new System.EventHandler(this.timerFinSaludo_Tick);
             // 
             // frmSaludoUsuario

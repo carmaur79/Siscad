@@ -392,11 +392,15 @@ namespace Siscad
 
         private void buttonSalir_Click(object sender, EventArgs e)
         {
-            if(MessageBox.Show("¿Desea cerrar la aplicación?", "Aviso", MessageBoxButtons.YesNo, 
-                MessageBoxIcon.Question, MessageBoxDefaultButton.Button2)== DialogResult.Yes)
-            {
-                Application.Exit();
-            }
+            abrirFormulario<pruebaDeCodigo>();
+            hideSubmenu();
+            minimizarMenuLateral();
+
+            //if(MessageBox.Show("¿Desea cerrar la aplicación?", "Aviso", MessageBoxButtons.YesNo, 
+            //    MessageBoxIcon.Question, MessageBoxDefaultButton.Button2)== DialogResult.Yes)
+            //{
+            //    Application.Exit();
+            //}
         }
         #endregion
 
@@ -416,7 +420,11 @@ namespace Siscad
 
         private void buttonCerrar_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            if (MessageBox.Show("¿Desea cerrar la aplicación?", "Aviso", MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
 
         private void buttonRestaurar_Click(object sender, EventArgs e)
@@ -541,7 +549,6 @@ namespace Siscad
             //Información que se muestra en el panel inferior
             labelEmpresaUsuario.Text = "Empresa: "+ empresaLogueada.razonSocial + "  Usuario: " +usuarioLogueado.nombre + " " 
                 + usuarioLogueado.apellido;
-            labelFechaHora.Text = "  Fecha: " + DateTime.Now.ToShortDateString() + "  Hora: " + DateTime.Now.ToShortTimeString();
             
             //Información de alertas a tener en cuenta por la empresa
             if (CADEmpresa.GetEmpresa(empresaLogueada.idEmpresa).fechaResolucionFacturacion != null)
@@ -554,6 +561,12 @@ namespace Siscad
                     MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
                 }
             }
+        }
+
+        private void horaFecha_Tick(object sender, EventArgs e)
+        {
+            labelFechaHora.Text = "  Fecha: " + DateTime.Now.ToString("dddd, ") 
+                + DateTime.Now.ToShortDateString() + "  Hora: " + DateTime.Now.ToLongTimeString();
         }
     }
 }
