@@ -37,7 +37,6 @@
             this.tipoPersonaTableAdapter = new Siscad.DSSiscadTableAdapters.tipoPersonaTableAdapter();
             this.tipoDocumentoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tipoPersonaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bunifuDatepicker1 = new Bunifu.Framework.UI.BunifuDatepicker();
             ((System.ComponentModel.ISupportInitialize)(this.dSSiscad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.terceroBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tipoDocumentoBindingSource)).BeginInit();
@@ -199,40 +198,14 @@
             this.tipoPersonaBindingSource.DataMember = "tipoPersona";
             this.tipoPersonaBindingSource.DataSource = this.dSSiscad;
             // 
-            // bunifuDatepicker1
-            // 
-            this.bunifuDatepicker1.BackColor = System.Drawing.Color.DarkGray;
-            this.bunifuDatepicker1.BorderRadius = 0;
-            this.bunifuDatepicker1.ForeColor = System.Drawing.Color.White;
-            this.bunifuDatepicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.bunifuDatepicker1.FormatCustom = null;
-            this.bunifuDatepicker1.Location = new System.Drawing.Point(529, 12);
-            this.bunifuDatepicker1.Name = "bunifuDatepicker1";
-            this.bunifuDatepicker1.Size = new System.Drawing.Size(281, 36);
-            this.bunifuDatepicker1.TabIndex = 83;
-            this.bunifuDatepicker1.Value = new System.DateTime(2019, 12, 9, 10, 8, 19, 784);
-            // 
             // pruebaDeCodigo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(822, 637);
-            this.Controls.Add(this.bunifuDatepicker1);
             this.Name = "pruebaDeCodigo";
             this.Text = "pruebaDeCodigo";
             this.Load += new System.EventHandler(this.pruebaDeCodigo_Load);
-            this.Controls.SetChildIndex(this.buttonFormCerrar, 0);
-            this.Controls.SetChildIndex(this.buttonFormCancelar, 0);
-            this.Controls.SetChildIndex(this.buttonFormGuardar, 0);
-            this.Controls.SetChildIndex(this.buttonFormBuscar, 0);
-            this.Controls.SetChildIndex(this.buttonFormNuevo, 0);
-            this.Controls.SetChildIndex(this.buttonFormEditar, 0);
-            this.Controls.SetChildIndex(this.buttonFormBorrar, 0);
-            this.Controls.SetChildIndex(this.buttonPrimerRegistro, 0);
-            this.Controls.SetChildIndex(this.buttonAnteriorRegistro, 0);
-            this.Controls.SetChildIndex(this.buttonSiguienteRegistro, 0);
-            this.Controls.SetChildIndex(this.buttonUltimoRegistro, 0);
-            this.Controls.SetChildIndex(this.bunifuDatepicker1, 0);
             ((System.ComponentModel.ISupportInitialize)(this.dSSiscad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.terceroBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tipoDocumentoBindingSource)).EndInit();
@@ -251,6 +224,5 @@
         private System.Windows.Forms.BindingSource tipoDocumentoBindingSource;
         private DSSiscadTableAdapters.tipoPersonaTableAdapter tipoPersonaTableAdapter;
         private System.Windows.Forms.BindingSource tipoPersonaBindingSource;
-        private Bunifu.Framework.UI.BunifuDatepicker bunifuDatepicker1;
     }
 }
