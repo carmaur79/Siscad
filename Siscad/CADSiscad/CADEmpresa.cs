@@ -55,7 +55,7 @@ namespace CADSiscad
             miEmpresa.idTerceroRepresentante = miRegistro.idTerceroRepresentante;
             miEmpresa.idDepartamento = miRegistro.idDepartamento;
             miEmpresa.fechaConstitucion = miRegistro.fechaConstitucion;
-            miEmpresa.logo = miRegistro.logo;
+            //miEmpresa.logo = miRegistro.logo.ToString();
             miEmpresa.resolucionFacturacion = miRegistro.resolucionFacturacion;
             miEmpresa.fechaResolucionFacturacion = miRegistro.fechaResolucionFacturacion;
             miEmpresa.idUsuario = miRegistro.idUsuario;

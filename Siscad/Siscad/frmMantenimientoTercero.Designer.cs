@@ -99,6 +99,7 @@
             this.pictureBoxImagen = new System.Windows.Forms.PictureBox();
             this.groupBoxImagen = new System.Windows.Forms.GroupBox();
             this.buttonFormCerrar = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             idTerceroLabel = new System.Windows.Forms.Label();
             dvLabel = new System.Windows.Forms.Label();
             idTipoDocumentoLabel = new System.Windows.Forms.Label();
@@ -829,6 +830,7 @@
             this.buttonCargarImagen.TabIndex = 7;
             this.buttonCargarImagen.Text = "...";
             this.buttonCargarImagen.UseVisualStyleBackColor = true;
+            this.buttonCargarImagen.Click += new System.EventHandler(this.buttonCargarImagen_Click);
             // 
             // imagenTextBox
             // 
@@ -926,6 +928,10 @@
             this.buttonFormCerrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.buttonFormCerrar.UseVisualStyleBackColor = true;
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // frmMantenimientoTercero
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1012,5 +1018,6 @@
         private System.Windows.Forms.PictureBox pictureBoxImagen;
         private System.Windows.Forms.GroupBox groupBoxImagen;
         public System.Windows.Forms.Button buttonFormCerrar;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

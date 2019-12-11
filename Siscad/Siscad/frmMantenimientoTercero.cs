@@ -39,5 +39,13 @@ namespace Siscad
             this.terceroTableAdapter.Fill(this.dSSiscad.tercero);
 
         }
+
+        private void buttonCargarImagen_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.InitialDirectory = "C:\\";
+            openFileDialog1.Filter = "Imágenes soportadas|*.jpeg; *.jpg; *.jpe; *.png; *.bmp; *.ico; *.gif; *.tif; *.tiff; *.jfif; *.dib; *.psd; *.raw";
+            if (openFileDialog1.ShowDialog() == DialogResult.OK) pictureBoxImagen.Load(openFileDialog1.FileName);
+
+        }
     }
 }
