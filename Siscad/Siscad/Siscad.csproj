@@ -178,11 +178,11 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMantenimientoTercero.cs">
+    <Compile Include="frmTercero.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMantenimientoTercero.Designer.cs">
-      <DependentUpon>frmMantenimientoTercero.cs</DependentUpon>
+    <Compile Include="frmTercero.Designer.cs">
+      <DependentUpon>frmTercero.cs</DependentUpon>
     </Compile>
     <Compile Include="frmNomina.cs">
       <SubType>Form</SubType>
@@ -220,11 +220,11 @@
     <Compile Include="frmSucursal.Designer.cs">
       <DependentUpon>frmSucursal.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmTercero.cs">
+    <Compile Include="frmTerceroParaBorrar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmTercero.Designer.cs">
-      <DependentUpon>frmTercero.cs</DependentUpon>
+    <Compile Include="frmTerceroParaBorrar.Designer.cs">
+      <DependentUpon>frmTerceroParaBorrar.cs</DependentUpon>
     </Compile>
     <Compile Include="frmTraslado.cs">
       <SubType>Form</SubType>
@@ -327,8 +327,8 @@
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMantenimientoTercero.resx">
-      <DependentUpon>frmMantenimientoTercero.cs</DependentUpon>
+    <EmbeddedResource Include="frmTercero.resx">
+      <DependentUpon>frmTercero.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmNomina.resx">
       <DependentUpon>frmNomina.cs</DependentUpon>
@@ -348,8 +348,8 @@
     <EmbeddedResource Include="frmSucursal.resx">
       <DependentUpon>frmSucursal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmTercero.resx">
-      <DependentUpon>frmTercero.cs</DependentUpon>
+    <EmbeddedResource Include="frmTerceroParaBorrar.resx">
+      <DependentUpon>frmTerceroParaBorrar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTraslado.resx">
       <DependentUpon>frmTraslado.cs</DependentUpon>

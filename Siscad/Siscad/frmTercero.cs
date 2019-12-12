@@ -10,47 +10,41 @@ using System.Windows.Forms;
 
 namespace Siscad
 {
-    public partial class frmTercero : BaseCrud
+    public partial class frmTercero : Form
     {
         public frmTercero()
         {
             InitializeComponent();
         }
 
-        private void buttonFormEditar_Click(object sender, EventArgs e)
+        private void terceroBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-            frmMantenimientoTercero miTercero = new frmMantenimientoTercero();
-            miTercero.ShowDialog();
+            this.Validate();
+            this.terceroBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.dSSiscad);
+
         }
 
-        private void frmTercero_Load(object sender, EventArgs e)
+        private void terceroBindingNavigatorSaveItem_Click_1(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'dSSiscad.municipio' Puede moverla o quitarla según sea necesario.
-            this.municipioTableAdapter.Fill(this.dSSiscad.municipio);
-            // TODO: esta línea de código carga datos en la tabla 'dSSiscad.departamento' Puede moverla o quitarla según sea necesario.
-            this.departamentoTableAdapter.Fill(this.dSSiscad.departamento);
-            // TODO: esta línea de código carga datos en la tabla 'dSSiscad.ocupaciones' Puede moverla o quitarla según sea necesario.
-            this.ocupacionesTableAdapter.Fill(this.dSSiscad.ocupaciones);
+            this.Validate();
+            this.terceroBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.dSSiscad);
+
+        }
+
+        private void frmMantenimientoTercero_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'dSSiscad.tercero' Puede moverla o quitarla según sea necesario.
             this.terceroTableAdapter.Fill(this.dSSiscad.tercero);
-        }
-
-        private void buttonPrimerRegistro_Click(object sender, EventArgs e)
-        {
 
         }
 
-        private void buttonAnteriorRegistro_Click(object sender, EventArgs e)
+        private void buttonCargarImagen_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void buttonSiguienteRegistro_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void buttonUltimoRegistro_Click(object sender, EventArgs e)
-        {
+            openFileDialog1.InitialDirectory = "C:\\";
+            openFileDialog1.Filter = "Imágenes soportadas|*.jpeg; *.jpg; *.jpe; *.png; *.bmp; *.ico; *.gif; *.tif; *.tiff; *.jfif; *.dib; *.psd; *.raw";
+            if (openFileDialog1.ShowDialog() == DialogResult.OK) pictureBoxImagen.Load(openFileDialog1.FileName);
 
         }
     }

@@ -551,16 +551,16 @@ namespace Siscad
                 + usuarioLogueado.apellido;
             
             //Información de alertas a tener en cuenta por la empresa
-            if (CADEmpresa.GetEmpresa(empresaLogueada.idEmpresa).fechaResolucionFacturacion != null)
-            {
-                DateTime vencimientoResolucionDian = CADEmpresa.GetEmpresa(empresaLogueada.idEmpresa).fechaResolucionFacturacion.AddMonths(18);
-                if (CADEmpresa.GetEmpresa(empresaLogueada.idEmpresa).fechaResolucionFacturacion.AddMonths(17) < DateTime.Now)
-                {
-                    MessageBox.Show("La resolución de autorización para facturar debe ser renovada, fecha de vencimiento el día " +
-                        vencimientoResolucionDian.ToShortDateString(), "Atención",
-                    MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
-                }
-            }
+            //if (CADEmpresa.GetEmpresa(empresaLogueada.idEmpresa).fechaResolucionFacturacion != null)
+            //{
+            //    DateTime vencimientoResolucionDian = CADEmpresa.GetEmpresa(empresaLogueada.idEmpresa).fechaResolucionFacturacion.AddMonths(18);
+            //    if (CADEmpresa.GetEmpresa(empresaLogueada.idEmpresa).fechaResolucionFacturacion.AddMonths(17) < DateTime.Now)
+            //    {
+            //        MessageBox.Show("La resolución de autorización para facturar debe ser renovada, fecha de vencimiento el día " +
+            //            vencimientoResolucionDian.ToShortDateString(), "Atención",
+            //        MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
+            //    }
+            //}
         }
 
         private void horaFecha_Tick(object sender, EventArgs e)
