@@ -28,37 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelNombreFormulario = new System.Windows.Forms.Label();
-            this.SuspendLayout();
-            // 
-            // labelNombreFormulario
-            // 
-            this.labelNombreFormulario.AutoSize = true;
-            this.labelNombreFormulario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNombreFormulario.ForeColor = System.Drawing.Color.DarkGray;
-            this.labelNombreFormulario.Location = new System.Drawing.Point(12, 9);
-            this.labelNombreFormulario.Name = "labelNombreFormulario";
-            this.labelNombreFormulario.Size = new System.Drawing.Size(332, 25);
-            this.labelNombreFormulario.TabIndex = 22;
-            this.labelNombreFormulario.Text = "DEVOLUCIÓN DE PRODUCTOS";
-            // 
-            // frmDevolucion
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(750, 450);
-            this.Controls.Add(this.labelNombreFormulario);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmDevolucion";
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Text = "frmDevolucion";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
         }
 
         #endregion
-
-        private System.Windows.Forms.Label labelNombreFormulario;
     }
 }

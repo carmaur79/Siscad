@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Siscad
 {
-    public partial class frmAnexoProducto : BaseCrud
+    public partial class frmAnexoProducto : Form
     {
         public frmAnexoProducto()
         {

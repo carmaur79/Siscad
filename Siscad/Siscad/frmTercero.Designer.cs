@@ -29,81 +29,56 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Label idTerceroLabel;
-            System.Windows.Forms.Label dvLabel;
-            System.Windows.Forms.Label idTipoDocumentoLabel;
-            System.Windows.Forms.Label idPersonaLabel;
-            System.Windows.Forms.Label nombre1Label;
-            System.Windows.Forms.Label apellido1Label;
+            System.Windows.Forms.Label clasificacionLabel;
+            System.Windows.Forms.Label otraInformacionLabel;
+            System.Windows.Forms.Label ubicacionLabel;
             System.Windows.Forms.Label razonSocialLabel;
+            System.Windows.Forms.Label identificacionLabel;
+            System.Windows.Forms.Label nombre1Label;
+            System.Windows.Forms.Label notasLabel;
             System.Windows.Forms.Label nombreComercialLabel;
-            System.Windows.Forms.Label codigoAlternoLabel;
-            System.Windows.Forms.Label fechaNacimientoLabel;
-            System.Windows.Forms.Label idSexoLabel;
-            System.Windows.Forms.Label tipoSangreLabel;
-            System.Windows.Forms.Label telefono1Label;
-            System.Windows.Forms.Label faxLabel;
-            System.Windows.Forms.Label correoElectronicoLabel;
-            System.Windows.Forms.Label direccionLabel;
-            System.Windows.Forms.Label idDepartamentoLabel;
-            System.Windows.Forms.Label idMunicipioLabel;
             System.Windows.Forms.Label sitioWebLabel;
+            System.Windows.Forms.Label apellido1Label;
+            System.Windows.Forms.Label idPersonaLabel;
+            System.Windows.Forms.Label codigoAlternoLabel;
+            System.Windows.Forms.Label tipoSangreLabel;
+            System.Windows.Forms.Label idMunicipioLabel;
             System.Windows.Forms.Label idEstadoCivilLabel;
-            System.Windows.Forms.Label imagenLabel;
+            System.Windows.Forms.Label idTipoDocumentoLabel;
+            System.Windows.Forms.Label fechaNacimientoLabel;
+            System.Windows.Forms.Label idTerceroLabel;
+            System.Windows.Forms.Label idDepartamentoLabel;
+            System.Windows.Forms.Label telefono1Label;
+            System.Windows.Forms.Label direccionLabel;
+            System.Windows.Forms.Label dvLabel;
+            System.Windows.Forms.Label correoElectronicoLabel;
+            System.Windows.Forms.Label faxLabel;
+            System.Windows.Forms.Label idSexoLabel;
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dSSiscad = new Siscad.DSSiscad();
             this.terceroBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.terceroTableAdapter = new Siscad.DSSiscadTableAdapters.terceroTableAdapter();
             this.tableAdapterManager = new Siscad.DSSiscadTableAdapters.TableAdapterManager();
-            this.esEmpleadoCheckBox = new System.Windows.Forms.CheckBox();
-            this.esClienteCheckBox = new System.Windows.Forms.CheckBox();
-            this.esProveedorCheckBox = new System.Windows.Forms.CheckBox();
-            this.esOtroCheckBox = new System.Windows.Forms.CheckBox();
-            this.esEpsCheckBox = new System.Windows.Forms.CheckBox();
-            this.esAfpCheckBox = new System.Windows.Forms.CheckBox();
-            this.esArlCheckBox = new System.Windows.Forms.CheckBox();
-            this.esCcfCheckBox = new System.Windows.Forms.CheckBox();
-            this.idTerceroTextBox = new System.Windows.Forms.TextBox();
-            this.dvTextBox = new System.Windows.Forms.TextBox();
-            this.idTipoDocumentoComboBox = new System.Windows.Forms.ComboBox();
-            this.idPersonaComboBox = new System.Windows.Forms.ComboBox();
-            this.nombre1TextBox = new System.Windows.Forms.TextBox();
-            this.nombre2TextBox = new System.Windows.Forms.TextBox();
-            this.apellido1TextBox = new System.Windows.Forms.TextBox();
-            this.apellido2TextBox = new System.Windows.Forms.TextBox();
-            this.razonSocialTextBox = new System.Windows.Forms.TextBox();
-            this.nombreComercialTextBox = new System.Windows.Forms.TextBox();
-            this.codigoAlternoTextBox = new System.Windows.Forms.TextBox();
-            this.fechaNacimientoDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.idSexoComboBox = new System.Windows.Forms.ComboBox();
-            this.tipoSangreComboBox = new System.Windows.Forms.ComboBox();
-            this.groupBoxIdentificacion = new System.Windows.Forms.GroupBox();
-            this.groupBoxClasificacion = new System.Windows.Forms.GroupBox();
-            this.groupBoxUbicacion = new System.Windows.Forms.GroupBox();
-            this.sitioWebTextBox = new System.Windows.Forms.TextBox();
-            this.idMunicipioComboBox = new System.Windows.Forms.ComboBox();
-            this.idDepartamentoComboBox = new System.Windows.Forms.ComboBox();
-            this.direccionTextBox = new System.Windows.Forms.TextBox();
-            this.correoElectronicoTextBox = new System.Windows.Forms.TextBox();
-            this.faxTextBox = new System.Windows.Forms.TextBox();
-            this.telefono3TextBox = new System.Windows.Forms.TextBox();
-            this.telefono2TextBox = new System.Windows.Forms.TextBox();
-            this.telefono1TextBox = new System.Windows.Forms.TextBox();
-            this.groupBoxOtraInformacion = new System.Windows.Forms.GroupBox();
-            this.buttonCargarImagen = new System.Windows.Forms.Button();
-            this.imagenTextBox = new System.Windows.Forms.TextBox();
-            this.vigenteCheckBox = new System.Windows.Forms.CheckBox();
-            this.responsableIvaCheckBox = new System.Windows.Forms.CheckBox();
-            this.idEstadoCivilComboBox = new System.Windows.Forms.ComboBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.notasTextBox = new System.Windows.Forms.TextBox();
-            this.pictureBoxImagen = new System.Windows.Forms.PictureBox();
-            this.groupBoxImagen = new System.Windows.Forms.GroupBox();
-            this.buttonFormCerrar = new System.Windows.Forms.Button();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.terceroBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButtonEdit = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonCancel = new System.Windows.Forms.ToolStripButton();
+            this.terceroBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonSearch = new System.Windows.Forms.ToolStripButton();
             this.terceroDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -144,227 +119,355 @@
             this.dataGridViewCheckBoxColumn9 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.dataGridViewCheckBoxColumn10 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            idTerceroLabel = new System.Windows.Forms.Label();
-            dvLabel = new System.Windows.Forms.Label();
-            idTipoDocumentoLabel = new System.Windows.Forms.Label();
-            idPersonaLabel = new System.Windows.Forms.Label();
-            nombre1Label = new System.Windows.Forms.Label();
-            apellido1Label = new System.Windows.Forms.Label();
+            this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.registrosGroupBox = new System.Windows.Forms.GroupBox();
+            this.ImagenLabel = new System.Windows.Forms.Label();
+            this.vigenteLabel = new System.Windows.Forms.Label();
+            this.imagenPictureBox = new System.Windows.Forms.PictureBox();
+            this.responsableIvaLabel = new System.Windows.Forms.Label();
+            this.nombre2TextBox = new System.Windows.Forms.TextBox();
+            this.nombreComercialTextBox = new System.Windows.Forms.TextBox();
+            this.apellido1TextBox = new System.Windows.Forms.TextBox();
+            this.notasTextBox = new System.Windows.Forms.TextBox();
+            this.razonSocialTextBox = new System.Windows.Forms.TextBox();
+            this.buttonCargarImagen = new System.Windows.Forms.Button();
+            this.nombre1TextBox = new System.Windows.Forms.TextBox();
+            this.idTerceroTextBox = new System.Windows.Forms.TextBox();
+            this.codigoAlternoTextBox = new System.Windows.Forms.TextBox();
+            this.vigenteCheckBox = new System.Windows.Forms.CheckBox();
+            this.apellido2TextBox = new System.Windows.Forms.TextBox();
+            this.sitioWebTextBox = new System.Windows.Forms.TextBox();
+            this.imagenTextBox = new System.Windows.Forms.TextBox();
+            this.esEpsCheckBox = new System.Windows.Forms.CheckBox();
+            this.idPersonaComboBox = new System.Windows.Forms.ComboBox();
+            this.tipoPersonaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.responsableIvaCheckBox = new System.Windows.Forms.CheckBox();
+            this.esAfpCheckBox = new System.Windows.Forms.CheckBox();
+            this.esProveedorCheckBox = new System.Windows.Forms.CheckBox();
+            this.fechaNacimientoDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.esOtroCheckBox = new System.Windows.Forms.CheckBox();
+            this.idEstadoCivilComboBox = new System.Windows.Forms.ComboBox();
+            this.estadoCivilBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.idMunicipioComboBox = new System.Windows.Forms.ComboBox();
+            this.municipioBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.esArlCheckBox = new System.Windows.Forms.CheckBox();
+            this.idTipoDocumentoComboBox = new System.Windows.Forms.ComboBox();
+            this.tipoDocumentoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.esEmpleadoCheckBox = new System.Windows.Forms.CheckBox();
+            this.telefono1TextBox = new System.Windows.Forms.TextBox();
+            this.idDepartamentoComboBox = new System.Windows.Forms.ComboBox();
+            this.departamentoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tipoSangreComboBox = new System.Windows.Forms.ComboBox();
+            this.tipoSangreBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.idSexoComboBox = new System.Windows.Forms.ComboBox();
+            this.sexoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.telefono2TextBox = new System.Windows.Forms.TextBox();
+            this.esClienteCheckBox = new System.Windows.Forms.CheckBox();
+            this.direccionTextBox = new System.Windows.Forms.TextBox();
+            this.telefono3TextBox = new System.Windows.Forms.TextBox();
+            this.dvTextBox = new System.Windows.Forms.TextBox();
+            this.faxTextBox = new System.Windows.Forms.TextBox();
+            this.esCcfCheckBox = new System.Windows.Forms.CheckBox();
+            this.correoElectronicoTextBox = new System.Windows.Forms.TextBox();
+            this.tituloLabel = new System.Windows.Forms.Label();
+            this.tipoDocumentoTableAdapter = new Siscad.DSSiscadTableAdapters.tipoDocumentoTableAdapter();
+            this.tipoPersonaTableAdapter = new Siscad.DSSiscadTableAdapters.tipoPersonaTableAdapter();
+            this.sexoTableAdapter = new Siscad.DSSiscadTableAdapters.sexoTableAdapter();
+            this.tipoSangreTableAdapter = new Siscad.DSSiscadTableAdapters.tipoSangreTableAdapter();
+            this.departamentoTableAdapter = new Siscad.DSSiscadTableAdapters.departamentoTableAdapter();
+            this.municipioTableAdapter = new Siscad.DSSiscadTableAdapters.municipioTableAdapter();
+            this.estadoCivilTableAdapter = new Siscad.DSSiscadTableAdapters.estadoCivilTableAdapter();
+            clasificacionLabel = new System.Windows.Forms.Label();
+            otraInformacionLabel = new System.Windows.Forms.Label();
+            ubicacionLabel = new System.Windows.Forms.Label();
             razonSocialLabel = new System.Windows.Forms.Label();
+            identificacionLabel = new System.Windows.Forms.Label();
+            nombre1Label = new System.Windows.Forms.Label();
+            notasLabel = new System.Windows.Forms.Label();
             nombreComercialLabel = new System.Windows.Forms.Label();
-            codigoAlternoLabel = new System.Windows.Forms.Label();
-            fechaNacimientoLabel = new System.Windows.Forms.Label();
-            idSexoLabel = new System.Windows.Forms.Label();
-            tipoSangreLabel = new System.Windows.Forms.Label();
-            telefono1Label = new System.Windows.Forms.Label();
-            faxLabel = new System.Windows.Forms.Label();
-            correoElectronicoLabel = new System.Windows.Forms.Label();
-            direccionLabel = new System.Windows.Forms.Label();
-            idDepartamentoLabel = new System.Windows.Forms.Label();
-            idMunicipioLabel = new System.Windows.Forms.Label();
             sitioWebLabel = new System.Windows.Forms.Label();
+            apellido1Label = new System.Windows.Forms.Label();
+            idPersonaLabel = new System.Windows.Forms.Label();
+            codigoAlternoLabel = new System.Windows.Forms.Label();
+            tipoSangreLabel = new System.Windows.Forms.Label();
+            idMunicipioLabel = new System.Windows.Forms.Label();
             idEstadoCivilLabel = new System.Windows.Forms.Label();
-            imagenLabel = new System.Windows.Forms.Label();
+            idTipoDocumentoLabel = new System.Windows.Forms.Label();
+            fechaNacimientoLabel = new System.Windows.Forms.Label();
+            idTerceroLabel = new System.Windows.Forms.Label();
+            idDepartamentoLabel = new System.Windows.Forms.Label();
+            telefono1Label = new System.Windows.Forms.Label();
+            direccionLabel = new System.Windows.Forms.Label();
+            dvLabel = new System.Windows.Forms.Label();
+            correoElectronicoLabel = new System.Windows.Forms.Label();
+            faxLabel = new System.Windows.Forms.Label();
+            idSexoLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dSSiscad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.terceroBindingSource)).BeginInit();
-            this.groupBoxIdentificacion.SuspendLayout();
-            this.groupBoxClasificacion.SuspendLayout();
-            this.groupBoxUbicacion.SuspendLayout();
-            this.groupBoxOtraInformacion.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxImagen)).BeginInit();
-            this.groupBoxImagen.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.terceroBindingNavigator)).BeginInit();
+            this.terceroBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.terceroDataGridView)).BeginInit();
+            this.registrosGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imagenPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tipoPersonaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.estadoCivilBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.municipioBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tipoDocumentoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.departamentoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tipoSangreBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sexoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // idTerceroLabel
+            // clasificacionLabel
             // 
-            idTerceroLabel.AutoSize = true;
-            idTerceroLabel.Location = new System.Drawing.Point(20, 22);
-            idTerceroLabel.Name = "idTerceroLabel";
-            idTerceroLabel.Size = new System.Drawing.Size(89, 13);
-            idTerceroLabel.TabIndex = 13;
-            idTerceroLabel.Text = "Documento No *:";
+            clasificacionLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            clasificacionLabel.AutoSize = true;
+            clasificacionLabel.Location = new System.Drawing.Point(143, 20);
+            clasificacionLabel.Name = "clasificacionLabel";
+            clasificacionLabel.Size = new System.Drawing.Size(86, 13);
+            clasificacionLabel.TabIndex = 75;
+            clasificacionLabel.Text = "CLASIFICACIÓN";
             // 
-            // dvLabel
+            // otraInformacionLabel
             // 
-            dvLabel.AutoSize = true;
-            dvLabel.Location = new System.Drawing.Point(217, 22);
-            dvLabel.Name = "dvLabel";
-            dvLabel.Size = new System.Drawing.Size(10, 13);
-            dvLabel.TabIndex = 14;
-            dvLabel.Text = "-";
+            otraInformacionLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            otraInformacionLabel.AutoSize = true;
+            otraInformacionLabel.Location = new System.Drawing.Point(142, 493);
+            otraInformacionLabel.Name = "otraInformacionLabel";
+            otraInformacionLabel.Size = new System.Drawing.Size(142, 13);
+            otraInformacionLabel.TabIndex = 78;
+            otraInformacionLabel.Text = "INFORMACIÓN ADICIONAL";
             // 
-            // idTipoDocumentoLabel
+            // ubicacionLabel
             // 
-            idTipoDocumentoLabel.AutoSize = true;
-            idTipoDocumentoLabel.Location = new System.Drawing.Point(13, 48);
-            idTipoDocumentoLabel.Name = "idTipoDocumentoLabel";
-            idTipoDocumentoLabel.Size = new System.Drawing.Size(96, 13);
-            idTipoDocumentoLabel.TabIndex = 15;
-            idTipoDocumentoLabel.Text = "Tipo Documento *:";
-            // 
-            // idPersonaLabel
-            // 
-            idPersonaLabel.AutoSize = true;
-            idPersonaLabel.Location = new System.Drawing.Point(321, 48);
-            idPersonaLabel.Name = "idPersonaLabel";
-            idPersonaLabel.Size = new System.Drawing.Size(56, 13);
-            idPersonaLabel.TabIndex = 16;
-            idPersonaLabel.Text = "Persona *:";
-            // 
-            // nombre1Label
-            // 
-            nombre1Label.AutoSize = true;
-            nombre1Label.Location = new System.Drawing.Point(50, 75);
-            nombre1Label.Name = "nombre1Label";
-            nombre1Label.Size = new System.Drawing.Size(59, 13);
-            nombre1Label.TabIndex = 17;
-            nombre1Label.Text = "Nombres *:";
-            // 
-            // apellido1Label
-            // 
-            apellido1Label.AutoSize = true;
-            apellido1Label.Location = new System.Drawing.Point(57, 101);
-            apellido1Label.Name = "apellido1Label";
-            apellido1Label.Size = new System.Drawing.Size(52, 13);
-            apellido1Label.TabIndex = 20;
-            apellido1Label.Text = "Apellidos:";
+            ubicacionLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            ubicacionLabel.AutoSize = true;
+            ubicacionLabel.Location = new System.Drawing.Point(143, 333);
+            ubicacionLabel.Name = "ubicacionLabel";
+            ubicacionLabel.Size = new System.Drawing.Size(65, 13);
+            ubicacionLabel.TabIndex = 77;
+            ubicacionLabel.Text = "UBICACIÓN";
             // 
             // razonSocialLabel
             // 
+            razonSocialLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             razonSocialLabel.AutoSize = true;
-            razonSocialLabel.Location = new System.Drawing.Point(36, 127);
+            razonSocialLabel.Location = new System.Drawing.Point(66, 238);
             razonSocialLabel.Name = "razonSocialLabel";
             razonSocialLabel.Size = new System.Drawing.Size(73, 13);
             razonSocialLabel.TabIndex = 23;
             razonSocialLabel.Text = "Razón Social:";
             // 
+            // identificacionLabel
+            // 
+            identificacionLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            identificacionLabel.AutoSize = true;
+            identificacionLabel.Location = new System.Drawing.Point(142, 117);
+            identificacionLabel.Name = "identificacionLabel";
+            identificacionLabel.Size = new System.Drawing.Size(92, 13);
+            identificacionLabel.TabIndex = 76;
+            identificacionLabel.Text = "IDENTIFICACIÓN";
+            // 
+            // nombre1Label
+            // 
+            nombre1Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            nombre1Label.AutoSize = true;
+            nombre1Label.Location = new System.Drawing.Point(80, 189);
+            nombre1Label.Name = "nombre1Label";
+            nombre1Label.Size = new System.Drawing.Size(59, 13);
+            nombre1Label.TabIndex = 17;
+            nombre1Label.Text = "Nombres *:";
+            // 
+            // notasLabel
+            // 
+            notasLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            notasLabel.AutoSize = true;
+            notasLabel.Location = new System.Drawing.Point(59, 540);
+            notasLabel.Name = "notasLabel";
+            notasLabel.Size = new System.Drawing.Size(81, 13);
+            notasLabel.TabIndex = 74;
+            notasLabel.Text = "Observaciones:";
+            // 
             // nombreComercialLabel
             // 
+            nombreComercialLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             nombreComercialLabel.AutoSize = true;
-            nombreComercialLabel.Location = new System.Drawing.Point(15, 153);
+            nombreComercialLabel.Location = new System.Drawing.Point(45, 267);
             nombreComercialLabel.Name = "nombreComercialLabel";
             nombreComercialLabel.Size = new System.Drawing.Size(96, 13);
             nombreComercialLabel.TabIndex = 25;
             nombreComercialLabel.Text = "Nombre Comercial:";
             // 
-            // codigoAlternoLabel
-            // 
-            codigoAlternoLabel.AutoSize = true;
-            codigoAlternoLabel.Location = new System.Drawing.Point(320, 153);
-            codigoAlternoLabel.Name = "codigoAlternoLabel";
-            codigoAlternoLabel.Size = new System.Drawing.Size(79, 13);
-            codigoAlternoLabel.TabIndex = 27;
-            codigoAlternoLabel.Text = "Código Alterno:";
-            // 
-            // fechaNacimientoLabel
-            // 
-            fechaNacimientoLabel.AutoSize = true;
-            fechaNacimientoLabel.Location = new System.Drawing.Point(16, 180);
-            fechaNacimientoLabel.Name = "fechaNacimientoLabel";
-            fechaNacimientoLabel.Size = new System.Drawing.Size(96, 13);
-            fechaNacimientoLabel.TabIndex = 29;
-            fechaNacimientoLabel.Text = "Fecha Nacimiento:";
-            // 
-            // idSexoLabel
-            // 
-            idSexoLabel.AutoSize = true;
-            idSexoLabel.Location = new System.Drawing.Point(220, 179);
-            idSexoLabel.Name = "idSexoLabel";
-            idSexoLabel.Size = new System.Drawing.Size(34, 13);
-            idSexoLabel.TabIndex = 30;
-            idSexoLabel.Text = "Sexo:";
-            // 
-            // tipoSangreLabel
-            // 
-            tipoSangreLabel.AutoSize = true;
-            tipoSangreLabel.Location = new System.Drawing.Point(372, 179);
-            tipoSangreLabel.Name = "tipoSangreLabel";
-            tipoSangreLabel.Size = new System.Drawing.Size(26, 13);
-            tipoSangreLabel.TabIndex = 32;
-            tipoSangreLabel.Text = "RH:";
-            // 
-            // telefono1Label
-            // 
-            telefono1Label.AutoSize = true;
-            telefono1Label.Location = new System.Drawing.Point(45, 22);
-            telefono1Label.Name = "telefono1Label";
-            telefono1Label.Size = new System.Drawing.Size(64, 13);
-            telefono1Label.TabIndex = 0;
-            telefono1Label.Text = "Teléfonos *:";
-            // 
-            // faxLabel
-            // 
-            faxLabel.AutoSize = true;
-            faxLabel.Location = new System.Drawing.Point(433, 22);
-            faxLabel.Name = "faxLabel";
-            faxLabel.Size = new System.Drawing.Size(27, 13);
-            faxLabel.TabIndex = 4;
-            faxLabel.Text = "Fax:";
-            // 
-            // correoElectronicoLabel
-            // 
-            correoElectronicoLabel.AutoSize = true;
-            correoElectronicoLabel.Location = new System.Drawing.Point(13, 48);
-            correoElectronicoLabel.Name = "correoElectronicoLabel";
-            correoElectronicoLabel.Size = new System.Drawing.Size(97, 13);
-            correoElectronicoLabel.TabIndex = 6;
-            correoElectronicoLabel.Text = "Correo Electrónico:";
-            // 
-            // direccionLabel
-            // 
-            direccionLabel.AutoSize = true;
-            direccionLabel.Location = new System.Drawing.Point(55, 74);
-            direccionLabel.Name = "direccionLabel";
-            direccionLabel.Size = new System.Drawing.Size(55, 13);
-            direccionLabel.TabIndex = 8;
-            direccionLabel.Text = "Dirección:";
-            // 
-            // idDepartamentoLabel
-            // 
-            idDepartamentoLabel.AutoSize = true;
-            idDepartamentoLabel.Location = new System.Drawing.Point(32, 100);
-            idDepartamentoLabel.Name = "idDepartamentoLabel";
-            idDepartamentoLabel.Size = new System.Drawing.Size(77, 13);
-            idDepartamentoLabel.TabIndex = 10;
-            idDepartamentoLabel.Text = "Departamento:";
-            // 
-            // idMunicipioLabel
-            // 
-            idMunicipioLabel.AutoSize = true;
-            idMunicipioLabel.Location = new System.Drawing.Point(315, 100);
-            idMunicipioLabel.Name = "idMunicipioLabel";
-            idMunicipioLabel.Size = new System.Drawing.Size(55, 13);
-            idMunicipioLabel.TabIndex = 12;
-            idMunicipioLabel.Text = "Municipio:";
-            // 
             // sitioWebLabel
             // 
+            sitioWebLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             sitioWebLabel.AutoSize = true;
-            sitioWebLabel.Location = new System.Drawing.Point(54, 127);
+            sitioWebLabel.Location = new System.Drawing.Point(84, 457);
             sitioWebLabel.Name = "sitioWebLabel";
             sitioWebLabel.Size = new System.Drawing.Size(56, 13);
             sitioWebLabel.TabIndex = 14;
             sitioWebLabel.Text = "Sitio Web:";
             // 
+            // apellido1Label
+            // 
+            apellido1Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            apellido1Label.AutoSize = true;
+            apellido1Label.Location = new System.Drawing.Point(87, 215);
+            apellido1Label.Name = "apellido1Label";
+            apellido1Label.Size = new System.Drawing.Size(52, 13);
+            apellido1Label.TabIndex = 20;
+            apellido1Label.Text = "Apellidos:";
+            // 
+            // idPersonaLabel
+            // 
+            idPersonaLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            idPersonaLabel.AutoSize = true;
+            idPersonaLabel.Location = new System.Drawing.Point(351, 162);
+            idPersonaLabel.Name = "idPersonaLabel";
+            idPersonaLabel.Size = new System.Drawing.Size(56, 13);
+            idPersonaLabel.TabIndex = 16;
+            idPersonaLabel.Text = "Persona *:";
+            // 
+            // codigoAlternoLabel
+            // 
+            codigoAlternoLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            codigoAlternoLabel.AutoSize = true;
+            codigoAlternoLabel.Location = new System.Drawing.Point(350, 267);
+            codigoAlternoLabel.Name = "codigoAlternoLabel";
+            codigoAlternoLabel.Size = new System.Drawing.Size(79, 13);
+            codigoAlternoLabel.TabIndex = 27;
+            codigoAlternoLabel.Text = "Código Alterno:";
+            // 
+            // tipoSangreLabel
+            // 
+            tipoSangreLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            tipoSangreLabel.AutoSize = true;
+            tipoSangreLabel.Location = new System.Drawing.Point(419, 294);
+            tipoSangreLabel.Name = "tipoSangreLabel";
+            tipoSangreLabel.Size = new System.Drawing.Size(26, 13);
+            tipoSangreLabel.TabIndex = 32;
+            tipoSangreLabel.Text = "RH:";
+            // 
+            // idMunicipioLabel
+            // 
+            idMunicipioLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            idMunicipioLabel.AutoSize = true;
+            idMunicipioLabel.Location = new System.Drawing.Point(345, 430);
+            idMunicipioLabel.Name = "idMunicipioLabel";
+            idMunicipioLabel.Size = new System.Drawing.Size(55, 13);
+            idMunicipioLabel.TabIndex = 12;
+            idMunicipioLabel.Text = "Municipio:";
+            // 
             // idEstadoCivilLabel
             // 
+            idEstadoCivilLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             idEstadoCivilLabel.AutoSize = true;
-            idEstadoCivilLabel.Location = new System.Drawing.Point(33, 51);
+            idEstadoCivilLabel.Location = new System.Drawing.Point(75, 512);
             idEstadoCivilLabel.Name = "idEstadoCivilLabel";
             idEstadoCivilLabel.Size = new System.Drawing.Size(65, 13);
             idEstadoCivilLabel.TabIndex = 0;
             idEstadoCivilLabel.Text = "Estado Civil:";
             // 
-            // imagenLabel
+            // idTipoDocumentoLabel
             // 
-            imagenLabel.AutoSize = true;
-            imagenLabel.Location = new System.Drawing.Point(19, 103);
-            imagenLabel.Name = "imagenLabel";
-            imagenLabel.Size = new System.Drawing.Size(79, 13);
-            imagenLabel.TabIndex = 5;
-            imagenLabel.Text = "Cargar Imagen:";
+            idTipoDocumentoLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            idTipoDocumentoLabel.AutoSize = true;
+            idTipoDocumentoLabel.Location = new System.Drawing.Point(43, 162);
+            idTipoDocumentoLabel.Name = "idTipoDocumentoLabel";
+            idTipoDocumentoLabel.Size = new System.Drawing.Size(96, 13);
+            idTipoDocumentoLabel.TabIndex = 15;
+            idTipoDocumentoLabel.Text = "Tipo Documento *:";
+            // 
+            // fechaNacimientoLabel
+            // 
+            fechaNacimientoLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            fechaNacimientoLabel.AutoSize = true;
+            fechaNacimientoLabel.Location = new System.Drawing.Point(46, 294);
+            fechaNacimientoLabel.Name = "fechaNacimientoLabel";
+            fechaNacimientoLabel.Size = new System.Drawing.Size(96, 13);
+            fechaNacimientoLabel.TabIndex = 29;
+            fechaNacimientoLabel.Text = "Fecha Nacimiento:";
+            // 
+            // idTerceroLabel
+            // 
+            idTerceroLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            idTerceroLabel.AutoSize = true;
+            idTerceroLabel.Location = new System.Drawing.Point(50, 136);
+            idTerceroLabel.Name = "idTerceroLabel";
+            idTerceroLabel.Size = new System.Drawing.Size(89, 13);
+            idTerceroLabel.TabIndex = 13;
+            idTerceroLabel.Text = "Documento No *:";
+            // 
+            // idDepartamentoLabel
+            // 
+            idDepartamentoLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            idDepartamentoLabel.AutoSize = true;
+            idDepartamentoLabel.Location = new System.Drawing.Point(62, 430);
+            idDepartamentoLabel.Name = "idDepartamentoLabel";
+            idDepartamentoLabel.Size = new System.Drawing.Size(77, 13);
+            idDepartamentoLabel.TabIndex = 10;
+            idDepartamentoLabel.Text = "Departamento:";
+            // 
+            // telefono1Label
+            // 
+            telefono1Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            telefono1Label.AutoSize = true;
+            telefono1Label.Location = new System.Drawing.Point(75, 352);
+            telefono1Label.Name = "telefono1Label";
+            telefono1Label.Size = new System.Drawing.Size(64, 13);
+            telefono1Label.TabIndex = 0;
+            telefono1Label.Text = "Teléfonos *:";
+            // 
+            // direccionLabel
+            // 
+            direccionLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            direccionLabel.AutoSize = true;
+            direccionLabel.Location = new System.Drawing.Point(85, 404);
+            direccionLabel.Name = "direccionLabel";
+            direccionLabel.Size = new System.Drawing.Size(55, 13);
+            direccionLabel.TabIndex = 8;
+            direccionLabel.Text = "Dirección:";
+            // 
+            // dvLabel
+            // 
+            dvLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            dvLabel.AutoSize = true;
+            dvLabel.Location = new System.Drawing.Point(313, 136);
+            dvLabel.Name = "dvLabel";
+            dvLabel.Size = new System.Drawing.Size(10, 13);
+            dvLabel.TabIndex = 14;
+            dvLabel.Text = "-";
+            // 
+            // correoElectronicoLabel
+            // 
+            correoElectronicoLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            correoElectronicoLabel.AutoSize = true;
+            correoElectronicoLabel.Location = new System.Drawing.Point(43, 378);
+            correoElectronicoLabel.Name = "correoElectronicoLabel";
+            correoElectronicoLabel.Size = new System.Drawing.Size(97, 13);
+            correoElectronicoLabel.TabIndex = 6;
+            correoElectronicoLabel.Text = "Correo Electrónico:";
+            // 
+            // faxLabel
+            // 
+            faxLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            faxLabel.AutoSize = true;
+            faxLabel.Location = new System.Drawing.Point(463, 352);
+            faxLabel.Name = "faxLabel";
+            faxLabel.Size = new System.Drawing.Size(27, 13);
+            faxLabel.TabIndex = 4;
+            faxLabel.Text = "Fax:";
+            // 
+            // idSexoLabel
+            // 
+            idSexoLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            idSexoLabel.AutoSize = true;
+            idSexoLabel.Location = new System.Drawing.Point(250, 293);
+            idSexoLabel.Name = "idSexoLabel";
+            idSexoLabel.Size = new System.Drawing.Size(34, 13);
+            idSexoLabel.TabIndex = 30;
+            idSexoLabel.Text = "Sexo:";
             // 
             // dSSiscad
             // 
@@ -459,546 +562,177 @@
             this.tableAdapterManager.ventasTableAdapter = null;
             this.tableAdapterManager.vinculacionTableAdapter = null;
             // 
-            // esEmpleadoCheckBox
-            // 
-            this.esEmpleadoCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.esEmpleadoCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.terceroBindingSource, "esEmpleado", true));
-            this.esEmpleadoCheckBox.Enabled = false;
-            this.esEmpleadoCheckBox.Location = new System.Drawing.Point(26, 19);
-            this.esEmpleadoCheckBox.Name = "esEmpleadoCheckBox";
-            this.esEmpleadoCheckBox.Size = new System.Drawing.Size(74, 24);
-            this.esEmpleadoCheckBox.TabIndex = 2;
-            this.esEmpleadoCheckBox.Text = "Empleado";
-            this.esEmpleadoCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // esClienteCheckBox
-            // 
-            this.esClienteCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.esClienteCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.terceroBindingSource, "esCliente", true));
-            this.esClienteCheckBox.Enabled = false;
-            this.esClienteCheckBox.Location = new System.Drawing.Point(106, 19);
-            this.esClienteCheckBox.Name = "esClienteCheckBox";
-            this.esClienteCheckBox.Size = new System.Drawing.Size(59, 24);
-            this.esClienteCheckBox.TabIndex = 3;
-            this.esClienteCheckBox.Text = "Cliente";
-            this.esClienteCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // esProveedorCheckBox
-            // 
-            this.esProveedorCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.esProveedorCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.terceroBindingSource, "esProveedor", true));
-            this.esProveedorCheckBox.Enabled = false;
-            this.esProveedorCheckBox.Location = new System.Drawing.Point(171, 19);
-            this.esProveedorCheckBox.Name = "esProveedorCheckBox";
-            this.esProveedorCheckBox.Size = new System.Drawing.Size(75, 24);
-            this.esProveedorCheckBox.TabIndex = 4;
-            this.esProveedorCheckBox.Text = "Proveedor";
-            this.esProveedorCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // esOtroCheckBox
-            // 
-            this.esOtroCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.esOtroCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.terceroBindingSource, "esOtro", true));
-            this.esOtroCheckBox.Enabled = false;
-            this.esOtroCheckBox.Location = new System.Drawing.Point(252, 19);
-            this.esOtroCheckBox.Name = "esOtroCheckBox";
-            this.esOtroCheckBox.Size = new System.Drawing.Size(46, 24);
-            this.esOtroCheckBox.TabIndex = 5;
-            this.esOtroCheckBox.Text = "Otro";
-            this.esOtroCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // esEpsCheckBox
-            // 
-            this.esEpsCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.esEpsCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.terceroBindingSource, "esEps", true));
-            this.esEpsCheckBox.Enabled = false;
-            this.esEpsCheckBox.Location = new System.Drawing.Point(304, 19);
-            this.esEpsCheckBox.Name = "esEpsCheckBox";
-            this.esEpsCheckBox.Size = new System.Drawing.Size(48, 24);
-            this.esEpsCheckBox.TabIndex = 6;
-            this.esEpsCheckBox.Text = "Eps";
-            this.esEpsCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // esAfpCheckBox
-            // 
-            this.esAfpCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.esAfpCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.terceroBindingSource, "esAfp", true));
-            this.esAfpCheckBox.Enabled = false;
-            this.esAfpCheckBox.Location = new System.Drawing.Point(358, 19);
-            this.esAfpCheckBox.Name = "esAfpCheckBox";
-            this.esAfpCheckBox.Size = new System.Drawing.Size(42, 24);
-            this.esAfpCheckBox.TabIndex = 8;
-            this.esAfpCheckBox.Text = "Afp";
-            this.esAfpCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // esArlCheckBox
-            // 
-            this.esArlCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.esArlCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.terceroBindingSource, "esArl", true));
-            this.esArlCheckBox.Enabled = false;
-            this.esArlCheckBox.Location = new System.Drawing.Point(406, 19);
-            this.esArlCheckBox.Name = "esArlCheckBox";
-            this.esArlCheckBox.Size = new System.Drawing.Size(42, 24);
-            this.esArlCheckBox.TabIndex = 10;
-            this.esArlCheckBox.Text = "Arl";
-            this.esArlCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // esCcfCheckBox
-            // 
-            this.esCcfCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.esCcfCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.terceroBindingSource, "esCcf", true));
-            this.esCcfCheckBox.Enabled = false;
-            this.esCcfCheckBox.Location = new System.Drawing.Point(454, 19);
-            this.esCcfCheckBox.Name = "esCcfCheckBox";
-            this.esCcfCheckBox.Size = new System.Drawing.Size(42, 24);
-            this.esCcfCheckBox.TabIndex = 12;
-            this.esCcfCheckBox.Text = "Ccf";
-            this.esCcfCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // idTerceroTextBox
-            // 
-            this.idTerceroTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "idTercero", true));
-            this.idTerceroTextBox.Location = new System.Drawing.Point(115, 19);
-            this.idTerceroTextBox.Name = "idTerceroTextBox";
-            this.idTerceroTextBox.ReadOnly = true;
-            this.idTerceroTextBox.Size = new System.Drawing.Size(100, 20);
-            this.idTerceroTextBox.TabIndex = 14;
-            this.idTerceroTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // dvTextBox
-            // 
-            this.dvTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "dv", true));
-            this.dvTextBox.Location = new System.Drawing.Point(229, 19);
-            this.dvTextBox.Name = "dvTextBox";
-            this.dvTextBox.ReadOnly = true;
-            this.dvTextBox.Size = new System.Drawing.Size(20, 20);
-            this.dvTextBox.TabIndex = 15;
-            this.dvTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // idTipoDocumentoComboBox
-            // 
-            this.idTipoDocumentoComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "idTipoDocumento", true));
-            this.idTipoDocumentoComboBox.Enabled = false;
-            this.idTipoDocumentoComboBox.FormattingEnabled = true;
-            this.idTipoDocumentoComboBox.Location = new System.Drawing.Point(115, 45);
-            this.idTipoDocumentoComboBox.Name = "idTipoDocumentoComboBox";
-            this.idTipoDocumentoComboBox.Size = new System.Drawing.Size(200, 21);
-            this.idTipoDocumentoComboBox.TabIndex = 16;
-            // 
-            // idPersonaComboBox
-            // 
-            this.idPersonaComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "idPersona", true));
-            this.idPersonaComboBox.Enabled = false;
-            this.idPersonaComboBox.FormattingEnabled = true;
-            this.idPersonaComboBox.Location = new System.Drawing.Point(383, 45);
-            this.idPersonaComboBox.Name = "idPersonaComboBox";
-            this.idPersonaComboBox.Size = new System.Drawing.Size(121, 21);
-            this.idPersonaComboBox.TabIndex = 17;
-            // 
-            // nombre1TextBox
-            // 
-            this.nombre1TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "nombre1", true));
-            this.nombre1TextBox.Location = new System.Drawing.Point(115, 72);
-            this.nombre1TextBox.Name = "nombre1TextBox";
-            this.nombre1TextBox.ReadOnly = true;
-            this.nombre1TextBox.Size = new System.Drawing.Size(200, 20);
-            this.nombre1TextBox.TabIndex = 18;
-            // 
-            // nombre2TextBox
-            // 
-            this.nombre2TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "nombre2", true));
-            this.nombre2TextBox.Location = new System.Drawing.Point(334, 72);
-            this.nombre2TextBox.Name = "nombre2TextBox";
-            this.nombre2TextBox.ReadOnly = true;
-            this.nombre2TextBox.Size = new System.Drawing.Size(170, 20);
-            this.nombre2TextBox.TabIndex = 20;
-            // 
-            // apellido1TextBox
-            // 
-            this.apellido1TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "apellido1", true));
-            this.apellido1TextBox.Location = new System.Drawing.Point(115, 98);
-            this.apellido1TextBox.Name = "apellido1TextBox";
-            this.apellido1TextBox.ReadOnly = true;
-            this.apellido1TextBox.Size = new System.Drawing.Size(200, 20);
-            this.apellido1TextBox.TabIndex = 21;
-            // 
-            // apellido2TextBox
-            // 
-            this.apellido2TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "apellido2", true));
-            this.apellido2TextBox.Location = new System.Drawing.Point(334, 98);
-            this.apellido2TextBox.Name = "apellido2TextBox";
-            this.apellido2TextBox.ReadOnly = true;
-            this.apellido2TextBox.Size = new System.Drawing.Size(170, 20);
-            this.apellido2TextBox.TabIndex = 23;
-            // 
-            // razonSocialTextBox
-            // 
-            this.razonSocialTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "razonSocial", true));
-            this.razonSocialTextBox.Location = new System.Drawing.Point(115, 124);
-            this.razonSocialTextBox.Name = "razonSocialTextBox";
-            this.razonSocialTextBox.ReadOnly = true;
-            this.razonSocialTextBox.Size = new System.Drawing.Size(389, 20);
-            this.razonSocialTextBox.TabIndex = 24;
-            // 
-            // nombreComercialTextBox
-            // 
-            this.nombreComercialTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "nombreComercial", true));
-            this.nombreComercialTextBox.Location = new System.Drawing.Point(115, 150);
-            this.nombreComercialTextBox.Name = "nombreComercialTextBox";
-            this.nombreComercialTextBox.ReadOnly = true;
-            this.nombreComercialTextBox.Size = new System.Drawing.Size(200, 20);
-            this.nombreComercialTextBox.TabIndex = 26;
-            // 
-            // codigoAlternoTextBox
-            // 
-            this.codigoAlternoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "codigoAlterno", true));
-            this.codigoAlternoTextBox.Location = new System.Drawing.Point(404, 150);
-            this.codigoAlternoTextBox.Name = "codigoAlternoTextBox";
-            this.codigoAlternoTextBox.ReadOnly = true;
-            this.codigoAlternoTextBox.Size = new System.Drawing.Size(100, 20);
-            this.codigoAlternoTextBox.TabIndex = 28;
-            // 
-            // fechaNacimientoDateTimePicker
-            // 
-            this.fechaNacimientoDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.terceroBindingSource, "fechaNacimiento", true));
-            this.fechaNacimientoDateTimePicker.Enabled = false;
-            this.fechaNacimientoDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.fechaNacimientoDateTimePicker.Location = new System.Drawing.Point(115, 176);
-            this.fechaNacimientoDateTimePicker.MinDate = new System.DateTime(1800, 1, 1, 0, 0, 0, 0);
-            this.fechaNacimientoDateTimePicker.Name = "fechaNacimientoDateTimePicker";
-            this.fechaNacimientoDateTimePicker.Size = new System.Drawing.Size(100, 20);
-            this.fechaNacimientoDateTimePicker.TabIndex = 30;
-            this.fechaNacimientoDateTimePicker.Value = new System.DateTime(1800, 1, 1, 0, 0, 0, 0);
-            // 
-            // idSexoComboBox
-            // 
-            this.idSexoComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "idSexo", true));
-            this.idSexoComboBox.Enabled = false;
-            this.idSexoComboBox.FormattingEnabled = true;
-            this.idSexoComboBox.Location = new System.Drawing.Point(260, 176);
-            this.idSexoComboBox.Name = "idSexoComboBox";
-            this.idSexoComboBox.Size = new System.Drawing.Size(100, 21);
-            this.idSexoComboBox.TabIndex = 31;
-            // 
-            // tipoSangreComboBox
-            // 
-            this.tipoSangreComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "tipoSangre", true));
-            this.tipoSangreComboBox.Enabled = false;
-            this.tipoSangreComboBox.FormattingEnabled = true;
-            this.tipoSangreComboBox.Location = new System.Drawing.Point(404, 176);
-            this.tipoSangreComboBox.Name = "tipoSangreComboBox";
-            this.tipoSangreComboBox.Size = new System.Drawing.Size(100, 21);
-            this.tipoSangreComboBox.TabIndex = 33;
-            // 
-            // groupBoxIdentificacion
-            // 
-            this.groupBoxIdentificacion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.groupBoxIdentificacion.Controls.Add(this.idTerceroTextBox);
-            this.groupBoxIdentificacion.Controls.Add(tipoSangreLabel);
-            this.groupBoxIdentificacion.Controls.Add(idTerceroLabel);
-            this.groupBoxIdentificacion.Controls.Add(this.tipoSangreComboBox);
-            this.groupBoxIdentificacion.Controls.Add(this.dvTextBox);
-            this.groupBoxIdentificacion.Controls.Add(idSexoLabel);
-            this.groupBoxIdentificacion.Controls.Add(dvLabel);
-            this.groupBoxIdentificacion.Controls.Add(this.idSexoComboBox);
-            this.groupBoxIdentificacion.Controls.Add(this.idTipoDocumentoComboBox);
-            this.groupBoxIdentificacion.Controls.Add(fechaNacimientoLabel);
-            this.groupBoxIdentificacion.Controls.Add(idTipoDocumentoLabel);
-            this.groupBoxIdentificacion.Controls.Add(this.fechaNacimientoDateTimePicker);
-            this.groupBoxIdentificacion.Controls.Add(this.idPersonaComboBox);
-            this.groupBoxIdentificacion.Controls.Add(codigoAlternoLabel);
-            this.groupBoxIdentificacion.Controls.Add(idPersonaLabel);
-            this.groupBoxIdentificacion.Controls.Add(this.codigoAlternoTextBox);
-            this.groupBoxIdentificacion.Controls.Add(this.nombre1TextBox);
-            this.groupBoxIdentificacion.Controls.Add(nombreComercialLabel);
-            this.groupBoxIdentificacion.Controls.Add(nombre1Label);
-            this.groupBoxIdentificacion.Controls.Add(this.nombreComercialTextBox);
-            this.groupBoxIdentificacion.Controls.Add(this.nombre2TextBox);
-            this.groupBoxIdentificacion.Controls.Add(razonSocialLabel);
-            this.groupBoxIdentificacion.Controls.Add(this.apellido1TextBox);
-            this.groupBoxIdentificacion.Controls.Add(this.razonSocialTextBox);
-            this.groupBoxIdentificacion.Controls.Add(apellido1Label);
-            this.groupBoxIdentificacion.Controls.Add(this.apellido2TextBox);
-            this.groupBoxIdentificacion.Location = new System.Drawing.Point(12, 95);
-            this.groupBoxIdentificacion.Name = "groupBoxIdentificacion";
-            this.groupBoxIdentificacion.Size = new System.Drawing.Size(523, 214);
-            this.groupBoxIdentificacion.TabIndex = 34;
-            this.groupBoxIdentificacion.TabStop = false;
-            this.groupBoxIdentificacion.Text = "Identificación";
-            // 
-            // groupBoxClasificacion
-            // 
-            this.groupBoxClasificacion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.groupBoxClasificacion.Controls.Add(this.esProveedorCheckBox);
-            this.groupBoxClasificacion.Controls.Add(this.esEmpleadoCheckBox);
-            this.groupBoxClasificacion.Controls.Add(this.esCcfCheckBox);
-            this.groupBoxClasificacion.Controls.Add(this.esClienteCheckBox);
-            this.groupBoxClasificacion.Controls.Add(this.esArlCheckBox);
-            this.groupBoxClasificacion.Controls.Add(this.esOtroCheckBox);
-            this.groupBoxClasificacion.Controls.Add(this.esAfpCheckBox);
-            this.groupBoxClasificacion.Controls.Add(this.esEpsCheckBox);
-            this.groupBoxClasificacion.Location = new System.Drawing.Point(12, 37);
-            this.groupBoxClasificacion.Name = "groupBoxClasificacion";
-            this.groupBoxClasificacion.Size = new System.Drawing.Size(523, 52);
-            this.groupBoxClasificacion.TabIndex = 35;
-            this.groupBoxClasificacion.TabStop = false;
-            this.groupBoxClasificacion.Text = "Clasificación";
-            // 
-            // groupBoxUbicacion
-            // 
-            this.groupBoxUbicacion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.groupBoxUbicacion.Controls.Add(sitioWebLabel);
-            this.groupBoxUbicacion.Controls.Add(this.sitioWebTextBox);
-            this.groupBoxUbicacion.Controls.Add(idMunicipioLabel);
-            this.groupBoxUbicacion.Controls.Add(this.idMunicipioComboBox);
-            this.groupBoxUbicacion.Controls.Add(idDepartamentoLabel);
-            this.groupBoxUbicacion.Controls.Add(this.idDepartamentoComboBox);
-            this.groupBoxUbicacion.Controls.Add(direccionLabel);
-            this.groupBoxUbicacion.Controls.Add(this.direccionTextBox);
-            this.groupBoxUbicacion.Controls.Add(correoElectronicoLabel);
-            this.groupBoxUbicacion.Controls.Add(this.correoElectronicoTextBox);
-            this.groupBoxUbicacion.Controls.Add(faxLabel);
-            this.groupBoxUbicacion.Controls.Add(this.faxTextBox);
-            this.groupBoxUbicacion.Controls.Add(this.telefono3TextBox);
-            this.groupBoxUbicacion.Controls.Add(this.telefono2TextBox);
-            this.groupBoxUbicacion.Controls.Add(telefono1Label);
-            this.groupBoxUbicacion.Controls.Add(this.telefono1TextBox);
-            this.groupBoxUbicacion.Location = new System.Drawing.Point(12, 315);
-            this.groupBoxUbicacion.Name = "groupBoxUbicacion";
-            this.groupBoxUbicacion.Size = new System.Drawing.Size(585, 161);
-            this.groupBoxUbicacion.TabIndex = 36;
-            this.groupBoxUbicacion.TabStop = false;
-            this.groupBoxUbicacion.Text = "Ubicación";
-            // 
-            // sitioWebTextBox
-            // 
-            this.sitioWebTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "sitioWeb", true));
-            this.sitioWebTextBox.Location = new System.Drawing.Point(116, 124);
-            this.sitioWebTextBox.Name = "sitioWebTextBox";
-            this.sitioWebTextBox.ReadOnly = true;
-            this.sitioWebTextBox.Size = new System.Drawing.Size(450, 20);
-            this.sitioWebTextBox.TabIndex = 15;
-            // 
-            // idMunicipioComboBox
-            // 
-            this.idMunicipioComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "idMunicipio", true));
-            this.idMunicipioComboBox.Enabled = false;
-            this.idMunicipioComboBox.FormattingEnabled = true;
-            this.idMunicipioComboBox.Location = new System.Drawing.Point(376, 97);
-            this.idMunicipioComboBox.Name = "idMunicipioComboBox";
-            this.idMunicipioComboBox.Size = new System.Drawing.Size(190, 21);
-            this.idMunicipioComboBox.TabIndex = 13;
-            // 
-            // idDepartamentoComboBox
-            // 
-            this.idDepartamentoComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "idDepartamento", true));
-            this.idDepartamentoComboBox.Enabled = false;
-            this.idDepartamentoComboBox.FormattingEnabled = true;
-            this.idDepartamentoComboBox.Location = new System.Drawing.Point(115, 97);
-            this.idDepartamentoComboBox.Name = "idDepartamentoComboBox";
-            this.idDepartamentoComboBox.Size = new System.Drawing.Size(190, 21);
-            this.idDepartamentoComboBox.TabIndex = 11;
-            // 
-            // direccionTextBox
-            // 
-            this.direccionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "direccion", true));
-            this.direccionTextBox.Location = new System.Drawing.Point(116, 71);
-            this.direccionTextBox.Name = "direccionTextBox";
-            this.direccionTextBox.ReadOnly = true;
-            this.direccionTextBox.Size = new System.Drawing.Size(450, 20);
-            this.direccionTextBox.TabIndex = 9;
-            // 
-            // correoElectronicoTextBox
-            // 
-            this.correoElectronicoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "correoElectronico", true));
-            this.correoElectronicoTextBox.Location = new System.Drawing.Point(116, 45);
-            this.correoElectronicoTextBox.Name = "correoElectronicoTextBox";
-            this.correoElectronicoTextBox.ReadOnly = true;
-            this.correoElectronicoTextBox.Size = new System.Drawing.Size(450, 20);
-            this.correoElectronicoTextBox.TabIndex = 7;
-            // 
-            // faxTextBox
-            // 
-            this.faxTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "fax", true));
-            this.faxTextBox.Location = new System.Drawing.Point(466, 19);
-            this.faxTextBox.Name = "faxTextBox";
-            this.faxTextBox.ReadOnly = true;
-            this.faxTextBox.Size = new System.Drawing.Size(100, 20);
-            this.faxTextBox.TabIndex = 5;
-            // 
-            // telefono3TextBox
-            // 
-            this.telefono3TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "telefono3", true));
-            this.telefono3TextBox.Location = new System.Drawing.Point(327, 19);
-            this.telefono3TextBox.Name = "telefono3TextBox";
-            this.telefono3TextBox.ReadOnly = true;
-            this.telefono3TextBox.Size = new System.Drawing.Size(100, 20);
-            this.telefono3TextBox.TabIndex = 4;
-            // 
-            // telefono2TextBox
-            // 
-            this.telefono2TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "telefono2", true));
-            this.telefono2TextBox.Location = new System.Drawing.Point(221, 19);
-            this.telefono2TextBox.Name = "telefono2TextBox";
-            this.telefono2TextBox.ReadOnly = true;
-            this.telefono2TextBox.Size = new System.Drawing.Size(100, 20);
-            this.telefono2TextBox.TabIndex = 3;
-            // 
-            // telefono1TextBox
-            // 
-            this.telefono1TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "telefono1", true));
-            this.telefono1TextBox.Location = new System.Drawing.Point(115, 19);
-            this.telefono1TextBox.Name = "telefono1TextBox";
-            this.telefono1TextBox.ReadOnly = true;
-            this.telefono1TextBox.Size = new System.Drawing.Size(100, 20);
-            this.telefono1TextBox.TabIndex = 1;
-            // 
-            // groupBoxOtraInformacion
-            // 
-            this.groupBoxOtraInformacion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.groupBoxOtraInformacion.Controls.Add(this.buttonCargarImagen);
-            this.groupBoxOtraInformacion.Controls.Add(imagenLabel);
-            this.groupBoxOtraInformacion.Controls.Add(this.imagenTextBox);
-            this.groupBoxOtraInformacion.Controls.Add(this.vigenteCheckBox);
-            this.groupBoxOtraInformacion.Controls.Add(this.responsableIvaCheckBox);
-            this.groupBoxOtraInformacion.Controls.Add(idEstadoCivilLabel);
-            this.groupBoxOtraInformacion.Controls.Add(this.idEstadoCivilComboBox);
-            this.groupBoxOtraInformacion.Location = new System.Drawing.Point(603, 315);
-            this.groupBoxOtraInformacion.Name = "groupBoxOtraInformacion";
-            this.groupBoxOtraInformacion.Size = new System.Drawing.Size(239, 161);
-            this.groupBoxOtraInformacion.TabIndex = 37;
-            this.groupBoxOtraInformacion.TabStop = false;
-            this.groupBoxOtraInformacion.Text = "Otra información";
-            // 
-            // buttonCargarImagen
-            // 
-            this.buttonCargarImagen.Enabled = false;
-            this.buttonCargarImagen.Location = new System.Drawing.Point(200, 100);
-            this.buttonCargarImagen.Name = "buttonCargarImagen";
-            this.buttonCargarImagen.Size = new System.Drawing.Size(25, 20);
-            this.buttonCargarImagen.TabIndex = 7;
-            this.buttonCargarImagen.Text = "...";
-            this.buttonCargarImagen.UseVisualStyleBackColor = true;
-            this.buttonCargarImagen.Click += new System.EventHandler(this.buttonCargarImagen_Click);
-            // 
-            // imagenTextBox
-            // 
-            this.imagenTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "imagen", true));
-            this.imagenTextBox.Location = new System.Drawing.Point(104, 100);
-            this.imagenTextBox.Name = "imagenTextBox";
-            this.imagenTextBox.ReadOnly = true;
-            this.imagenTextBox.Size = new System.Drawing.Size(90, 20);
-            this.imagenTextBox.TabIndex = 6;
-            // 
-            // vigenteCheckBox
-            // 
-            this.vigenteCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.vigenteCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.terceroBindingSource, "vigente", true));
-            this.vigenteCheckBox.Enabled = false;
-            this.vigenteCheckBox.Location = new System.Drawing.Point(162, 74);
-            this.vigenteCheckBox.Name = "vigenteCheckBox";
-            this.vigenteCheckBox.Size = new System.Drawing.Size(63, 24);
-            this.vigenteCheckBox.TabIndex = 5;
-            this.vigenteCheckBox.Text = "Vigente";
-            this.vigenteCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // responsableIvaCheckBox
-            // 
-            this.responsableIvaCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.responsableIvaCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.terceroBindingSource, "responsableIva", true));
-            this.responsableIvaCheckBox.Enabled = false;
-            this.responsableIvaCheckBox.Location = new System.Drawing.Point(7, 72);
-            this.responsableIvaCheckBox.Name = "responsableIvaCheckBox";
-            this.responsableIvaCheckBox.Size = new System.Drawing.Size(111, 24);
-            this.responsableIvaCheckBox.TabIndex = 3;
-            this.responsableIvaCheckBox.Text = "Responsable Iva:";
-            this.responsableIvaCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // idEstadoCivilComboBox
-            // 
-            this.idEstadoCivilComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "idEstadoCivil", true));
-            this.idEstadoCivilComboBox.Enabled = false;
-            this.idEstadoCivilComboBox.FormattingEnabled = true;
-            this.idEstadoCivilComboBox.Location = new System.Drawing.Point(104, 48);
-            this.idEstadoCivilComboBox.Name = "idEstadoCivilComboBox";
-            this.idEstadoCivilComboBox.Size = new System.Drawing.Size(121, 21);
-            this.idEstadoCivilComboBox.TabIndex = 1;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.groupBox1.Controls.Add(this.notasTextBox);
-            this.groupBox1.Location = new System.Drawing.Point(12, 482);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(830, 97);
-            this.groupBox1.TabIndex = 38;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Observaciones";
-            // 
-            // notasTextBox
-            // 
-            this.notasTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "notas", true));
-            this.notasTextBox.Location = new System.Drawing.Point(116, 19);
-            this.notasTextBox.Multiline = true;
-            this.notasTextBox.Name = "notasTextBox";
-            this.notasTextBox.ReadOnly = true;
-            this.notasTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.notasTextBox.Size = new System.Drawing.Size(700, 61);
-            this.notasTextBox.TabIndex = 1;
-            // 
-            // pictureBoxImagen
-            // 
-            this.pictureBoxImagen.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBoxImagen.Location = new System.Drawing.Point(45, 39);
-            this.pictureBoxImagen.Name = "pictureBoxImagen";
-            this.pictureBoxImagen.Size = new System.Drawing.Size(160, 200);
-            this.pictureBoxImagen.TabIndex = 39;
-            this.pictureBoxImagen.TabStop = false;
-            // 
-            // groupBoxImagen
-            // 
-            this.groupBoxImagen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.groupBoxImagen.Controls.Add(this.pictureBoxImagen);
-            this.groupBoxImagen.Location = new System.Drawing.Point(567, 37);
-            this.groupBoxImagen.Name = "groupBoxImagen";
-            this.groupBoxImagen.Size = new System.Drawing.Size(247, 272);
-            this.groupBoxImagen.TabIndex = 40;
-            this.groupBoxImagen.TabStop = false;
-            this.groupBoxImagen.Text = "Imagen";
-            // 
-            // buttonFormCerrar
-            // 
-            this.buttonFormCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonFormCerrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
-            this.buttonFormCerrar.Image = global::Siscad.Properties.Resources.salir;
-            this.buttonFormCerrar.Location = new System.Drawing.Point(694, -9);
-            this.buttonFormCerrar.Name = "buttonFormCerrar";
-            this.buttonFormCerrar.Size = new System.Drawing.Size(60, 40);
-            this.buttonFormCerrar.TabIndex = 73;
-            this.buttonFormCerrar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonFormCerrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.buttonFormCerrar.UseVisualStyleBackColor = true;
-            // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
+            // terceroBindingNavigator
+            // 
+            this.terceroBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.terceroBindingNavigator.BindingSource = this.terceroBindingSource;
+            this.terceroBindingNavigator.CountItem = this.bindingNavigatorCountItem;
+            this.terceroBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.terceroBindingNavigator.ImageScalingSize = new System.Drawing.Size(23, 22);
+            this.terceroBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bindingNavigatorMoveFirstItem,
+            this.bindingNavigatorMovePreviousItem,
+            this.bindingNavigatorSeparator,
+            this.bindingNavigatorPositionItem,
+            this.bindingNavigatorCountItem,
+            this.bindingNavigatorSeparator1,
+            this.bindingNavigatorMoveNextItem,
+            this.bindingNavigatorMoveLastItem,
+            this.bindingNavigatorSeparator2,
+            this.bindingNavigatorAddNewItem,
+            this.toolStripButtonEdit,
+            this.bindingNavigatorDeleteItem,
+            this.toolStripButtonCancel,
+            this.terceroBindingNavigatorSaveItem,
+            this.toolStripButtonSearch});
+            this.terceroBindingNavigator.Location = new System.Drawing.Point(0, 0);
+            this.terceroBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.terceroBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.terceroBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.terceroBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.terceroBindingNavigator.Name = "terceroBindingNavigator";
+            this.terceroBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
+            this.terceroBindingNavigator.Size = new System.Drawing.Size(1300, 29);
+            this.terceroBindingNavigator.TabIndex = 0;
+            this.terceroBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = global::Siscad.Properties.Resources.nuevo;
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(27, 26);
+            this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 26);
+            this.bindingNavigatorCountItem.Text = "de {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = global::Siscad.Properties.Resources.borrar;
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(27, 26);
+            this.bindingNavigatorDeleteItem.Text = "Eliminar";
+            // 
+            // bindingNavigatorMoveFirstItem
+            // 
+            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem.Image = global::Siscad.Properties.Resources.primerRegistro;
+            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(27, 26);
+            this.bindingNavigatorMoveFirstItem.Text = "Mover primero";
+            // 
+            // bindingNavigatorMovePreviousItem
+            // 
+            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem.Image = global::Siscad.Properties.Resources.anteriorRegistro;
+            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(27, 26);
+            this.bindingNavigatorMovePreviousItem.Text = "Mover anterior";
+            // 
+            // bindingNavigatorSeparator
+            // 
+            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 29);
+            // 
+            // bindingNavigatorPositionItem
+            // 
+            this.bindingNavigatorPositionItem.AccessibleName = "Posición";
+            this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem.Text = "0";
+            this.bindingNavigatorPositionItem.ToolTipText = "Posición actual";
+            // 
+            // bindingNavigatorSeparator1
+            // 
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 29);
+            // 
+            // bindingNavigatorMoveNextItem
+            // 
+            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem.Image = global::Siscad.Properties.Resources.siguienteRegistro;
+            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(27, 26);
+            this.bindingNavigatorMoveNextItem.Text = "Mover siguiente";
+            // 
+            // bindingNavigatorMoveLastItem
+            // 
+            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveLastItem.Image = global::Siscad.Properties.Resources.ultimoRegistro;
+            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
+            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(27, 26);
+            this.bindingNavigatorMoveLastItem.Text = "Mover último";
+            // 
+            // bindingNavigatorSeparator2
+            // 
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 29);
+            // 
+            // toolStripButtonEdit
+            // 
+            this.toolStripButtonEdit.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButtonEdit.Image = global::Siscad.Properties.Resources.editar;
+            this.toolStripButtonEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonEdit.Name = "toolStripButtonEdit";
+            this.toolStripButtonEdit.Size = new System.Drawing.Size(27, 26);
+            this.toolStripButtonEdit.Text = "Editar";
+            // 
+            // toolStripButtonCancel
+            // 
+            this.toolStripButtonCancel.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButtonCancel.Image = global::Siscad.Properties.Resources.cancelar;
+            this.toolStripButtonCancel.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonCancel.Name = "toolStripButtonCancel";
+            this.toolStripButtonCancel.Size = new System.Drawing.Size(27, 26);
+            this.toolStripButtonCancel.Text = "Cancelar";
+            // 
+            // terceroBindingNavigatorSaveItem
+            // 
+            this.terceroBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.terceroBindingNavigatorSaveItem.Image = global::Siscad.Properties.Resources.guardar;
+            this.terceroBindingNavigatorSaveItem.Name = "terceroBindingNavigatorSaveItem";
+            this.terceroBindingNavigatorSaveItem.Size = new System.Drawing.Size(27, 26);
+            this.terceroBindingNavigatorSaveItem.Text = "Guardar datos";
+            this.terceroBindingNavigatorSaveItem.Click += new System.EventHandler(this.terceroBindingNavigatorSaveItem_Click);
+            // 
+            // toolStripButtonSearch
+            // 
+            this.toolStripButtonSearch.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButtonSearch.Image = global::Siscad.Properties.Resources.buscar;
+            this.toolStripButtonSearch.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonSearch.Name = "toolStripButtonSearch";
+            this.toolStripButtonSearch.Size = new System.Drawing.Size(27, 26);
+            this.toolStripButtonSearch.Text = "Buscar";
             // 
             // terceroDataGridView
             // 
             this.terceroDataGridView.AllowUserToAddRows = false;
             this.terceroDataGridView.AllowUserToDeleteRows = false;
             this.terceroDataGridView.AllowUserToOrderColumns = true;
-            this.terceroDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.terceroDataGridView.AutoGenerateColumns = false;
-            this.terceroDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            this.terceroDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.terceroDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
+            this.terceroDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.terceroDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.terceroDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.DarkGray;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DarkGray;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.terceroDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
@@ -1043,29 +777,37 @@
             this.dataGridViewTextBoxColumn27,
             this.dataGridViewCheckBoxColumn9,
             this.dataGridViewCheckBoxColumn10,
-            this.dataGridViewTextBoxColumn28});
+            this.dataGridViewTextBoxColumn28,
+            this.dataGridViewTextBoxColumn29,
+            this.dataGridViewTextBoxColumn30});
             this.terceroDataGridView.DataSource = this.terceroBindingSource;
-            this.terceroDataGridView.EnableHeadersVisualStyles = false;
-            this.terceroDataGridView.GridColor = System.Drawing.Color.SteelBlue;
-            this.terceroDataGridView.Location = new System.Drawing.Point(858, 37);
-            this.terceroDataGridView.Name = "terceroDataGridView";
-            this.terceroDataGridView.ReadOnly = true;
-            this.terceroDataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.terceroDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SteelBlue;
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            this.terceroDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.terceroDataGridView.Size = new System.Drawing.Size(343, 542);
-            this.terceroDataGridView.TabIndex = 73;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.terceroDataGridView.DefaultCellStyle = dataGridViewCellStyle4;
+            this.terceroDataGridView.Dock = System.Windows.Forms.DockStyle.Right;
+            this.terceroDataGridView.EnableHeadersVisualStyles = false;
+            this.terceroDataGridView.GridColor = System.Drawing.Color.SteelBlue;
+            this.terceroDataGridView.Location = new System.Drawing.Point(900, 29);
+            this.terceroDataGridView.Name = "terceroDataGridView";
+            this.terceroDataGridView.ReadOnly = true;
+            this.terceroDataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.terceroDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.terceroDataGridView.RowHeadersVisible = false;
+            this.terceroDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.terceroDataGridView.Size = new System.Drawing.Size(400, 706);
+            this.terceroDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -1083,7 +825,6 @@
             this.dataGridViewTextBoxColumn2.HeaderText = "Documento";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Width = 90;
             // 
             // dataGridViewTextBoxColumn3
             // 
@@ -1147,12 +888,12 @@
             this.dataGridViewTextBoxColumn10.HeaderText = "Nombre completo";
             this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
             this.dataGridViewTextBoxColumn10.ReadOnly = true;
-            this.dataGridViewTextBoxColumn10.Width = 300;
+            this.dataGridViewTextBoxColumn10.Width = 280;
             // 
             // dataGridViewTextBoxColumn11
             // 
             this.dataGridViewTextBoxColumn11.DataPropertyName = "nombreComercial";
-            this.dataGridViewTextBoxColumn11.HeaderText = "nombreComercial";
+            this.dataGridViewTextBoxColumn11.HeaderText = "Nombre comercial";
             this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
             this.dataGridViewTextBoxColumn11.ReadOnly = true;
             this.dataGridViewTextBoxColumn11.Visible = false;
@@ -1200,7 +941,9 @@
             // dataGridViewTextBoxColumn17
             // 
             this.dataGridViewTextBoxColumn17.DataPropertyName = "telefono1";
-            this.dataGridViewTextBoxColumn17.HeaderText = "telefono1";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.dataGridViewTextBoxColumn17.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewTextBoxColumn17.HeaderText = "Teléfono1";
             this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
             this.dataGridViewTextBoxColumn17.ReadOnly = true;
             this.dataGridViewTextBoxColumn17.Visible = false;
@@ -1381,40 +1124,739 @@
             this.dataGridViewTextBoxColumn28.ReadOnly = true;
             this.dataGridViewTextBoxColumn28.Visible = false;
             // 
+            // dataGridViewTextBoxColumn29
+            // 
+            this.dataGridViewTextBoxColumn29.DataPropertyName = "adicional1";
+            this.dataGridViewTextBoxColumn29.HeaderText = "adicional1";
+            this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
+            this.dataGridViewTextBoxColumn29.ReadOnly = true;
+            this.dataGridViewTextBoxColumn29.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn30
+            // 
+            this.dataGridViewTextBoxColumn30.DataPropertyName = "adicional2";
+            this.dataGridViewTextBoxColumn30.HeaderText = "adicional2";
+            this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
+            this.dataGridViewTextBoxColumn30.ReadOnly = true;
+            this.dataGridViewTextBoxColumn30.Visible = false;
+            // 
+            // registrosGroupBox
+            // 
+            this.registrosGroupBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.registrosGroupBox.Controls.Add(this.ImagenLabel);
+            this.registrosGroupBox.Controls.Add(this.vigenteLabel);
+            this.registrosGroupBox.Controls.Add(this.imagenPictureBox);
+            this.registrosGroupBox.Controls.Add(this.responsableIvaLabel);
+            this.registrosGroupBox.Controls.Add(clasificacionLabel);
+            this.registrosGroupBox.Controls.Add(this.nombre2TextBox);
+            this.registrosGroupBox.Controls.Add(otraInformacionLabel);
+            this.registrosGroupBox.Controls.Add(this.nombreComercialTextBox);
+            this.registrosGroupBox.Controls.Add(ubicacionLabel);
+            this.registrosGroupBox.Controls.Add(razonSocialLabel);
+            this.registrosGroupBox.Controls.Add(identificacionLabel);
+            this.registrosGroupBox.Controls.Add(nombre1Label);
+            this.registrosGroupBox.Controls.Add(this.apellido1TextBox);
+            this.registrosGroupBox.Controls.Add(notasLabel);
+            this.registrosGroupBox.Controls.Add(nombreComercialLabel);
+            this.registrosGroupBox.Controls.Add(this.notasTextBox);
+            this.registrosGroupBox.Controls.Add(this.razonSocialTextBox);
+            this.registrosGroupBox.Controls.Add(this.buttonCargarImagen);
+            this.registrosGroupBox.Controls.Add(this.nombre1TextBox);
+            this.registrosGroupBox.Controls.Add(sitioWebLabel);
+            this.registrosGroupBox.Controls.Add(apellido1Label);
+            this.registrosGroupBox.Controls.Add(this.idTerceroTextBox);
+            this.registrosGroupBox.Controls.Add(this.codigoAlternoTextBox);
+            this.registrosGroupBox.Controls.Add(this.vigenteCheckBox);
+            this.registrosGroupBox.Controls.Add(this.apellido2TextBox);
+            this.registrosGroupBox.Controls.Add(this.sitioWebTextBox);
+            this.registrosGroupBox.Controls.Add(idPersonaLabel);
+            this.registrosGroupBox.Controls.Add(this.imagenTextBox);
+            this.registrosGroupBox.Controls.Add(codigoAlternoLabel);
+            this.registrosGroupBox.Controls.Add(tipoSangreLabel);
+            this.registrosGroupBox.Controls.Add(this.esEpsCheckBox);
+            this.registrosGroupBox.Controls.Add(idMunicipioLabel);
+            this.registrosGroupBox.Controls.Add(this.idPersonaComboBox);
+            this.registrosGroupBox.Controls.Add(this.responsableIvaCheckBox);
+            this.registrosGroupBox.Controls.Add(this.esAfpCheckBox);
+            this.registrosGroupBox.Controls.Add(this.esProveedorCheckBox);
+            this.registrosGroupBox.Controls.Add(this.fechaNacimientoDateTimePicker);
+            this.registrosGroupBox.Controls.Add(idEstadoCivilLabel);
+            this.registrosGroupBox.Controls.Add(this.esOtroCheckBox);
+            this.registrosGroupBox.Controls.Add(this.idEstadoCivilComboBox);
+            this.registrosGroupBox.Controls.Add(idTipoDocumentoLabel);
+            this.registrosGroupBox.Controls.Add(this.idMunicipioComboBox);
+            this.registrosGroupBox.Controls.Add(fechaNacimientoLabel);
+            this.registrosGroupBox.Controls.Add(idTerceroLabel);
+            this.registrosGroupBox.Controls.Add(this.esArlCheckBox);
+            this.registrosGroupBox.Controls.Add(idDepartamentoLabel);
+            this.registrosGroupBox.Controls.Add(this.idTipoDocumentoComboBox);
+            this.registrosGroupBox.Controls.Add(this.esEmpleadoCheckBox);
+            this.registrosGroupBox.Controls.Add(this.telefono1TextBox);
+            this.registrosGroupBox.Controls.Add(this.idDepartamentoComboBox);
+            this.registrosGroupBox.Controls.Add(telefono1Label);
+            this.registrosGroupBox.Controls.Add(this.tipoSangreComboBox);
+            this.registrosGroupBox.Controls.Add(this.idSexoComboBox);
+            this.registrosGroupBox.Controls.Add(direccionLabel);
+            this.registrosGroupBox.Controls.Add(this.telefono2TextBox);
+            this.registrosGroupBox.Controls.Add(this.esClienteCheckBox);
+            this.registrosGroupBox.Controls.Add(this.direccionTextBox);
+            this.registrosGroupBox.Controls.Add(this.telefono3TextBox);
+            this.registrosGroupBox.Controls.Add(this.dvTextBox);
+            this.registrosGroupBox.Controls.Add(dvLabel);
+            this.registrosGroupBox.Controls.Add(correoElectronicoLabel);
+            this.registrosGroupBox.Controls.Add(this.faxTextBox);
+            this.registrosGroupBox.Controls.Add(this.esCcfCheckBox);
+            this.registrosGroupBox.Controls.Add(faxLabel);
+            this.registrosGroupBox.Controls.Add(this.correoElectronicoTextBox);
+            this.registrosGroupBox.Controls.Add(idSexoLabel);
+            this.registrosGroupBox.ForeColor = System.Drawing.Color.White;
+            this.registrosGroupBox.Location = new System.Drawing.Point(152, 65);
+            this.registrosGroupBox.Name = "registrosGroupBox";
+            this.registrosGroupBox.Size = new System.Drawing.Size(650, 651);
+            this.registrosGroupBox.TabIndex = 81;
+            this.registrosGroupBox.TabStop = false;
+            // 
+            // ImagenLabel
+            // 
+            this.ImagenLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.ImagenLabel.AutoSize = true;
+            this.ImagenLabel.Location = new System.Drawing.Point(445, 513);
+            this.ImagenLabel.Name = "ImagenLabel";
+            this.ImagenLabel.Size = new System.Drawing.Size(45, 13);
+            this.ImagenLabel.TabIndex = 81;
+            this.ImagenLabel.Text = "Imagen:";
+            // 
+            // vigenteLabel
+            // 
+            this.vigenteLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.vigenteLabel.AutoSize = true;
+            this.vigenteLabel.Location = new System.Drawing.Point(379, 513);
+            this.vigenteLabel.Name = "vigenteLabel";
+            this.vigenteLabel.Size = new System.Drawing.Size(46, 13);
+            this.vigenteLabel.TabIndex = 80;
+            this.vigenteLabel.Text = "Vigente:";
+            // 
+            // imagenPictureBox
+            // 
+            this.imagenPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.imagenPictureBox.Location = new System.Drawing.Point(381, 20);
+            this.imagenPictureBox.Name = "imagenPictureBox";
+            this.imagenPictureBox.Size = new System.Drawing.Size(214, 130);
+            this.imagenPictureBox.TabIndex = 2;
+            this.imagenPictureBox.TabStop = false;
+            // 
+            // responsableIvaLabel
+            // 
+            this.responsableIvaLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.responsableIvaLabel.AutoSize = true;
+            this.responsableIvaLabel.Location = new System.Drawing.Point(270, 513);
+            this.responsableIvaLabel.Name = "responsableIvaLabel";
+            this.responsableIvaLabel.Size = new System.Drawing.Size(90, 13);
+            this.responsableIvaLabel.TabIndex = 79;
+            this.responsableIvaLabel.Text = "Responsable Iva:";
+            // 
+            // nombre2TextBox
+            // 
+            this.nombre2TextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.nombre2TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "nombre2", true));
+            this.nombre2TextBox.Location = new System.Drawing.Point(395, 186);
+            this.nombre2TextBox.Name = "nombre2TextBox";
+            this.nombre2TextBox.ReadOnly = true;
+            this.nombre2TextBox.Size = new System.Drawing.Size(200, 20);
+            this.nombre2TextBox.TabIndex = 20;
+            // 
+            // nombreComercialTextBox
+            // 
+            this.nombreComercialTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.nombreComercialTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "nombreComercial", true));
+            this.nombreComercialTextBox.Location = new System.Drawing.Point(145, 264);
+            this.nombreComercialTextBox.Name = "nombreComercialTextBox";
+            this.nombreComercialTextBox.ReadOnly = true;
+            this.nombreComercialTextBox.Size = new System.Drawing.Size(200, 20);
+            this.nombreComercialTextBox.TabIndex = 26;
+            // 
+            // apellido1TextBox
+            // 
+            this.apellido1TextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.apellido1TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "apellido1", true));
+            this.apellido1TextBox.Location = new System.Drawing.Point(145, 212);
+            this.apellido1TextBox.Name = "apellido1TextBox";
+            this.apellido1TextBox.ReadOnly = true;
+            this.apellido1TextBox.Size = new System.Drawing.Size(240, 20);
+            this.apellido1TextBox.TabIndex = 21;
+            // 
+            // notasTextBox
+            // 
+            this.notasTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.notasTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "notas", true));
+            this.notasTextBox.Location = new System.Drawing.Point(145, 537);
+            this.notasTextBox.Multiline = true;
+            this.notasTextBox.Name = "notasTextBox";
+            this.notasTextBox.ReadOnly = true;
+            this.notasTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.notasTextBox.Size = new System.Drawing.Size(450, 89);
+            this.notasTextBox.TabIndex = 1;
+            // 
+            // razonSocialTextBox
+            // 
+            this.razonSocialTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.razonSocialTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "razonSocial", true));
+            this.razonSocialTextBox.Location = new System.Drawing.Point(145, 238);
+            this.razonSocialTextBox.Name = "razonSocialTextBox";
+            this.razonSocialTextBox.ReadOnly = true;
+            this.razonSocialTextBox.Size = new System.Drawing.Size(450, 20);
+            this.razonSocialTextBox.TabIndex = 24;
+            // 
+            // buttonCargarImagen
+            // 
+            this.buttonCargarImagen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonCargarImagen.BackColor = System.Drawing.Color.DarkGray;
+            this.buttonCargarImagen.FlatAppearance.BorderSize = 0;
+            this.buttonCargarImagen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCargarImagen.ForeColor = System.Drawing.Color.Black;
+            this.buttonCargarImagen.Location = new System.Drawing.Point(570, 509);
+            this.buttonCargarImagen.Name = "buttonCargarImagen";
+            this.buttonCargarImagen.Size = new System.Drawing.Size(25, 20);
+            this.buttonCargarImagen.TabIndex = 7;
+            this.buttonCargarImagen.Text = "...";
+            this.buttonCargarImagen.UseVisualStyleBackColor = false;
+            // 
+            // nombre1TextBox
+            // 
+            this.nombre1TextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.nombre1TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "nombre1", true));
+            this.nombre1TextBox.Location = new System.Drawing.Point(145, 186);
+            this.nombre1TextBox.Name = "nombre1TextBox";
+            this.nombre1TextBox.ReadOnly = true;
+            this.nombre1TextBox.Size = new System.Drawing.Size(240, 20);
+            this.nombre1TextBox.TabIndex = 18;
+            // 
+            // idTerceroTextBox
+            // 
+            this.idTerceroTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.idTerceroTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "idTercero", true));
+            this.idTerceroTextBox.Location = new System.Drawing.Point(145, 133);
+            this.idTerceroTextBox.Name = "idTerceroTextBox";
+            this.idTerceroTextBox.ReadOnly = true;
+            this.idTerceroTextBox.Size = new System.Drawing.Size(167, 20);
+            this.idTerceroTextBox.TabIndex = 14;
+            this.idTerceroTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // codigoAlternoTextBox
+            // 
+            this.codigoAlternoTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.codigoAlternoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "codigoAlterno", true));
+            this.codigoAlternoTextBox.Location = new System.Drawing.Point(435, 264);
+            this.codigoAlternoTextBox.Name = "codigoAlternoTextBox";
+            this.codigoAlternoTextBox.ReadOnly = true;
+            this.codigoAlternoTextBox.Size = new System.Drawing.Size(160, 20);
+            this.codigoAlternoTextBox.TabIndex = 28;
+            // 
+            // vigenteCheckBox
+            // 
+            this.vigenteCheckBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.vigenteCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.vigenteCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.terceroBindingSource, "vigente", true));
+            this.vigenteCheckBox.Enabled = false;
+            this.vigenteCheckBox.ForeColor = System.Drawing.Color.White;
+            this.vigenteCheckBox.Location = new System.Drawing.Point(423, 509);
+            this.vigenteCheckBox.Name = "vigenteCheckBox";
+            this.vigenteCheckBox.Size = new System.Drawing.Size(18, 21);
+            this.vigenteCheckBox.TabIndex = 5;
+            this.vigenteCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // apellido2TextBox
+            // 
+            this.apellido2TextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.apellido2TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "apellido2", true));
+            this.apellido2TextBox.Location = new System.Drawing.Point(395, 212);
+            this.apellido2TextBox.Name = "apellido2TextBox";
+            this.apellido2TextBox.ReadOnly = true;
+            this.apellido2TextBox.Size = new System.Drawing.Size(200, 20);
+            this.apellido2TextBox.TabIndex = 23;
+            // 
+            // sitioWebTextBox
+            // 
+            this.sitioWebTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.sitioWebTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "sitioWeb", true));
+            this.sitioWebTextBox.Location = new System.Drawing.Point(146, 454);
+            this.sitioWebTextBox.Name = "sitioWebTextBox";
+            this.sitioWebTextBox.ReadOnly = true;
+            this.sitioWebTextBox.Size = new System.Drawing.Size(450, 20);
+            this.sitioWebTextBox.TabIndex = 15;
+            // 
+            // imagenTextBox
+            // 
+            this.imagenTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.imagenTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "imagen", true));
+            this.imagenTextBox.ForeColor = System.Drawing.Color.Black;
+            this.imagenTextBox.Location = new System.Drawing.Point(490, 509);
+            this.imagenTextBox.Name = "imagenTextBox";
+            this.imagenTextBox.ReadOnly = true;
+            this.imagenTextBox.Size = new System.Drawing.Size(81, 20);
+            this.imagenTextBox.TabIndex = 6;
+            // 
+            // esEpsCheckBox
+            // 
+            this.esEpsCheckBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.esEpsCheckBox.Appearance = System.Windows.Forms.Appearance.Button;
+            this.esEpsCheckBox.BackColor = System.Drawing.SystemColors.Control;
+            this.esEpsCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.esEpsCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.terceroBindingSource, "esEps", true));
+            this.esEpsCheckBox.Enabled = false;
+            this.esEpsCheckBox.FlatAppearance.BorderSize = 0;
+            this.esEpsCheckBox.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.esEpsCheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.esEpsCheckBox.ForeColor = System.Drawing.Color.Black;
+            this.esEpsCheckBox.Location = new System.Drawing.Point(192, 66);
+            this.esEpsCheckBox.Name = "esEpsCheckBox";
+            this.esEpsCheckBox.Size = new System.Drawing.Size(40, 24);
+            this.esEpsCheckBox.TabIndex = 6;
+            this.esEpsCheckBox.Text = "Eps";
+            this.esEpsCheckBox.UseVisualStyleBackColor = false;
+            // 
+            // idPersonaComboBox
+            // 
+            this.idPersonaComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.idPersonaComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "idPersona", true));
+            this.idPersonaComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.terceroBindingSource, "idPersona", true));
+            this.idPersonaComboBox.DataSource = this.tipoPersonaBindingSource;
+            this.idPersonaComboBox.DisplayMember = "tipoPersona";
+            this.idPersonaComboBox.Enabled = false;
+            this.idPersonaComboBox.FormattingEnabled = true;
+            this.idPersonaComboBox.Location = new System.Drawing.Point(425, 159);
+            this.idPersonaComboBox.Name = "idPersonaComboBox";
+            this.idPersonaComboBox.Size = new System.Drawing.Size(170, 21);
+            this.idPersonaComboBox.TabIndex = 17;
+            this.idPersonaComboBox.ValueMember = "idPersona";
+            // 
+            // tipoPersonaBindingSource
+            // 
+            this.tipoPersonaBindingSource.DataMember = "tipoPersona";
+            this.tipoPersonaBindingSource.DataSource = this.dSSiscad;
+            // 
+            // responsableIvaCheckBox
+            // 
+            this.responsableIvaCheckBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.responsableIvaCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.responsableIvaCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.terceroBindingSource, "responsableIva", true));
+            this.responsableIvaCheckBox.Enabled = false;
+            this.responsableIvaCheckBox.ForeColor = System.Drawing.Color.White;
+            this.responsableIvaCheckBox.Location = new System.Drawing.Point(355, 509);
+            this.responsableIvaCheckBox.Name = "responsableIvaCheckBox";
+            this.responsableIvaCheckBox.Size = new System.Drawing.Size(20, 21);
+            this.responsableIvaCheckBox.TabIndex = 3;
+            this.responsableIvaCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // esAfpCheckBox
+            // 
+            this.esAfpCheckBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.esAfpCheckBox.Appearance = System.Windows.Forms.Appearance.Button;
+            this.esAfpCheckBox.BackColor = System.Drawing.SystemColors.Control;
+            this.esAfpCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.esAfpCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.terceroBindingSource, "esAfp", true));
+            this.esAfpCheckBox.Enabled = false;
+            this.esAfpCheckBox.FlatAppearance.BorderSize = 0;
+            this.esAfpCheckBox.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.esAfpCheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.esAfpCheckBox.ForeColor = System.Drawing.Color.Black;
+            this.esAfpCheckBox.Location = new System.Drawing.Point(238, 66);
+            this.esAfpCheckBox.Name = "esAfpCheckBox";
+            this.esAfpCheckBox.Size = new System.Drawing.Size(40, 24);
+            this.esAfpCheckBox.TabIndex = 8;
+            this.esAfpCheckBox.Text = "Afp";
+            this.esAfpCheckBox.UseVisualStyleBackColor = false;
+            // 
+            // esProveedorCheckBox
+            // 
+            this.esProveedorCheckBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.esProveedorCheckBox.Appearance = System.Windows.Forms.Appearance.Button;
+            this.esProveedorCheckBox.BackColor = System.Drawing.SystemColors.Control;
+            this.esProveedorCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.esProveedorCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.terceroBindingSource, "esProveedor", true));
+            this.esProveedorCheckBox.Enabled = false;
+            this.esProveedorCheckBox.FlatAppearance.BorderSize = 0;
+            this.esProveedorCheckBox.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.esProveedorCheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.esProveedorCheckBox.ForeColor = System.Drawing.Color.Black;
+            this.esProveedorCheckBox.Location = new System.Drawing.Point(296, 36);
+            this.esProveedorCheckBox.Name = "esProveedorCheckBox";
+            this.esProveedorCheckBox.Size = new System.Drawing.Size(75, 24);
+            this.esProveedorCheckBox.TabIndex = 4;
+            this.esProveedorCheckBox.Text = "Proveedor";
+            this.esProveedorCheckBox.UseVisualStyleBackColor = false;
+            // 
+            // fechaNacimientoDateTimePicker
+            // 
+            this.fechaNacimientoDateTimePicker.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.fechaNacimientoDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.terceroBindingSource, "fechaNacimiento", true));
+            this.fechaNacimientoDateTimePicker.Enabled = false;
+            this.fechaNacimientoDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.fechaNacimientoDateTimePicker.Location = new System.Drawing.Point(145, 290);
+            this.fechaNacimientoDateTimePicker.MinDate = new System.DateTime(1800, 1, 1, 0, 0, 0, 0);
+            this.fechaNacimientoDateTimePicker.Name = "fechaNacimientoDateTimePicker";
+            this.fechaNacimientoDateTimePicker.Size = new System.Drawing.Size(100, 20);
+            this.fechaNacimientoDateTimePicker.TabIndex = 30;
+            this.fechaNacimientoDateTimePicker.Value = new System.DateTime(1800, 1, 1, 0, 0, 0, 0);
+            // 
+            // esOtroCheckBox
+            // 
+            this.esOtroCheckBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.esOtroCheckBox.Appearance = System.Windows.Forms.Appearance.Button;
+            this.esOtroCheckBox.BackColor = System.Drawing.SystemColors.Control;
+            this.esOtroCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.esOtroCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.terceroBindingSource, "esOtro", true));
+            this.esOtroCheckBox.Enabled = false;
+            this.esOtroCheckBox.FlatAppearance.BorderSize = 0;
+            this.esOtroCheckBox.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.esOtroCheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.esOtroCheckBox.ForeColor = System.Drawing.Color.Black;
+            this.esOtroCheckBox.Location = new System.Drawing.Point(146, 66);
+            this.esOtroCheckBox.Name = "esOtroCheckBox";
+            this.esOtroCheckBox.Size = new System.Drawing.Size(40, 24);
+            this.esOtroCheckBox.TabIndex = 5;
+            this.esOtroCheckBox.Text = "Otro";
+            this.esOtroCheckBox.UseVisualStyleBackColor = false;
+            // 
+            // idEstadoCivilComboBox
+            // 
+            this.idEstadoCivilComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.idEstadoCivilComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "idEstadoCivil", true));
+            this.idEstadoCivilComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.terceroBindingSource, "idEstadoCivil", true));
+            this.idEstadoCivilComboBox.DataSource = this.estadoCivilBindingSource;
+            this.idEstadoCivilComboBox.DisplayMember = "estadoCivil";
+            this.idEstadoCivilComboBox.Enabled = false;
+            this.idEstadoCivilComboBox.FormattingEnabled = true;
+            this.idEstadoCivilComboBox.Location = new System.Drawing.Point(145, 509);
+            this.idEstadoCivilComboBox.Name = "idEstadoCivilComboBox";
+            this.idEstadoCivilComboBox.Size = new System.Drawing.Size(122, 21);
+            this.idEstadoCivilComboBox.TabIndex = 1;
+            this.idEstadoCivilComboBox.ValueMember = "idEstadoCivil";
+            // 
+            // estadoCivilBindingSource
+            // 
+            this.estadoCivilBindingSource.DataMember = "estadoCivil";
+            this.estadoCivilBindingSource.DataSource = this.dSSiscad;
+            // 
+            // idMunicipioComboBox
+            // 
+            this.idMunicipioComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.idMunicipioComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "idMunicipio", true));
+            this.idMunicipioComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.terceroBindingSource, "idMunicipio", true));
+            this.idMunicipioComboBox.DataSource = this.municipioBindingSource;
+            this.idMunicipioComboBox.DisplayMember = "municipio";
+            this.idMunicipioComboBox.Enabled = false;
+            this.idMunicipioComboBox.FormattingEnabled = true;
+            this.idMunicipioComboBox.Location = new System.Drawing.Point(406, 427);
+            this.idMunicipioComboBox.Name = "idMunicipioComboBox";
+            this.idMunicipioComboBox.Size = new System.Drawing.Size(190, 21);
+            this.idMunicipioComboBox.TabIndex = 13;
+            this.idMunicipioComboBox.ValueMember = "idMunicipio";
+            // 
+            // municipioBindingSource
+            // 
+            this.municipioBindingSource.DataMember = "municipio";
+            this.municipioBindingSource.DataSource = this.dSSiscad;
+            // 
+            // esArlCheckBox
+            // 
+            this.esArlCheckBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.esArlCheckBox.Appearance = System.Windows.Forms.Appearance.Button;
+            this.esArlCheckBox.BackColor = System.Drawing.SystemColors.Control;
+            this.esArlCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.esArlCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.terceroBindingSource, "esArl", true));
+            this.esArlCheckBox.Enabled = false;
+            this.esArlCheckBox.FlatAppearance.BorderSize = 0;
+            this.esArlCheckBox.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.esArlCheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.esArlCheckBox.ForeColor = System.Drawing.Color.Black;
+            this.esArlCheckBox.Location = new System.Drawing.Point(284, 66);
+            this.esArlCheckBox.Name = "esArlCheckBox";
+            this.esArlCheckBox.Size = new System.Drawing.Size(40, 24);
+            this.esArlCheckBox.TabIndex = 10;
+            this.esArlCheckBox.Text = "Arl";
+            this.esArlCheckBox.UseVisualStyleBackColor = false;
+            // 
+            // idTipoDocumentoComboBox
+            // 
+            this.idTipoDocumentoComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.idTipoDocumentoComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "idTipoDocumento", true));
+            this.idTipoDocumentoComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.terceroBindingSource, "idTipoDocumento", true));
+            this.idTipoDocumentoComboBox.DataSource = this.tipoDocumentoBindingSource;
+            this.idTipoDocumentoComboBox.DisplayMember = "descripcion";
+            this.idTipoDocumentoComboBox.Enabled = false;
+            this.idTipoDocumentoComboBox.FormattingEnabled = true;
+            this.idTipoDocumentoComboBox.Location = new System.Drawing.Point(145, 159);
+            this.idTipoDocumentoComboBox.Name = "idTipoDocumentoComboBox";
+            this.idTipoDocumentoComboBox.Size = new System.Drawing.Size(200, 21);
+            this.idTipoDocumentoComboBox.TabIndex = 16;
+            this.idTipoDocumentoComboBox.ValueMember = "idDocumento";
+            // 
+            // tipoDocumentoBindingSource
+            // 
+            this.tipoDocumentoBindingSource.DataMember = "tipoDocumento";
+            this.tipoDocumentoBindingSource.DataSource = this.dSSiscad;
+            // 
+            // esEmpleadoCheckBox
+            // 
+            this.esEmpleadoCheckBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.esEmpleadoCheckBox.Appearance = System.Windows.Forms.Appearance.Button;
+            this.esEmpleadoCheckBox.BackColor = System.Drawing.SystemColors.Control;
+            this.esEmpleadoCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.esEmpleadoCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.terceroBindingSource, "esEmpleado", true));
+            this.esEmpleadoCheckBox.Enabled = false;
+            this.esEmpleadoCheckBox.FlatAppearance.BorderSize = 0;
+            this.esEmpleadoCheckBox.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.esEmpleadoCheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.esEmpleadoCheckBox.ForeColor = System.Drawing.Color.Black;
+            this.esEmpleadoCheckBox.Location = new System.Drawing.Point(146, 36);
+            this.esEmpleadoCheckBox.Name = "esEmpleadoCheckBox";
+            this.esEmpleadoCheckBox.Size = new System.Drawing.Size(74, 24);
+            this.esEmpleadoCheckBox.TabIndex = 2;
+            this.esEmpleadoCheckBox.Text = "Empleado";
+            this.esEmpleadoCheckBox.UseVisualStyleBackColor = false;
+            // 
+            // telefono1TextBox
+            // 
+            this.telefono1TextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.telefono1TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "telefono1", true));
+            this.telefono1TextBox.Location = new System.Drawing.Point(145, 349);
+            this.telefono1TextBox.Name = "telefono1TextBox";
+            this.telefono1TextBox.ReadOnly = true;
+            this.telefono1TextBox.Size = new System.Drawing.Size(100, 20);
+            this.telefono1TextBox.TabIndex = 1;
+            // 
+            // idDepartamentoComboBox
+            // 
+            this.idDepartamentoComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.idDepartamentoComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "idDepartamento", true));
+            this.idDepartamentoComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.terceroBindingSource, "idDepartamento", true));
+            this.idDepartamentoComboBox.DataSource = this.departamentoBindingSource;
+            this.idDepartamentoComboBox.DisplayMember = "departamento";
+            this.idDepartamentoComboBox.Enabled = false;
+            this.idDepartamentoComboBox.FormattingEnabled = true;
+            this.idDepartamentoComboBox.Location = new System.Drawing.Point(145, 427);
+            this.idDepartamentoComboBox.Name = "idDepartamentoComboBox";
+            this.idDepartamentoComboBox.Size = new System.Drawing.Size(190, 21);
+            this.idDepartamentoComboBox.TabIndex = 11;
+            this.idDepartamentoComboBox.ValueMember = "idDepartamento";
+            // 
+            // departamentoBindingSource
+            // 
+            this.departamentoBindingSource.DataMember = "departamento";
+            this.departamentoBindingSource.DataSource = this.dSSiscad;
+            // 
+            // tipoSangreComboBox
+            // 
+            this.tipoSangreComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.tipoSangreComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "tipoSangre", true));
+            this.tipoSangreComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.terceroBindingSource, "tipoSangre", true));
+            this.tipoSangreComboBox.DataSource = this.tipoSangreBindingSource;
+            this.tipoSangreComboBox.DisplayMember = "rh";
+            this.tipoSangreComboBox.Enabled = false;
+            this.tipoSangreComboBox.FormattingEnabled = true;
+            this.tipoSangreComboBox.Location = new System.Drawing.Point(451, 291);
+            this.tipoSangreComboBox.Name = "tipoSangreComboBox";
+            this.tipoSangreComboBox.Size = new System.Drawing.Size(144, 21);
+            this.tipoSangreComboBox.TabIndex = 33;
+            this.tipoSangreComboBox.ValueMember = "rh";
+            // 
+            // tipoSangreBindingSource
+            // 
+            this.tipoSangreBindingSource.DataMember = "tipoSangre";
+            this.tipoSangreBindingSource.DataSource = this.dSSiscad;
+            // 
+            // idSexoComboBox
+            // 
+            this.idSexoComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.idSexoComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "idSexo", true));
+            this.idSexoComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.terceroBindingSource, "idSexo", true));
+            this.idSexoComboBox.DataSource = this.sexoBindingSource;
+            this.idSexoComboBox.DisplayMember = "sexo";
+            this.idSexoComboBox.Enabled = false;
+            this.idSexoComboBox.FormattingEnabled = true;
+            this.idSexoComboBox.Location = new System.Drawing.Point(290, 290);
+            this.idSexoComboBox.Name = "idSexoComboBox";
+            this.idSexoComboBox.Size = new System.Drawing.Size(117, 21);
+            this.idSexoComboBox.TabIndex = 31;
+            this.idSexoComboBox.ValueMember = "idSexo";
+            // 
+            // sexoBindingSource
+            // 
+            this.sexoBindingSource.DataMember = "sexo";
+            this.sexoBindingSource.DataSource = this.dSSiscad;
+            // 
+            // telefono2TextBox
+            // 
+            this.telefono2TextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.telefono2TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "telefono2", true));
+            this.telefono2TextBox.Location = new System.Drawing.Point(251, 349);
+            this.telefono2TextBox.Name = "telefono2TextBox";
+            this.telefono2TextBox.ReadOnly = true;
+            this.telefono2TextBox.Size = new System.Drawing.Size(100, 20);
+            this.telefono2TextBox.TabIndex = 3;
+            // 
+            // esClienteCheckBox
+            // 
+            this.esClienteCheckBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.esClienteCheckBox.Appearance = System.Windows.Forms.Appearance.Button;
+            this.esClienteCheckBox.BackColor = System.Drawing.SystemColors.Control;
+            this.esClienteCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.esClienteCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.terceroBindingSource, "esCliente", true));
+            this.esClienteCheckBox.Enabled = false;
+            this.esClienteCheckBox.FlatAppearance.BorderSize = 0;
+            this.esClienteCheckBox.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.esClienteCheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.esClienteCheckBox.ForeColor = System.Drawing.Color.Black;
+            this.esClienteCheckBox.Location = new System.Drawing.Point(229, 36);
+            this.esClienteCheckBox.Name = "esClienteCheckBox";
+            this.esClienteCheckBox.Size = new System.Drawing.Size(59, 24);
+            this.esClienteCheckBox.TabIndex = 3;
+            this.esClienteCheckBox.Text = "Cliente";
+            this.esClienteCheckBox.UseVisualStyleBackColor = false;
+            // 
+            // direccionTextBox
+            // 
+            this.direccionTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.direccionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "direccion", true));
+            this.direccionTextBox.Location = new System.Drawing.Point(146, 401);
+            this.direccionTextBox.Name = "direccionTextBox";
+            this.direccionTextBox.ReadOnly = true;
+            this.direccionTextBox.Size = new System.Drawing.Size(450, 20);
+            this.direccionTextBox.TabIndex = 9;
+            // 
+            // telefono3TextBox
+            // 
+            this.telefono3TextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.telefono3TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "telefono3", true));
+            this.telefono3TextBox.Location = new System.Drawing.Point(357, 349);
+            this.telefono3TextBox.Name = "telefono3TextBox";
+            this.telefono3TextBox.ReadOnly = true;
+            this.telefono3TextBox.Size = new System.Drawing.Size(100, 20);
+            this.telefono3TextBox.TabIndex = 4;
+            // 
+            // dvTextBox
+            // 
+            this.dvTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.dvTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "dv", true));
+            this.dvTextBox.Location = new System.Drawing.Point(325, 133);
+            this.dvTextBox.Name = "dvTextBox";
+            this.dvTextBox.ReadOnly = true;
+            this.dvTextBox.Size = new System.Drawing.Size(20, 20);
+            this.dvTextBox.TabIndex = 15;
+            this.dvTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // faxTextBox
+            // 
+            this.faxTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.faxTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "fax", true));
+            this.faxTextBox.Location = new System.Drawing.Point(496, 349);
+            this.faxTextBox.Name = "faxTextBox";
+            this.faxTextBox.ReadOnly = true;
+            this.faxTextBox.Size = new System.Drawing.Size(100, 20);
+            this.faxTextBox.TabIndex = 5;
+            // 
+            // esCcfCheckBox
+            // 
+            this.esCcfCheckBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.esCcfCheckBox.Appearance = System.Windows.Forms.Appearance.Button;
+            this.esCcfCheckBox.BackColor = System.Drawing.SystemColors.Control;
+            this.esCcfCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.esCcfCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.terceroBindingSource, "esCcf", true));
+            this.esCcfCheckBox.Enabled = false;
+            this.esCcfCheckBox.FlatAppearance.BorderSize = 0;
+            this.esCcfCheckBox.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.esCcfCheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.esCcfCheckBox.ForeColor = System.Drawing.Color.Black;
+            this.esCcfCheckBox.Location = new System.Drawing.Point(330, 66);
+            this.esCcfCheckBox.Name = "esCcfCheckBox";
+            this.esCcfCheckBox.Size = new System.Drawing.Size(40, 24);
+            this.esCcfCheckBox.TabIndex = 12;
+            this.esCcfCheckBox.Text = "Ccf";
+            this.esCcfCheckBox.UseVisualStyleBackColor = false;
+            // 
+            // correoElectronicoTextBox
+            // 
+            this.correoElectronicoTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.correoElectronicoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.terceroBindingSource, "correoElectronico", true));
+            this.correoElectronicoTextBox.Location = new System.Drawing.Point(146, 375);
+            this.correoElectronicoTextBox.Name = "correoElectronicoTextBox";
+            this.correoElectronicoTextBox.ReadOnly = true;
+            this.correoElectronicoTextBox.Size = new System.Drawing.Size(450, 20);
+            this.correoElectronicoTextBox.TabIndex = 7;
+            // 
+            // tituloLabel
+            // 
+            this.tituloLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tituloLabel.AutoSize = true;
+            this.tituloLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tituloLabel.ForeColor = System.Drawing.Color.DarkGray;
+            this.tituloLabel.Location = new System.Drawing.Point(351, 29);
+            this.tituloLabel.Name = "tituloLabel";
+            this.tituloLabel.Size = new System.Drawing.Size(301, 29);
+            this.tituloLabel.TabIndex = 82;
+            this.tituloLabel.Text = "GESTIÓN DE TERCEROS";
+            // 
+            // tipoDocumentoTableAdapter
+            // 
+            this.tipoDocumentoTableAdapter.ClearBeforeFill = true;
+            // 
+            // tipoPersonaTableAdapter
+            // 
+            this.tipoPersonaTableAdapter.ClearBeforeFill = true;
+            // 
+            // sexoTableAdapter
+            // 
+            this.sexoTableAdapter.ClearBeforeFill = true;
+            // 
+            // tipoSangreTableAdapter
+            // 
+            this.tipoSangreTableAdapter.ClearBeforeFill = true;
+            // 
+            // departamentoTableAdapter
+            // 
+            this.departamentoTableAdapter.ClearBeforeFill = true;
+            // 
+            // municipioTableAdapter
+            // 
+            this.municipioTableAdapter.ClearBeforeFill = true;
+            // 
+            // estadoCivilTableAdapter
+            // 
+            this.estadoCivilTableAdapter.ClearBeforeFill = true;
+            // 
             // frmTercero
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            this.ClientSize = new System.Drawing.Size(1213, 673);
+            this.ClientSize = new System.Drawing.Size(1300, 735);
+            this.Controls.Add(this.tituloLabel);
+            this.Controls.Add(this.registrosGroupBox);
             this.Controls.Add(this.terceroDataGridView);
-            this.Controls.Add(this.buttonFormCerrar);
-            this.Controls.Add(this.groupBoxImagen);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.groupBoxOtraInformacion);
-            this.Controls.Add(this.groupBoxUbicacion);
-            this.Controls.Add(this.groupBoxClasificacion);
-            this.Controls.Add(this.groupBoxIdentificacion);
-            this.ForeColor = System.Drawing.Color.DarkGray;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Controls.Add(this.terceroBindingNavigator);
             this.Name = "frmTercero";
-            this.Text = "Tercero";
-            this.Load += new System.EventHandler(this.frmMantenimientoTercero_Load);
+            this.Text = "frmTercero";
+            this.Load += new System.EventHandler(this.frmTercero_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dSSiscad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.terceroBindingSource)).EndInit();
-            this.groupBoxIdentificacion.ResumeLayout(false);
-            this.groupBoxIdentificacion.PerformLayout();
-            this.groupBoxClasificacion.ResumeLayout(false);
-            this.groupBoxUbicacion.ResumeLayout(false);
-            this.groupBoxUbicacion.PerformLayout();
-            this.groupBoxOtraInformacion.ResumeLayout(false);
-            this.groupBoxOtraInformacion.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxImagen)).EndInit();
-            this.groupBoxImagen.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.terceroBindingNavigator)).EndInit();
+            this.terceroBindingNavigator.ResumeLayout(false);
+            this.terceroBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.terceroDataGridView)).EndInit();
+            this.registrosGroupBox.ResumeLayout(false);
+            this.registrosGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imagenPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tipoPersonaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.estadoCivilBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.municipioBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tipoDocumentoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.departamentoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tipoSangreBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sexoBindingSource)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -1424,53 +1866,66 @@
         private System.Windows.Forms.BindingSource terceroBindingSource;
         private DSSiscadTableAdapters.terceroTableAdapter terceroTableAdapter;
         private DSSiscadTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.CheckBox esEmpleadoCheckBox;
-        private System.Windows.Forms.CheckBox esClienteCheckBox;
-        private System.Windows.Forms.CheckBox esProveedorCheckBox;
-        private System.Windows.Forms.CheckBox esOtroCheckBox;
-        private System.Windows.Forms.CheckBox esEpsCheckBox;
-        private System.Windows.Forms.CheckBox esAfpCheckBox;
-        private System.Windows.Forms.CheckBox esArlCheckBox;
-        private System.Windows.Forms.CheckBox esCcfCheckBox;
-        private System.Windows.Forms.TextBox idTerceroTextBox;
-        private System.Windows.Forms.TextBox dvTextBox;
-        private System.Windows.Forms.ComboBox idTipoDocumentoComboBox;
-        private System.Windows.Forms.ComboBox idPersonaComboBox;
-        private System.Windows.Forms.TextBox nombre1TextBox;
-        private System.Windows.Forms.TextBox nombre2TextBox;
-        private System.Windows.Forms.TextBox apellido1TextBox;
-        private System.Windows.Forms.TextBox apellido2TextBox;
-        private System.Windows.Forms.TextBox razonSocialTextBox;
-        private System.Windows.Forms.TextBox nombreComercialTextBox;
-        private System.Windows.Forms.TextBox codigoAlternoTextBox;
-        private System.Windows.Forms.DateTimePicker fechaNacimientoDateTimePicker;
-        private System.Windows.Forms.ComboBox idSexoComboBox;
-        private System.Windows.Forms.ComboBox tipoSangreComboBox;
-        private System.Windows.Forms.GroupBox groupBoxIdentificacion;
-        private System.Windows.Forms.GroupBox groupBoxClasificacion;
-        private System.Windows.Forms.GroupBox groupBoxUbicacion;
-        private System.Windows.Forms.TextBox sitioWebTextBox;
-        private System.Windows.Forms.ComboBox idMunicipioComboBox;
-        private System.Windows.Forms.ComboBox idDepartamentoComboBox;
-        private System.Windows.Forms.TextBox direccionTextBox;
-        private System.Windows.Forms.TextBox correoElectronicoTextBox;
-        private System.Windows.Forms.TextBox faxTextBox;
-        private System.Windows.Forms.TextBox telefono3TextBox;
-        private System.Windows.Forms.TextBox telefono2TextBox;
-        private System.Windows.Forms.TextBox telefono1TextBox;
-        private System.Windows.Forms.GroupBox groupBoxOtraInformacion;
-        private System.Windows.Forms.Button buttonCargarImagen;
-        private System.Windows.Forms.TextBox imagenTextBox;
-        private System.Windows.Forms.CheckBox vigenteCheckBox;
-        private System.Windows.Forms.CheckBox responsableIvaCheckBox;
-        private System.Windows.Forms.ComboBox idEstadoCivilComboBox;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox notasTextBox;
-        private System.Windows.Forms.PictureBox pictureBoxImagen;
-        private System.Windows.Forms.GroupBox groupBoxImagen;
-        public System.Windows.Forms.Button buttonFormCerrar;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.BindingNavigator terceroBindingNavigator;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
+        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
+        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
+        private System.Windows.Forms.ToolStripButton terceroBindingNavigatorSaveItem;
         private System.Windows.Forms.DataGridView terceroDataGridView;
+        private System.Windows.Forms.PictureBox imagenPictureBox;
+        private System.Windows.Forms.GroupBox registrosGroupBox;
+        private System.Windows.Forms.Label vigenteLabel;
+        private System.Windows.Forms.Label responsableIvaLabel;
+        private System.Windows.Forms.TextBox nombre2TextBox;
+        private System.Windows.Forms.TextBox nombreComercialTextBox;
+        private System.Windows.Forms.TextBox apellido1TextBox;
+        private System.Windows.Forms.TextBox notasTextBox;
+        private System.Windows.Forms.TextBox razonSocialTextBox;
+        private System.Windows.Forms.Button buttonCargarImagen;
+        private System.Windows.Forms.TextBox nombre1TextBox;
+        private System.Windows.Forms.TextBox idTerceroTextBox;
+        private System.Windows.Forms.TextBox codigoAlternoTextBox;
+        private System.Windows.Forms.CheckBox vigenteCheckBox;
+        private System.Windows.Forms.TextBox apellido2TextBox;
+        private System.Windows.Forms.TextBox sitioWebTextBox;
+        private System.Windows.Forms.TextBox imagenTextBox;
+        private System.Windows.Forms.CheckBox esEpsCheckBox;
+        private System.Windows.Forms.ComboBox idPersonaComboBox;
+        private System.Windows.Forms.CheckBox responsableIvaCheckBox;
+        private System.Windows.Forms.CheckBox esAfpCheckBox;
+        private System.Windows.Forms.CheckBox esProveedorCheckBox;
+        private System.Windows.Forms.DateTimePicker fechaNacimientoDateTimePicker;
+        private System.Windows.Forms.CheckBox esOtroCheckBox;
+        private System.Windows.Forms.ComboBox idEstadoCivilComboBox;
+        private System.Windows.Forms.ComboBox idMunicipioComboBox;
+        private System.Windows.Forms.CheckBox esArlCheckBox;
+        private System.Windows.Forms.ComboBox idTipoDocumentoComboBox;
+        private System.Windows.Forms.CheckBox esEmpleadoCheckBox;
+        private System.Windows.Forms.TextBox telefono1TextBox;
+        private System.Windows.Forms.ComboBox idDepartamentoComboBox;
+        private System.Windows.Forms.ComboBox tipoSangreComboBox;
+        private System.Windows.Forms.ComboBox idSexoComboBox;
+        private System.Windows.Forms.TextBox telefono2TextBox;
+        private System.Windows.Forms.CheckBox esClienteCheckBox;
+        private System.Windows.Forms.TextBox direccionTextBox;
+        private System.Windows.Forms.TextBox telefono3TextBox;
+        private System.Windows.Forms.TextBox dvTextBox;
+        private System.Windows.Forms.TextBox faxTextBox;
+        private System.Windows.Forms.CheckBox esCcfCheckBox;
+        private System.Windows.Forms.TextBox correoElectronicoTextBox;
+        private System.Windows.Forms.Label ImagenLabel;
+        private System.Windows.Forms.Label tituloLabel;
+        private System.Windows.Forms.ToolStripButton toolStripButtonEdit;
+        private System.Windows.Forms.ToolStripButton toolStripButtonCancel;
+        private System.Windows.Forms.ToolStripButton toolStripButtonSearch;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
@@ -1510,5 +1965,21 @@
         private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn9;
         private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn10;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn28;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn29;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn30;
+        private System.Windows.Forms.BindingSource tipoDocumentoBindingSource;
+        private DSSiscadTableAdapters.tipoDocumentoTableAdapter tipoDocumentoTableAdapter;
+        private System.Windows.Forms.BindingSource tipoPersonaBindingSource;
+        private DSSiscadTableAdapters.tipoPersonaTableAdapter tipoPersonaTableAdapter;
+        private System.Windows.Forms.BindingSource sexoBindingSource;
+        private DSSiscadTableAdapters.sexoTableAdapter sexoTableAdapter;
+        private System.Windows.Forms.BindingSource tipoSangreBindingSource;
+        private DSSiscadTableAdapters.tipoSangreTableAdapter tipoSangreTableAdapter;
+        private System.Windows.Forms.BindingSource departamentoBindingSource;
+        private DSSiscadTableAdapters.departamentoTableAdapter departamentoTableAdapter;
+        private System.Windows.Forms.BindingSource municipioBindingSource;
+        private DSSiscadTableAdapters.municipioTableAdapter municipioTableAdapter;
+        private System.Windows.Forms.BindingSource estadoCivilBindingSource;
+        private DSSiscadTableAdapters.estadoCivilTableAdapter estadoCivilTableAdapter;
     }
 }

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Siscad
 {
-    public partial class frmHistorialMedico : BaseCrud
+    public partial class frmHistorialMedico : Form
     {
         public frmHistorialMedico()
         {

@@ -58,6 +58,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DSSiscad.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBase.Designer.cs">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmActividadPendiente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,18 +100,6 @@
     <Compile Include="frmAnexoTercero.Designer.cs">
       <DependentUpon>frmAnexoTercero.cs</DependentUpon>
     </Compile>
-    <Compile Include="BaseCrud.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BaseCrud.Designer.cs">
-      <DependentUpon>BaseCrud.cs</DependentUpon>
-    </Compile>
-    <Compile Include="BaseInforme.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BaseInforme.Designer.cs">
-      <DependentUpon>BaseInforme.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmCambioClave.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,12 +117,6 @@
     </Compile>
     <Compile Include="frmCompra.Designer.cs">
       <DependentUpon>frmCompra.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmContrato.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmContrato.Designer.cs">
-      <DependentUpon>frmContrato.cs</DependentUpon>
     </Compile>
     <Compile Include="frmDevolucion.cs">
       <SubType>Form</SubType>
@@ -172,29 +160,23 @@
     <Compile Include="frmInfoLaboral.Designer.cs">
       <DependentUpon>frmInfoLaboral.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmInfoSiso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfoSiso.Designer.cs">
+      <DependentUpon>frmInfoSiso.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmTercero.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmTercero.Designer.cs">
-      <DependentUpon>frmTercero.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmNomina.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmNomina.Designer.cs">
       <DependentUpon>frmNomina.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmPrincipal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmPrincipal.Designer.cs">
-      <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="frmProducto.cs">
       <SubType>Form</SubType>
@@ -208,23 +190,29 @@
     <Compile Include="frmSalida.Designer.cs">
       <DependentUpon>frmSalida.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSaludoUsuario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmSaludoUsuario.Designer.cs">
-      <DependentUpon>frmSaludoUsuario.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmSucursal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmSucursal.Designer.cs">
       <DependentUpon>frmSucursal.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmTerceroParaBorrar.cs">
+    <Compile Include="frmTercero.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmTerceroParaBorrar.Designer.cs">
-      <DependentUpon>frmTerceroParaBorrar.cs</DependentUpon>
+    <Compile Include="frmTercero.Designer.cs">
+      <DependentUpon>frmTercero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSaludoUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSaludoUsuario.Designer.cs">
+      <DependentUpon>frmSaludoUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="frmTraslado.cs">
       <SubType>Form</SubType>
@@ -250,118 +238,31 @@
     <Compile Include="frmVigilanciaControl.Designer.cs">
       <DependentUpon>frmVigilanciaControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmInfoSiso.cs">
+    <Compile Include="frmVinculacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmInfoSiso.Designer.cs">
-      <DependentUpon>frmInfoSiso.cs</DependentUpon>
+    <Compile Include="frmVinculacion.Designer.cs">
+      <DependentUpon>frmVinculacion.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="pruebaDeCodigo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="pruebaDeCodigo.Designer.cs">
-      <DependentUpon>pruebaDeCodigo.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="frmActividadPendiente.resx">
-      <DependentUpon>frmActividadPendiente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmAfiliacion.resx">
-      <DependentUpon>frmAfiliacion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmAnexoProducto.resx">
-      <DependentUpon>frmAnexoProducto.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmAnexoRrHh.resx">
-      <DependentUpon>frmAnexoRrHh.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmAnexoSiso.resx">
-      <DependentUpon>frmAnexoSiso.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmAnexoTercero.resx">
-      <DependentUpon>frmAnexoTercero.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BaseCrud.resx">
-      <DependentUpon>BaseCrud.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BaseInforme.resx">
-      <DependentUpon>BaseInforme.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmCambioClave.resx">
-      <DependentUpon>frmCambioClave.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmCambioUsuario.resx">
-      <DependentUpon>frmCambioUsuario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmCompra.resx">
-      <DependentUpon>frmCompra.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmContrato.resx">
-      <DependentUpon>frmContrato.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmDevolucion.resx">
-      <DependentUpon>frmDevolucion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmEmpresa.resx">
-      <DependentUpon>frmEmpresa.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmHistorialMedico.resx">
-      <DependentUpon>frmHistorialMedico.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmIncidenteAccidente.resx">
-      <DependentUpon>frmIncidenteAccidente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmInfoComercial.resx">
-      <DependentUpon>frmInfoComercial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmInfoEmpresa.resx">
-      <DependentUpon>frmInfoEmpresa.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmInfoLaboral.resx">
-      <DependentUpon>frmInfoLaboral.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmInfoSiso.resx">
-      <DependentUpon>frmInfoSiso.cs</DependentUpon>
+    <EmbeddedResource Include="FormBase.resx">
+      <DependentUpon>FormBase.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmSucursal.resx">
+      <DependentUpon>frmSucursal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmTercero.resx">
       <DependentUpon>frmTercero.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmNomina.resx">
-      <DependentUpon>frmNomina.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmProducto.resx">
-      <DependentUpon>frmProducto.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmSalida.resx">
-      <DependentUpon>frmSalida.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmSaludoUsuario.resx">
       <DependentUpon>frmSaludoUsuario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmSucursal.resx">
-      <DependentUpon>frmSucursal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmTerceroParaBorrar.resx">
-      <DependentUpon>frmTerceroParaBorrar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmTraslado.resx">
-      <DependentUpon>frmTraslado.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmUsuario.resx">
-      <DependentUpon>frmUsuario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmVenta.resx">
-      <DependentUpon>frmVenta.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmVigilanciaControl.resx">
-      <DependentUpon>frmVigilanciaControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -373,9 +274,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="pruebaDeCodigo.resx">
-      <DependentUpon>pruebaDeCodigo.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="DSSiscad.xsc">
       <DependentUpon>DSSiscad.xsd</DependentUpon>
     </None>

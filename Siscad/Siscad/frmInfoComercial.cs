@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Siscad
 {
-    public partial class frmInfoComercial : BaseInforme
+    public partial class frmInfoComercial : Form
     {
         public frmInfoComercial()
         {

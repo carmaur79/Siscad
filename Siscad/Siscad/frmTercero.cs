@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Siscad
 {
-    public partial class frmTercero : Form
+    public partial class frmTercero : FormBase
     {
         public frmTercero()
         {
@@ -25,26 +25,24 @@ namespace Siscad
 
         }
 
-        private void terceroBindingNavigatorSaveItem_Click_1(object sender, EventArgs e)
+        private void frmTercero_Load(object sender, EventArgs e)
         {
-            this.Validate();
-            this.terceroBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.dSSiscad);
-
-        }
-
-        private void frmMantenimientoTercero_Load(object sender, EventArgs e)
-        {
+            // TODO: esta línea de código carga datos en la tabla 'dSSiscad.estadoCivil' Puede moverla o quitarla según sea necesario.
+            this.estadoCivilTableAdapter.Fill(this.dSSiscad.estadoCivil);
+            // TODO: esta línea de código carga datos en la tabla 'dSSiscad.municipio' Puede moverla o quitarla según sea necesario.
+            this.municipioTableAdapter.Fill(this.dSSiscad.municipio);
+            // TODO: esta línea de código carga datos en la tabla 'dSSiscad.departamento' Puede moverla o quitarla según sea necesario.
+            this.departamentoTableAdapter.Fill(this.dSSiscad.departamento);
+            // TODO: esta línea de código carga datos en la tabla 'dSSiscad.tipoSangre' Puede moverla o quitarla según sea necesario.
+            this.tipoSangreTableAdapter.Fill(this.dSSiscad.tipoSangre);
+            // TODO: esta línea de código carga datos en la tabla 'dSSiscad.sexo' Puede moverla o quitarla según sea necesario.
+            this.sexoTableAdapter.Fill(this.dSSiscad.sexo);
+            // TODO: esta línea de código carga datos en la tabla 'dSSiscad.tipoPersona' Puede moverla o quitarla según sea necesario.
+            this.tipoPersonaTableAdapter.Fill(this.dSSiscad.tipoPersona);
+            // TODO: esta línea de código carga datos en la tabla 'dSSiscad.tipoDocumento' Puede moverla o quitarla según sea necesario.
+            this.tipoDocumentoTableAdapter.Fill(this.dSSiscad.tipoDocumento);
             // TODO: esta línea de código carga datos en la tabla 'dSSiscad.tercero' Puede moverla o quitarla según sea necesario.
             this.terceroTableAdapter.Fill(this.dSSiscad.tercero);
-
-        }
-
-        private void buttonCargarImagen_Click(object sender, EventArgs e)
-        {
-            openFileDialog1.InitialDirectory = "C:\\";
-            openFileDialog1.Filter = "Imágenes soportadas|*.jpeg; *.jpg; *.jpe; *.png; *.bmp; *.ico; *.gif; *.tif; *.tiff; *.jfif; *.dib; *.psd; *.raw";
-            if (openFileDialog1.ShowDialog() == DialogResult.OK) pictureBoxImagen.Load(openFileDialog1.FileName);
 
         }
     }

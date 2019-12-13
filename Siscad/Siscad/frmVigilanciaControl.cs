@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Siscad
 {
-    public partial class frmVigilanciaControl : BaseCrud
+    public partial class frmVigilanciaControl : Form
     {
         public frmVigilanciaControl()
         {

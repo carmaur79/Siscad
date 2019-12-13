@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Siscad
 {
-    public partial class frmActividadPendiente : BaseCrud
+    public partial class frmActividadPendiente : Form
     {
         public frmActividadPendiente()
         {

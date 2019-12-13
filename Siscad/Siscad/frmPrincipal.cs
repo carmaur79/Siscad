@@ -237,7 +237,7 @@ namespace Siscad
         private void buttonContrato_Click(object sender, EventArgs e)
         {
             //mi código
-            abrirFormulario<frmContrato>();
+            abrirFormulario<frmVinculacion>();
             hideSubmenu(); 
             minimizarMenuLateral();
         }
@@ -392,15 +392,11 @@ namespace Siscad
 
         private void buttonSalir_Click(object sender, EventArgs e)
         {
-            abrirFormulario<pruebaDeCodigo>();
-            hideSubmenu();
-            minimizarMenuLateral();
-
-            //if(MessageBox.Show("¿Desea cerrar la aplicación?", "Aviso", MessageBoxButtons.YesNo, 
-            //    MessageBoxIcon.Question, MessageBoxDefaultButton.Button2)== DialogResult.Yes)
-            //{
-            //    Application.Exit();
-            //}
+            if (MessageBox.Show("¿Desea cerrar la aplicación?", "Aviso", MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
         #endregion
 
@@ -421,7 +417,7 @@ namespace Siscad
         private void buttonCerrar_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("¿Desea cerrar la aplicación?", "Aviso", MessageBoxButtons.YesNo,
-                MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+                MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
             {
                 Application.Exit();
             }
