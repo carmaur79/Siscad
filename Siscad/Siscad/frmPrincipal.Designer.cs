@@ -31,9 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.panelMenuSuperior = new System.Windows.Forms.Panel();
-            this.buttonMaximizar = new System.Windows.Forms.Button();
             this.buttonCerrar = new System.Windows.Forms.Button();
-            this.buttonRestaurar = new System.Windows.Forms.Button();
             this.buttonMinimizar = new System.Windows.Forms.Button();
             this.labelNombreAplicacion = new System.Windows.Forms.Label();
             this.buttonMenu = new System.Windows.Forms.Button();
@@ -100,9 +98,7 @@
             // panelMenuSuperior
             // 
             this.panelMenuSuperior.BackColor = System.Drawing.Color.DarkGray;
-            this.panelMenuSuperior.Controls.Add(this.buttonMaximizar);
             this.panelMenuSuperior.Controls.Add(this.buttonCerrar);
-            this.panelMenuSuperior.Controls.Add(this.buttonRestaurar);
             this.panelMenuSuperior.Controls.Add(this.buttonMinimizar);
             this.panelMenuSuperior.Controls.Add(this.labelNombreAplicacion);
             this.panelMenuSuperior.Controls.Add(this.buttonMenu);
@@ -111,22 +107,6 @@
             this.panelMenuSuperior.Name = "panelMenuSuperior";
             this.panelMenuSuperior.Size = new System.Drawing.Size(750, 43);
             this.panelMenuSuperior.TabIndex = 0;
-            this.panelMenuSuperior.DoubleClick += new System.EventHandler(this.panelMenuSuperior_DoubleClick);
-            this.panelMenuSuperior.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelMenuSuperior_MouseMove);
-            // 
-            // buttonMaximizar
-            // 
-            this.buttonMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonMaximizar.FlatAppearance.BorderSize = 0;
-            this.buttonMaximizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonMaximizar.Image = global::Siscad.Properties.Resources.maximizar;
-            this.buttonMaximizar.Location = new System.Drawing.Point(662, 1);
-            this.buttonMaximizar.Name = "buttonMaximizar";
-            this.buttonMaximizar.Size = new System.Drawing.Size(35, 35);
-            this.buttonMaximizar.TabIndex = 5;
-            this.buttonMaximizar.UseVisualStyleBackColor = true;
-            this.buttonMaximizar.Visible = false;
-            this.buttonMaximizar.Click += new System.EventHandler(this.buttonMaximizar_Click);
             // 
             // buttonCerrar
             // 
@@ -141,26 +121,13 @@
             this.buttonCerrar.UseVisualStyleBackColor = true;
             this.buttonCerrar.Click += new System.EventHandler(this.buttonCerrar_Click);
             // 
-            // buttonRestaurar
-            // 
-            this.buttonRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonRestaurar.FlatAppearance.BorderSize = 0;
-            this.buttonRestaurar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonRestaurar.Image = global::Siscad.Properties.Resources.restaurar;
-            this.buttonRestaurar.Location = new System.Drawing.Point(662, 1);
-            this.buttonRestaurar.Name = "buttonRestaurar";
-            this.buttonRestaurar.Size = new System.Drawing.Size(35, 35);
-            this.buttonRestaurar.TabIndex = 3;
-            this.buttonRestaurar.UseVisualStyleBackColor = true;
-            this.buttonRestaurar.Click += new System.EventHandler(this.buttonRestaurar_Click);
-            // 
             // buttonMinimizar
             // 
             this.buttonMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonMinimizar.FlatAppearance.BorderSize = 0;
             this.buttonMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonMinimizar.Image = global::Siscad.Properties.Resources.minimizar;
-            this.buttonMinimizar.Location = new System.Drawing.Point(621, 1);
+            this.buttonMinimizar.Location = new System.Drawing.Point(662, 1);
             this.buttonMinimizar.Name = "buttonMinimizar";
             this.buttonMinimizar.Size = new System.Drawing.Size(35, 35);
             this.buttonMinimizar.TabIndex = 2;
@@ -177,8 +144,6 @@
             this.labelNombreAplicacion.Size = new System.Drawing.Size(512, 23);
             this.labelNombreAplicacion.TabIndex = 1;
             this.labelNombreAplicacion.Text = "Sistema integral en seguridad social, comercial y administrativo";
-            this.labelNombreAplicacion.DoubleClick += new System.EventHandler(this.labelNombreAplicacion_DoubleClick);
-            this.labelNombreAplicacion.MouseMove += new System.Windows.Forms.MouseEventHandler(this.labelNombreAplicacion_MouseMove);
             // 
             // buttonMenu
             // 
@@ -1088,9 +1053,7 @@
         private System.Windows.Forms.Button buttonInfoEmpresa;
         private System.Windows.Forms.Button buttonConsultaInformacion;
         private System.Windows.Forms.Button buttonCerrar;
-        private System.Windows.Forms.Button buttonRestaurar;
         private System.Windows.Forms.Button buttonMinimizar;
-        private System.Windows.Forms.Button buttonMaximizar;
         private System.Windows.Forms.PictureBox pictureBoxLogo;
         private System.Windows.Forms.Label labelEmpresaUsuario;
         private System.Windows.Forms.Label labelFechaHora;

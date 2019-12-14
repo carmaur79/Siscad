@@ -423,16 +423,6 @@ namespace Siscad
             }
         }
 
-        private void buttonRestaurar_Click(object sender, EventArgs e)
-        {
-            restaurarVentana();
-        }
-
-        private void buttonMaximizar_Click(object sender, EventArgs e)
-        {
-            maximizarVentana();
-        }
-
         private void buttonMinimizar_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
@@ -441,72 +431,6 @@ namespace Siscad
         private void frmPrincipal_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
-        }
-
-        //Librerías y código necesarios para arrastrar formulario
-        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-        private extern static void ReleaseCapture();
-        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-
-        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
-
-        private void arrastrarForm()
-        {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
-            if (WindowState == FormWindowState.Normal)
-            {
-                buttonMaximizar.Visible = true;
-                buttonRestaurar.Visible = false;
-            }
-        }
-
-        private void panelMenuSuperior_MouseMove(object sender, MouseEventArgs e)
-        {
-            arrastrarForm();
-        }
-
-        private void labelNombreAplicacion_MouseMove(object sender, MouseEventArgs e)
-        {
-            arrastrarForm();
-        }
-
-        private void maximizarVentana()
-        {
-            WindowState = FormWindowState.Maximized;
-            buttonMaximizar.Visible = false;
-            buttonRestaurar.Visible = true;
-        }
-
-        private void restaurarVentana()
-        {
-            WindowState = FormWindowState.Normal;
-            buttonMaximizar.Visible = true;
-            buttonRestaurar.Visible = false;
-        }
-
-        private void labelNombreAplicacion_DoubleClick(object sender, EventArgs e)
-        {
-            if (WindowState == FormWindowState.Normal)
-            {
-                maximizarVentana();
-            }
-            else
-            {
-                restaurarVentana();
-            }
-        }
-
-        private void panelMenuSuperior_DoubleClick(object sender, EventArgs e)
-        {
-            if (WindowState == FormWindowState.Normal)
-            {
-                maximizarVentana();
-            }
-            else
-            {
-                restaurarVentana();
-            }
         }
         #endregion
 
