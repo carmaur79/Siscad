@@ -956,9 +956,9 @@
             this.pictureBoxLogo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBoxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxLogo.Image = global::Siscad.Properties.Resources.LogoSiscad;
-            this.pictureBoxLogo.Location = new System.Drawing.Point(96, 126);
+            this.pictureBoxLogo.Location = new System.Drawing.Point(145, 126);
             this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(320, 120);
+            this.pictureBoxLogo.Size = new System.Drawing.Size(210, 120);
             this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxLogo.TabIndex = 0;
             this.pictureBoxLogo.TabStop = false;

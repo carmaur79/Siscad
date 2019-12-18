@@ -22,19 +22,19 @@ namespace Siscad
 
         private CADUsuario usuarioLogueado;
 
-        public CADUsuario UsuarioLogueado
-        {
-            get { return usuarioLogueado; }
-            set { usuarioLogueado = value; }
-        }
+        //public CADUsuario UsuarioLogueado
+        //{
+        //    get { return usuarioLogueado; }
+        //    set { usuarioLogueado = value; }
+        //}
 
-        private CADEmpresa empresaLogueada;
+        //private CADEmpresa empresaLogueada;
 
-        public CADEmpresa EmpresaLogueada
-        {
-            get { return empresaLogueada; }
-            set { empresaLogueada = value; }
-        }
+        //public CADEmpresa EmpresaLogueada
+        //{
+        //    get { return empresaLogueada; }
+        //    set { empresaLogueada = value; }
+        //}
 
         #region Funcionalidad de los botones del menú lateral
         private void customizeDesign()
@@ -467,8 +467,8 @@ namespace Siscad
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
             //Información que se muestra en el panel inferior
-            labelEmpresaUsuario.Text = "Empresa: "+ empresaLogueada.razonSocial + "  Usuario: " +usuarioLogueado.nombre + " " 
-                + usuarioLogueado.apellido;
+            //labelEmpresaUsuario.Text = "Empresa: "+ empresaLogueada.razonSocial + "  Usuario: " +usuarioLogueado.nombre + " " 
+            //    + usuarioLogueado.apellido;
             
             //Información de alertas a tener en cuenta por la empresa
             //if (CADEmpresa.GetEmpresa(empresaLogueada.idEmpresa).fechaResolucionFacturacion != null)

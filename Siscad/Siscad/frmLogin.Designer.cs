@@ -51,32 +51,33 @@
             // 
             this.lblFecha.AutoSize = true;
             this.lblFecha.BackColor = System.Drawing.Color.Transparent;
-            this.lblFecha.ForeColor = System.Drawing.Color.DarkOrange;
+            this.lblFecha.ForeColor = System.Drawing.SystemColors.Control;
             this.lblFecha.Location = new System.Drawing.Point(67, 316);
             this.lblFecha.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(0, 13);
+            this.lblFecha.Size = new System.Drawing.Size(16, 13);
             this.lblFecha.TabIndex = 29;
+            this.lblFecha.Text = "...";
             // 
             // labelTitulo
             // 
             this.labelTitulo.AutoSize = true;
             this.labelTitulo.BackColor = System.Drawing.Color.Transparent;
             this.labelTitulo.Font = new System.Drawing.Font("Algerian", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTitulo.ForeColor = System.Drawing.Color.DarkOrange;
-            this.labelTitulo.Location = new System.Drawing.Point(222, 83);
+            this.labelTitulo.ForeColor = System.Drawing.SystemColors.Control;
+            this.labelTitulo.Location = new System.Drawing.Point(160, 94);
             this.labelTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTitulo.Name = "labelTitulo";
-            this.labelTitulo.Size = new System.Drawing.Size(153, 45);
+            this.labelTitulo.Size = new System.Drawing.Size(270, 45);
             this.labelTitulo.TabIndex = 28;
-            this.labelTitulo.Text = "SISCAD";
+            this.labelTitulo.Text = "SISCAD-PYME";
             // 
             // labelNombreAplicacion
             // 
             this.labelNombreAplicacion.AutoSize = true;
             this.labelNombreAplicacion.BackColor = System.Drawing.Color.Transparent;
             this.labelNombreAplicacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNombreAplicacion.ForeColor = System.Drawing.Color.DarkOrange;
+            this.labelNombreAplicacion.ForeColor = System.Drawing.SystemColors.Control;
             this.labelNombreAplicacion.Location = new System.Drawing.Point(67, 278);
             this.labelNombreAplicacion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelNombreAplicacion.Name = "labelNombreAplicacion";
@@ -97,7 +98,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label3.ForeColor = System.Drawing.SystemColors.Control;
             this.label3.Location = new System.Drawing.Point(144, 164);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
@@ -157,7 +158,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label2.ForeColor = System.Drawing.SystemColors.Control;
             this.label2.Location = new System.Drawing.Point(160, 207);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
@@ -178,7 +179,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
             this.label1.Location = new System.Drawing.Point(149, 184);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
@@ -196,16 +197,16 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(600, 30);
+            this.panel1.Size = new System.Drawing.Size(600, 40);
             this.panel1.TabIndex = 30;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DarkGray;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 370);
+            this.panel2.Location = new System.Drawing.Point(0, 360);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(600, 30);
+            this.panel2.Size = new System.Drawing.Size(600, 40);
             this.panel2.TabIndex = 31;
             // 
             // frmLogin
