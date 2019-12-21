@@ -36,10 +36,10 @@
             this.labelBienvenido = new System.Windows.Forms.Label();
             this.nombreEmpresaLabel = new System.Windows.Forms.Label();
             this.panelTitulo = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timerIniciaSaludo = new System.Windows.Forms.Timer(this.components);
             this.timerFinSaludo = new System.Windows.Forms.Timer(this.components);
             this.panelInferior = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -49,7 +49,7 @@
             this.saludoLabel.AutoSize = true;
             this.saludoLabel.Font = new System.Drawing.Font("Algerian", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saludoLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.saludoLabel.Location = new System.Drawing.Point(160, 262);
+            this.saludoLabel.Location = new System.Drawing.Point(160, 231);
             this.saludoLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.saludoLabel.Name = "saludoLabel";
             this.saludoLabel.Size = new System.Drawing.Size(270, 45);
@@ -62,7 +62,7 @@
             this.nombreUsuarioLabel.AutoSize = true;
             this.nombreUsuarioLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.nombreUsuarioLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.nombreUsuarioLabel.Location = new System.Drawing.Point(255, 134);
+            this.nombreUsuarioLabel.Location = new System.Drawing.Point(255, 123);
             this.nombreUsuarioLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nombreUsuarioLabel.Name = "nombreUsuarioLabel";
             this.nombreUsuarioLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -76,7 +76,7 @@
             this.textoIngresoLabel.AutoSize = true;
             this.textoIngresoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textoIngresoLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.textoIngresoLabel.Location = new System.Drawing.Point(256, 168);
+            this.textoIngresoLabel.Location = new System.Drawing.Point(256, 157);
             this.textoIngresoLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.textoIngresoLabel.Name = "textoIngresoLabel";
             this.textoIngresoLabel.Size = new System.Drawing.Size(156, 17);
@@ -88,7 +88,7 @@
             this.fechaIngresoLabel.AutoSize = true;
             this.fechaIngresoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fechaIngresoLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.fechaIngresoLabel.Location = new System.Drawing.Point(256, 193);
+            this.fechaIngresoLabel.Location = new System.Drawing.Point(256, 182);
             this.fechaIngresoLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.fechaIngresoLabel.Name = "fechaIngresoLabel";
             this.fechaIngresoLabel.Size = new System.Drawing.Size(20, 17);
@@ -100,7 +100,7 @@
             this.labelBienvenido.AutoSize = true;
             this.labelBienvenido.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelBienvenido.ForeColor = System.Drawing.SystemColors.Control;
-            this.labelBienvenido.Location = new System.Drawing.Point(255, 110);
+            this.labelBienvenido.Location = new System.Drawing.Point(255, 99);
             this.labelBienvenido.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelBienvenido.Name = "labelBienvenido";
             this.labelBienvenido.Size = new System.Drawing.Size(125, 24);
@@ -121,7 +121,7 @@
             // 
             // panelTitulo
             // 
-            this.panelTitulo.BackColor = System.Drawing.Color.DarkGray;
+            this.panelTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(178)))), ((int)(((byte)(105)))));
             this.panelTitulo.Controls.Add(this.nombreEmpresaLabel);
             this.panelTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitulo.ForeColor = System.Drawing.Color.DarkGray;
@@ -129,16 +129,6 @@
             this.panelTitulo.Name = "panelTitulo";
             this.panelTitulo.Size = new System.Drawing.Size(600, 40);
             this.panelTitulo.TabIndex = 3;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Siscad.Properties.Resources.LogoSiscad;
-            this.pictureBox1.Location = new System.Drawing.Point(71, 110);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(166, 100);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
             // 
             // timerIniciaSaludo
             // 
@@ -152,7 +142,7 @@
             // 
             // panelInferior
             // 
-            this.panelInferior.BackColor = System.Drawing.Color.DarkGray;
+            this.panelInferior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(178)))), ((int)(((byte)(105)))));
             this.panelInferior.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelInferior.ForeColor = System.Drawing.SystemColors.Control;
             this.panelInferior.Location = new System.Drawing.Point(0, 310);
@@ -160,11 +150,21 @@
             this.panelInferior.Size = new System.Drawing.Size(600, 40);
             this.panelInferior.TabIndex = 8;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Siscad.Properties.Resources.LogoSiscad;
+            this.pictureBox1.Location = new System.Drawing.Point(71, 99);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(166, 100);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmSaludoUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(27)))), ((int)(((byte)(64)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(600, 350);
             this.Controls.Add(this.pictureBox1);

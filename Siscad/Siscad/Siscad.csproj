@@ -467,5 +467,17 @@
   <ItemGroup>
     <None Include="Resources\LogoSiscad.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empleados.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empleados.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ingresar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aceptar.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

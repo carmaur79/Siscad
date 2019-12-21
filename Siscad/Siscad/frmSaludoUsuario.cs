@@ -88,7 +88,7 @@ namespace Siscad
                 timerFinSaludo.Stop();
                 this.Hide();
                 //CADUsuario.UpdateUltimoIngreso(usuarioLogueado.idUsuario);
-                frmPrincipal miForm = new frmPrincipal();
+                frmPrincipal1 miForm = new frmPrincipal1();
                 //miForm.UsuarioLogueado = this.usuarioLogueado;
                 //miForm.EmpresaLogueada = this.empresaLogueada;
                 miForm.Show();
