@@ -34,7 +34,7 @@
             this.buttonCerrar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panelMenuLateral = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.panelSubMenuRecursosHumanos = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.buttonEmpleados = new Bunifu.Framework.UI.BunifuFlatButton();
             this.buttonMenuRecursosHumanos = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panelMargenDerecha = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.panelMargenIzquierda = new Bunifu.Framework.UI.BunifuGradientPanel();
@@ -42,6 +42,8 @@
             this.pictureBoxLogo = new Bunifu.Framework.UI.BunifuImageButton();
             this.panelMostrarMenuLateral = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.panelBarraInferior = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.buttonVinculacion = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.buttonNovedadLaboral = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panelBarraSuperior.SuspendLayout();
             this.panelMenuLateral.SuspendLayout();
             this.panelSubMenuRecursosHumanos.SuspendLayout();
@@ -53,14 +55,14 @@
             this.panelContenedor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelContenedor.BackgroundImage")));
             this.panelContenedor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenedor.GradientBottomLeft = System.Drawing.Color.White;
-            this.panelContenedor.GradientBottomRight = System.Drawing.Color.White;
-            this.panelContenedor.GradientTopLeft = System.Drawing.Color.White;
-            this.panelContenedor.GradientTopRight = System.Drawing.Color.White;
+            this.panelContenedor.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(18)))), ((int)(((byte)(6)))));
+            this.panelContenedor.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(18)))), ((int)(((byte)(6)))));
+            this.panelContenedor.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(37)))), ((int)(((byte)(123)))));
+            this.panelContenedor.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(37)))), ((int)(((byte)(123)))));
             this.panelContenedor.Location = new System.Drawing.Point(200, 40);
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Quality = 10;
-            this.panelContenedor.Size = new System.Drawing.Size(800, 530);
+            this.panelContenedor.Size = new System.Drawing.Size(800, 520);
             this.panelContenedor.TabIndex = 3;
             // 
             // panelBarraSuperior
@@ -69,10 +71,10 @@
             this.panelBarraSuperior.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelBarraSuperior.Controls.Add(this.buttonCerrar);
             this.panelBarraSuperior.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelBarraSuperior.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(18)))), ((int)(((byte)(6)))));
-            this.panelBarraSuperior.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(18)))), ((int)(((byte)(6)))));
-            this.panelBarraSuperior.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(37)))), ((int)(((byte)(123)))));
-            this.panelBarraSuperior.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(37)))), ((int)(((byte)(123)))));
+            this.panelBarraSuperior.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(178)))), ((int)(((byte)(105)))));
+            this.panelBarraSuperior.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(178)))), ((int)(((byte)(105)))));
+            this.panelBarraSuperior.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(178)))), ((int)(((byte)(105)))));
+            this.panelBarraSuperior.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(178)))), ((int)(((byte)(105)))));
             this.panelBarraSuperior.Location = new System.Drawing.Point(200, 0);
             this.panelBarraSuperior.Name = "panelBarraSuperior";
             this.panelBarraSuperior.Quality = 10;
@@ -132,7 +134,7 @@
             this.panelMenuLateral.Location = new System.Drawing.Point(0, 0);
             this.panelMenuLateral.Name = "panelMenuLateral";
             this.panelMenuLateral.Quality = 10;
-            this.panelMenuLateral.Size = new System.Drawing.Size(200, 570);
+            this.panelMenuLateral.Size = new System.Drawing.Size(200, 560);
             this.panelMenuLateral.TabIndex = 1;
             // 
             // panelSubMenuRecursosHumanos
@@ -140,7 +142,9 @@
             this.panelSubMenuRecursosHumanos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
             this.panelSubMenuRecursosHumanos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelSubMenuRecursosHumanos.BackgroundImage")));
             this.panelSubMenuRecursosHumanos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelSubMenuRecursosHumanos.Controls.Add(this.bunifuFlatButton1);
+            this.panelSubMenuRecursosHumanos.Controls.Add(this.buttonNovedadLaboral);
+            this.panelSubMenuRecursosHumanos.Controls.Add(this.buttonVinculacion);
+            this.panelSubMenuRecursosHumanos.Controls.Add(this.buttonEmpleados);
             this.panelSubMenuRecursosHumanos.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSubMenuRecursosHumanos.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
             this.panelSubMenuRecursosHumanos.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
@@ -152,41 +156,41 @@
             this.panelSubMenuRecursosHumanos.Size = new System.Drawing.Size(185, 246);
             this.panelSubMenuRecursosHumanos.TabIndex = 7;
             // 
-            // bunifuFlatButton1
+            // buttonEmpleados
             // 
-            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton1.BorderRadius = 0;
-            this.bunifuFlatButton1.ButtonText = "Empleados";
-            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.Iconimage = global::Siscad.Properties.Resources.anexoTercero;
-            this.bunifuFlatButton1.Iconimage_right = null;
-            this.bunifuFlatButton1.Iconimage_right_Selected = null;
-            this.bunifuFlatButton1.Iconimage_Selected = null;
-            this.bunifuFlatButton1.IconMarginLeft = 0;
-            this.bunifuFlatButton1.IconMarginRight = 0;
-            this.bunifuFlatButton1.IconRightVisible = true;
-            this.bunifuFlatButton1.IconRightZoom = 0D;
-            this.bunifuFlatButton1.IconVisible = true;
-            this.bunifuFlatButton1.IconZoom = 80D;
-            this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
-            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
-            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(185, 40);
-            this.bunifuFlatButton1.TabIndex = 7;
-            this.bunifuFlatButton1.Text = "Empleados";
-            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonEmpleados.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
+            this.buttonEmpleados.BackColor = System.Drawing.Color.Transparent;
+            this.buttonEmpleados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonEmpleados.BorderRadius = 0;
+            this.buttonEmpleados.ButtonText = "Empleados";
+            this.buttonEmpleados.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonEmpleados.DisabledColor = System.Drawing.Color.Gray;
+            this.buttonEmpleados.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonEmpleados.Iconcolor = System.Drawing.Color.Transparent;
+            this.buttonEmpleados.Iconimage = global::Siscad.Properties.Resources.anexoTercero;
+            this.buttonEmpleados.Iconimage_right = null;
+            this.buttonEmpleados.Iconimage_right_Selected = null;
+            this.buttonEmpleados.Iconimage_Selected = null;
+            this.buttonEmpleados.IconMarginLeft = 0;
+            this.buttonEmpleados.IconMarginRight = 0;
+            this.buttonEmpleados.IconRightVisible = true;
+            this.buttonEmpleados.IconRightZoom = 0D;
+            this.buttonEmpleados.IconVisible = true;
+            this.buttonEmpleados.IconZoom = 80D;
+            this.buttonEmpleados.IsTab = false;
+            this.buttonEmpleados.Location = new System.Drawing.Point(0, 0);
+            this.buttonEmpleados.Name = "buttonEmpleados";
+            this.buttonEmpleados.Normalcolor = System.Drawing.Color.Transparent;
+            this.buttonEmpleados.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(107)))), ((int)(((byte)(114)))));
+            this.buttonEmpleados.OnHoverTextColor = System.Drawing.Color.White;
+            this.buttonEmpleados.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonEmpleados.selected = false;
+            this.buttonEmpleados.Size = new System.Drawing.Size(185, 40);
+            this.buttonEmpleados.TabIndex = 7;
+            this.buttonEmpleados.Text = "Empleados";
+            this.buttonEmpleados.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonEmpleados.Textcolor = System.Drawing.Color.White;
+            this.buttonEmpleados.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // buttonMenuRecursosHumanos
             // 
@@ -235,7 +239,7 @@
             this.panelMargenDerecha.Location = new System.Drawing.Point(195, 111);
             this.panelMargenDerecha.Name = "panelMargenDerecha";
             this.panelMargenDerecha.Quality = 10;
-            this.panelMargenDerecha.Size = new System.Drawing.Size(5, 459);
+            this.panelMargenDerecha.Size = new System.Drawing.Size(5, 449);
             this.panelMargenDerecha.TabIndex = 5;
             // 
             // panelMargenIzquierda
@@ -250,7 +254,7 @@
             this.panelMargenIzquierda.Location = new System.Drawing.Point(5, 111);
             this.panelMargenIzquierda.Name = "panelMargenIzquierda";
             this.panelMargenIzquierda.Quality = 10;
-            this.panelMargenIzquierda.Size = new System.Drawing.Size(5, 459);
+            this.panelMargenIzquierda.Size = new System.Drawing.Size(5, 449);
             this.panelMargenIzquierda.TabIndex = 4;
             // 
             // labelSiscadPyme
@@ -295,7 +299,7 @@
             this.panelMostrarMenuLateral.Location = new System.Drawing.Point(0, 0);
             this.panelMostrarMenuLateral.Name = "panelMostrarMenuLateral";
             this.panelMostrarMenuLateral.Quality = 10;
-            this.panelMostrarMenuLateral.Size = new System.Drawing.Size(5, 570);
+            this.panelMostrarMenuLateral.Size = new System.Drawing.Size(5, 560);
             this.panelMostrarMenuLateral.TabIndex = 0;
             // 
             // panelBarraInferior
@@ -304,15 +308,87 @@
             this.panelBarraInferior.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelBarraInferior.BackgroundImage")));
             this.panelBarraInferior.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelBarraInferior.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelBarraInferior.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
-            this.panelBarraInferior.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
-            this.panelBarraInferior.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
-            this.panelBarraInferior.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
-            this.panelBarraInferior.Location = new System.Drawing.Point(0, 570);
+            this.panelBarraInferior.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(178)))), ((int)(((byte)(105)))));
+            this.panelBarraInferior.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(178)))), ((int)(((byte)(105)))));
+            this.panelBarraInferior.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(178)))), ((int)(((byte)(105)))));
+            this.panelBarraInferior.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(178)))), ((int)(((byte)(105)))));
+            this.panelBarraInferior.Location = new System.Drawing.Point(0, 560);
             this.panelBarraInferior.Name = "panelBarraInferior";
             this.panelBarraInferior.Quality = 10;
-            this.panelBarraInferior.Size = new System.Drawing.Size(1000, 30);
+            this.panelBarraInferior.Size = new System.Drawing.Size(1000, 40);
             this.panelBarraInferior.TabIndex = 0;
+            // 
+            // buttonVinculacion
+            // 
+            this.buttonVinculacion.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
+            this.buttonVinculacion.BackColor = System.Drawing.Color.Transparent;
+            this.buttonVinculacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonVinculacion.BorderRadius = 0;
+            this.buttonVinculacion.ButtonText = "Vinculación";
+            this.buttonVinculacion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonVinculacion.DisabledColor = System.Drawing.Color.Gray;
+            this.buttonVinculacion.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonVinculacion.Iconcolor = System.Drawing.Color.Transparent;
+            this.buttonVinculacion.Iconimage = global::Siscad.Properties.Resources.contrato;
+            this.buttonVinculacion.Iconimage_right = null;
+            this.buttonVinculacion.Iconimage_right_Selected = null;
+            this.buttonVinculacion.Iconimage_Selected = null;
+            this.buttonVinculacion.IconMarginLeft = 0;
+            this.buttonVinculacion.IconMarginRight = 0;
+            this.buttonVinculacion.IconRightVisible = true;
+            this.buttonVinculacion.IconRightZoom = 0D;
+            this.buttonVinculacion.IconVisible = true;
+            this.buttonVinculacion.IconZoom = 80D;
+            this.buttonVinculacion.IsTab = false;
+            this.buttonVinculacion.Location = new System.Drawing.Point(0, 40);
+            this.buttonVinculacion.Name = "buttonVinculacion";
+            this.buttonVinculacion.Normalcolor = System.Drawing.Color.Transparent;
+            this.buttonVinculacion.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(107)))), ((int)(((byte)(114)))));
+            this.buttonVinculacion.OnHoverTextColor = System.Drawing.Color.White;
+            this.buttonVinculacion.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonVinculacion.selected = false;
+            this.buttonVinculacion.Size = new System.Drawing.Size(185, 40);
+            this.buttonVinculacion.TabIndex = 8;
+            this.buttonVinculacion.Text = "Vinculación";
+            this.buttonVinculacion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonVinculacion.Textcolor = System.Drawing.Color.White;
+            this.buttonVinculacion.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // buttonNovedadLaboral
+            // 
+            this.buttonNovedadLaboral.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
+            this.buttonNovedadLaboral.BackColor = System.Drawing.Color.Transparent;
+            this.buttonNovedadLaboral.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonNovedadLaboral.BorderRadius = 0;
+            this.buttonNovedadLaboral.ButtonText = "Novedad laboral";
+            this.buttonNovedadLaboral.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonNovedadLaboral.DisabledColor = System.Drawing.Color.Gray;
+            this.buttonNovedadLaboral.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonNovedadLaboral.Iconcolor = System.Drawing.Color.Transparent;
+            this.buttonNovedadLaboral.Iconimage = global::Siscad.Properties.Resources.editar;
+            this.buttonNovedadLaboral.Iconimage_right = null;
+            this.buttonNovedadLaboral.Iconimage_right_Selected = null;
+            this.buttonNovedadLaboral.Iconimage_Selected = null;
+            this.buttonNovedadLaboral.IconMarginLeft = 0;
+            this.buttonNovedadLaboral.IconMarginRight = 0;
+            this.buttonNovedadLaboral.IconRightVisible = true;
+            this.buttonNovedadLaboral.IconRightZoom = 0D;
+            this.buttonNovedadLaboral.IconVisible = true;
+            this.buttonNovedadLaboral.IconZoom = 80D;
+            this.buttonNovedadLaboral.IsTab = false;
+            this.buttonNovedadLaboral.Location = new System.Drawing.Point(0, 80);
+            this.buttonNovedadLaboral.Name = "buttonNovedadLaboral";
+            this.buttonNovedadLaboral.Normalcolor = System.Drawing.Color.Transparent;
+            this.buttonNovedadLaboral.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(107)))), ((int)(((byte)(114)))));
+            this.buttonNovedadLaboral.OnHoverTextColor = System.Drawing.Color.White;
+            this.buttonNovedadLaboral.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.buttonNovedadLaboral.selected = false;
+            this.buttonNovedadLaboral.Size = new System.Drawing.Size(185, 40);
+            this.buttonNovedadLaboral.TabIndex = 9;
+            this.buttonNovedadLaboral.Text = "Novedad laboral";
+            this.buttonNovedadLaboral.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonNovedadLaboral.Textcolor = System.Drawing.Color.White;
+            this.buttonNovedadLaboral.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // frmPrincipal1
             // 
@@ -351,6 +427,8 @@
         private Bunifu.Framework.UI.BunifuGradientPanel panelMargenDerecha;
         private Bunifu.Framework.UI.BunifuFlatButton buttonCerrar;
         private Bunifu.Framework.UI.BunifuGradientPanel panelSubMenuRecursosHumanos;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
+        private Bunifu.Framework.UI.BunifuFlatButton buttonEmpleados;
+        private Bunifu.Framework.UI.BunifuFlatButton buttonVinculacion;
+        private Bunifu.Framework.UI.BunifuFlatButton buttonNovedadLaboral;
     }
 }
