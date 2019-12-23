@@ -16,5 +16,10 @@ namespace Siscad
         {
             InitializeComponent();
         }
+
+        private void buttonCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

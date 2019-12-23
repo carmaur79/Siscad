@@ -479,5 +479,20 @@
   <ItemGroup>
     <None Include="Resources\aceptar.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asistencia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prestacionSocial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\memorando.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seleccionPersonal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuPrincipal.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
