@@ -56,7 +56,7 @@ namespace Siscad
         private void abrirFormularioHijo(Form childForm)
         {
             if (activeForm != null)
-                activeForm.Close();
+                //activeForm.Close();
             activeForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
@@ -248,6 +248,15 @@ namespace Siscad
         private void buttonMinimizar_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
+        }
+
+        private void panelMostrarMenuLateral_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (panelMenuLateral.Width != 200)
+            {
+                labelSiscadPyme2.Visible = false;
+                panelMenuLateral.Width = 200;
+            }
         }
     }
 }

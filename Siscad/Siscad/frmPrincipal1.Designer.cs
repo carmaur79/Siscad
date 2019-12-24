@@ -1179,6 +1179,7 @@
             this.panelMostrarMenuLateral.Quality = 10;
             this.panelMostrarMenuLateral.Size = new System.Drawing.Size(5, 710);
             this.panelMostrarMenuLateral.TabIndex = 1;
+            this.panelMostrarMenuLateral.MouseClick += new System.Windows.Forms.MouseEventHandler(this.panelMostrarMenuLateral_MouseClick);
             // 
             // panelBarraInferior
             // 
@@ -1204,7 +1205,7 @@
             this.labelFechaHora.BackColor = System.Drawing.Color.Transparent;
             this.labelFechaHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelFechaHora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
-            this.labelFechaHora.Location = new System.Drawing.Point(724, 14);
+            this.labelFechaHora.Location = new System.Drawing.Point(693, 12);
             this.labelFechaHora.Name = "labelFechaHora";
             this.labelFechaHora.Size = new System.Drawing.Size(20, 17);
             this.labelFechaHora.TabIndex = 0;
@@ -1220,6 +1221,7 @@
             this.Controls.Add(this.panelMenuLateral);
             this.Controls.Add(this.panelBarraInferior);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmPrincipal1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPrincipal1";
