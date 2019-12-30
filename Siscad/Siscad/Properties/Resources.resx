@@ -121,9 +121,6 @@
   <data name="saludOcupacional" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\saludOcupacional.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ultimoRegistro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ultimoRegistro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="usuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\usuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -172,6 +169,9 @@
   <data name="seleccionPersonal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\seleccionPersonal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="horario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\horario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="anexoProducto" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\anexoProducto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -181,20 +181,20 @@
   <data name="consultaInforme" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\consultaInforme.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="incidenteAccidente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\incidenteAccidente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="producto" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\producto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="incidenteAccidente" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\incidenteAccidente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="devolucion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\devolucion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="prestacionSocial" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\prestacionSocial.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="aceptar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\aceptar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="devolucion" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\devolucion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="afiliacion1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\afiliacion1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -238,9 +238,6 @@
   <data name="maximizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\maximizar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="infoEmpresa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\infoEmpresa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="vigilancia" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vigilancia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -265,14 +262,17 @@
   <data name="primerRegistro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\primerRegistro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cambioClave" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cambioClave.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ultimoRegistro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ultimoRegistro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LogoSiscad" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LogoSiscad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="memorando" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\memorando.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cambioClave" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cambioClave.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="infoEmpresa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\infoEmpresa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="salir" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\salir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -289,11 +289,14 @@
   <data name="compra" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\compra.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="cambioUsuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cambioUsuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="areaTrabajo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\areaTrabajo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cambioUsuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cambioUsuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="memorando" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\memorando.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="editar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\editar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -313,7 +316,7 @@
   <data name="siguienteRegistro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\siguienteRegistro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="horario" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\horario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="gestionGeneral" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gestionGeneral.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

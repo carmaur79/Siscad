@@ -58,12 +58,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DSSiscad.xsd</DependentUpon>
     </Compile>
-    <Compile Include="FormBase.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormBase.Designer.cs">
-      <DependentUpon>FormBase.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmActividadPendiente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -178,11 +172,11 @@
     <Compile Include="frmNomina.Designer.cs">
       <DependentUpon>frmNomina.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmPrincipal1.cs">
+    <Compile Include="frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmPrincipal1.Designer.cs">
-      <DependentUpon>frmPrincipal1.cs</DependentUpon>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="frmProducto.cs">
       <SubType>Form</SubType>
@@ -196,29 +190,17 @@
     <Compile Include="frmSalida.Designer.cs">
       <DependentUpon>frmSalida.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSucursal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmSucursal.Designer.cs">
-      <DependentUpon>frmSucursal.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmTercero.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmTercero.Designer.cs">
-      <DependentUpon>frmTercero.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmPrincipal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmPrincipal.Designer.cs">
-      <DependentUpon>frmPrincipal.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmSaludoUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmSaludoUsuario.Designer.cs">
       <DependentUpon>frmSaludoUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSucursal.Designer.cs">
+      <DependentUpon>frmSucursal.cs</DependentUpon>
     </Compile>
     <Compile Include="frmTraslado.cs">
       <SubType>Form</SubType>
@@ -252,29 +234,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormBase.resx">
-      <DependentUpon>FormBase.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmEmpresa.resx">
       <DependentUpon>frmEmpresa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmPrincipal1.resx">
-      <DependentUpon>frmPrincipal1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmSucursal.resx">
-      <DependentUpon>frmSucursal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmTercero.resx">
-      <DependentUpon>frmTercero.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSaludoUsuario.resx">
       <DependentUpon>frmSaludoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSucursal.resx">
+      <DependentUpon>frmSucursal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsuario.resx">
+      <DependentUpon>frmUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -508,6 +484,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\horario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gestionGeneral.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

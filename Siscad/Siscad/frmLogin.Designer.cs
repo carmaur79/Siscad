@@ -168,6 +168,7 @@
             // btnCancelar
             // 
             this.btnCancelar.BackColor = System.Drawing.Color.Transparent;
+            this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancelar.FlatAppearance.BorderSize = 0;
             this.btnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -196,6 +197,7 @@
             // btnAceptar
             // 
             this.btnAceptar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(123)))), ((int)(((byte)(75)))));
+            this.btnAceptar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAceptar.FlatAppearance.BorderSize = 0;
             this.btnAceptar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
             this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;

@@ -10,19 +10,11 @@ using System.Windows.Forms;
 
 namespace Siscad
 {
-    public partial class frmSucursal : FormBase
+    public partial class frmSucursal : Form
     {
         public frmSucursal()
         {
             InitializeComponent();
-        }
-
-        private void sucursalBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.sucursalBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.dSSiscad);
-
         }
 
         private void frmSucursal_Load(object sender, EventArgs e)

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSaludoUsuario));
             this.saludoLabel = new System.Windows.Forms.Label();
             this.nombreUsuarioLabel = new System.Windows.Forms.Label();
             this.textoIngresoLabel = new System.Windows.Forms.Label();
@@ -111,7 +112,7 @@
             // 
             this.nombreEmpresaLabel.AutoSize = true;
             this.nombreEmpresaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nombreEmpresaLabel.ForeColor = System.Drawing.Color.DarkGray;
+            this.nombreEmpresaLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(27)))), ((int)(((byte)(64)))));
             this.nombreEmpresaLabel.Location = new System.Drawing.Point(11, 9);
             this.nombreEmpresaLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.nombreEmpresaLabel.Name = "nombreEmpresaLabel";
@@ -176,6 +177,7 @@
             this.Controls.Add(this.panelTitulo);
             this.Controls.Add(this.nombreUsuarioLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmSaludoUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmSaludoUsuario";

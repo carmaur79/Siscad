@@ -9,7 +9,8 @@ namespace CADSiscad
 {
     public class CADUsuario
     {
-        public string idUsuario { get; set; }
+        public int idUsuario { get; set; }
+        public string codigoUsuario { get; set; }
         public string nombre { get; set; }
         public string apellido { get; set; }
         public string clave { get; set; }
@@ -18,14 +19,18 @@ namespace CADSiscad
         public DateTime horaUltimoIngreso { get; set; }
         public DateTime fechaModificacionClave { get; set; }
         public string correo { get; set; }
-        public string estado { get; set; }
+        public bool estado { get; set; }
+        public string adicional1 { get; set; }
+        public string adicional2 { get; set; }
+        public string adicional3 { get; set; }
+        public int idUsuarioCreador { get; set; }
 
 
         private static usuarioTableAdapter adaptador = new usuarioTableAdapter();
 
-        public static bool ValidarUsuario(string idUsuario, string clave)
+        public static bool ValidarUsuario(string codigoUsuario, string clave)
         {
-            if (adaptador.ValidaUsuario(idUsuario, clave) == null)
+            if (adaptador.ValidaUsuario(codigoUsuario, clave) == null)
             {
                 return false;
             }
@@ -34,9 +39,9 @@ namespace CADSiscad
                 return true;
             }
         }
-        public static bool ExisteUsuario(string idUsuario)
+        public static bool ExisteUsuario(string codigoUsuario)
         {
-            if (adaptador.ExisteUsuario(idUsuario) == null)
+            if (adaptador.ExisteUsuario(codigoUsuario) == null)
             {
                 return false;
             }
@@ -46,9 +51,9 @@ namespace CADSiscad
             }
         }
 
-        public static bool EstadoUsuario(string idUsuario, string estado)
+        public static bool EstadoUsuario(string codigoUsuario, bool estado)
         {
-            if (adaptador.EstadoUsuario(idUsuario, estado) == null)
+            if (adaptador.EstadoUsuario(codigoUsuario, estado) == null)
             {
                 return false;
             }
@@ -66,6 +71,7 @@ namespace CADSiscad
             DSCADSiscad.usuarioRow miRegistro = (DSCADSiscad.usuarioRow)miTabla.Rows[0];
             miUsuario = new CADUsuario();
             miUsuario.idUsuario = miRegistro.idUsuario;
+            miUsuario.codigoUsuario = miRegistro.codigoUsuario;
             miUsuario.nombre = miRegistro.nombre;
             miUsuario.apellido = miRegistro.apellido;
             miUsuario.clave = miRegistro.clave;
@@ -74,7 +80,11 @@ namespace CADSiscad
             miUsuario.horaUltimoIngreso = miRegistro.horaUltimoIngreso;
             miUsuario.fechaModificacionClave = miRegistro.fechaModificacionClave;
             miUsuario.correo = miRegistro.correo;
-            miUsuario.estado = miRegistro.estado;
+            miUsuario.estado = Convert.ToBoolean(miRegistro.estado);
+            miUsuario.adicional1 = miRegistro.adicional1;
+            miUsuario.adicional2 = miRegistro.adicional2;
+            miUsuario.adicional3 = miRegistro.adicional3;
+            miUsuario.idUsuarioCreador = miRegistro.idUsuarioCreador;
             return miUsuario;
         }
 

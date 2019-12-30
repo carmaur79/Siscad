@@ -9,6 +9,5 @@ namespace CADSiscad
 {
     class CADTercero
     {
-        private static terceroTableAdapter adaptador = new terceroTableAdapter();
     }
 }

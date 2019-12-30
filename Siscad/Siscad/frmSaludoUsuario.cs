@@ -58,15 +58,15 @@ namespace Siscad
             this.Opacity = 0.0;
             timerIniciaSaludo.Start();
             //Se carga información en el formulario
-            //nombreUsuarioLabel.Text = usuarioLogueado.nombre + " " + usuarioLogueado.apellido;
-            //fechaIngresoLabel.Text = usuarioLogueado.ultimoIngreso.ToLongDateString() + " a las " + usuarioLogueado.ultimoIngreso.ToLongTimeString() + " horas";
-            //nombreEmpresaLabel.Text = empresaLogueada.razonSocial;
-            //if (CADUsuario.EstadoUsuario(usuarioLogueado.idUsuario, ("0")))
-            //{
-            //    MessageBox.Show("No tiene permiso para ingresar al sistema, hable con su superior", "Atención",
-            //    MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
-            //    Application.Exit();
-            //}
+            nombreUsuarioLabel.Text = usuarioLogueado.nombre + " " + usuarioLogueado.apellido;
+            fechaIngresoLabel.Text = usuarioLogueado.ultimoIngreso.ToLongDateString() + " a las " + usuarioLogueado.ultimoIngreso.ToLongTimeString() + " horas";
+            nombreEmpresaLabel.Text = empresaLogueada.razonSocial;
+            if (CADUsuario.EstadoUsuario(usuarioLogueado.codigoUsuario, false))
+            {
+                MessageBox.Show("No tiene permiso para ingresar al sistema, hable con su superior", "Atención",
+                MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
+                Application.Exit();
+            }
         }
 
         private void timerIniciaSaludo_Tick(object sender, EventArgs e)
@@ -88,9 +88,9 @@ namespace Siscad
                 timerFinSaludo.Stop();
                 this.Hide();
                 //CADUsuario.UpdateUltimoIngreso(usuarioLogueado.idUsuario);
-                frmPrincipal1 miForm = new frmPrincipal1();
-                //miForm.UsuarioLogueado = this.usuarioLogueado;
-                //miForm.EmpresaLogueada = this.empresaLogueada;
+                frmPrincipal miForm = new frmPrincipal();
+                miForm.UsuarioLogueado = this.usuarioLogueado;
+                miForm.EmpresaLogueada = this.empresaLogueada;
                 miForm.Show();
             }
         }
