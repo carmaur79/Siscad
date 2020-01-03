@@ -144,9 +144,10 @@
             // 
             // numeroDocumentoLabel
             // 
+            numeroDocumentoLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             numeroDocumentoLabel.AutoSize = true;
             numeroDocumentoLabel.ForeColor = System.Drawing.SystemColors.Control;
-            numeroDocumentoLabel.Location = new System.Drawing.Point(109, 205);
+            numeroDocumentoLabel.Location = new System.Drawing.Point(114, 279);
             numeroDocumentoLabel.Name = "numeroDocumentoLabel";
             numeroDocumentoLabel.Size = new System.Drawing.Size(30, 13);
             numeroDocumentoLabel.TabIndex = 5;
@@ -154,9 +155,10 @@
             // 
             // dvLabel
             // 
+            dvLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             dvLabel.AutoSize = true;
             dvLabel.ForeColor = System.Drawing.SystemColors.Control;
-            dvLabel.Location = new System.Drawing.Point(296, 206);
+            dvLabel.Location = new System.Drawing.Point(301, 280);
             dvLabel.Name = "dvLabel";
             dvLabel.Size = new System.Drawing.Size(10, 13);
             dvLabel.TabIndex = 7;
@@ -164,9 +166,10 @@
             // 
             // razonSocialLabel
             // 
+            razonSocialLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             razonSocialLabel.AutoSize = true;
             razonSocialLabel.ForeColor = System.Drawing.SystemColors.Control;
-            razonSocialLabel.Location = new System.Drawing.Point(61, 238);
+            razonSocialLabel.Location = new System.Drawing.Point(66, 312);
             razonSocialLabel.Name = "razonSocialLabel";
             razonSocialLabel.Size = new System.Drawing.Size(78, 13);
             razonSocialLabel.TabIndex = 9;
@@ -174,9 +177,10 @@
             // 
             // nombreComercialLabel
             // 
+            nombreComercialLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             nombreComercialLabel.AutoSize = true;
             nombreComercialLabel.ForeColor = System.Drawing.SystemColors.Control;
-            nombreComercialLabel.Location = new System.Drawing.Point(44, 271);
+            nombreComercialLabel.Location = new System.Drawing.Point(49, 345);
             nombreComercialLabel.Name = "nombreComercialLabel";
             nombreComercialLabel.Size = new System.Drawing.Size(95, 13);
             nombreComercialLabel.TabIndex = 11;
@@ -184,9 +188,10 @@
             // 
             // direccionLabel
             // 
+            direccionLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             direccionLabel.AutoSize = true;
             direccionLabel.ForeColor = System.Drawing.SystemColors.Control;
-            direccionLabel.Location = new System.Drawing.Point(84, 369);
+            direccionLabel.Location = new System.Drawing.Point(89, 443);
             direccionLabel.Name = "direccionLabel";
             direccionLabel.Size = new System.Drawing.Size(55, 13);
             direccionLabel.TabIndex = 14;
@@ -194,9 +199,10 @@
             // 
             // idDepartamentoLabel
             // 
+            idDepartamentoLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             idDepartamentoLabel.AutoSize = true;
             idDepartamentoLabel.ForeColor = System.Drawing.SystemColors.Control;
-            idDepartamentoLabel.Location = new System.Drawing.Point(62, 402);
+            idDepartamentoLabel.Location = new System.Drawing.Point(67, 476);
             idDepartamentoLabel.Name = "idDepartamentoLabel";
             idDepartamentoLabel.Size = new System.Drawing.Size(77, 13);
             idDepartamentoLabel.TabIndex = 16;
@@ -204,9 +210,10 @@
             // 
             // idMunicipioLabel
             // 
+            idMunicipioLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             idMunicipioLabel.AutoSize = true;
             idMunicipioLabel.ForeColor = System.Drawing.SystemColors.Control;
-            idMunicipioLabel.Location = new System.Drawing.Point(84, 436);
+            idMunicipioLabel.Location = new System.Drawing.Point(89, 510);
             idMunicipioLabel.Name = "idMunicipioLabel";
             idMunicipioLabel.Size = new System.Drawing.Size(55, 13);
             idMunicipioLabel.TabIndex = 18;
@@ -214,9 +221,10 @@
             // 
             // telefono1Label
             // 
+            telefono1Label.Anchor = System.Windows.Forms.AnchorStyles.Top;
             telefono1Label.AutoSize = true;
             telefono1Label.ForeColor = System.Drawing.SystemColors.Control;
-            telefono1Label.Location = new System.Drawing.Point(82, 536);
+            telefono1Label.Location = new System.Drawing.Point(87, 610);
             telefono1Label.Name = "telefono1Label";
             telefono1Label.Size = new System.Drawing.Size(57, 13);
             telefono1Label.TabIndex = 21;
@@ -224,6 +232,7 @@
             // 
             // idTerceroArlLabel
             // 
+            idTerceroArlLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             idTerceroArlLabel.AutoSize = true;
             idTerceroArlLabel.ForeColor = System.Drawing.SystemColors.Control;
             idTerceroArlLabel.Location = new System.Drawing.Point(684, 397);
@@ -234,9 +243,10 @@
             // 
             // correoLabel
             // 
+            correoLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             correoLabel.AutoSize = true;
             correoLabel.ForeColor = System.Drawing.SystemColors.Control;
-            correoLabel.Location = new System.Drawing.Point(98, 572);
+            correoLabel.Location = new System.Drawing.Point(103, 646);
             correoLabel.Name = "correoLabel";
             correoLabel.Size = new System.Drawing.Size(41, 13);
             correoLabel.TabIndex = 24;
@@ -244,9 +254,10 @@
             // 
             // sitioWebLabel
             // 
+            sitioWebLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             sitioWebLabel.AutoSize = true;
             sitioWebLabel.ForeColor = System.Drawing.SystemColors.Control;
-            sitioWebLabel.Location = new System.Drawing.Point(86, 610);
+            sitioWebLabel.Location = new System.Drawing.Point(91, 684);
             sitioWebLabel.Name = "sitioWebLabel";
             sitioWebLabel.Size = new System.Drawing.Size(53, 13);
             sitioWebLabel.TabIndex = 26;
@@ -254,6 +265,7 @@
             // 
             // idTerceroRepresentanteLabel
             // 
+            idTerceroRepresentanteLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             idTerceroRepresentanteLabel.AutoSize = true;
             idTerceroRepresentanteLabel.ForeColor = System.Drawing.SystemColors.Control;
             idTerceroRepresentanteLabel.Location = new System.Drawing.Point(601, 434);
@@ -264,6 +276,7 @@
             // 
             // fechaConstitucionLabel
             // 
+            fechaConstitucionLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             fechaConstitucionLabel.AutoSize = true;
             fechaConstitucionLabel.ForeColor = System.Drawing.SystemColors.Control;
             fechaConstitucionLabel.Location = new System.Drawing.Point(591, 474);
@@ -274,6 +287,7 @@
             // 
             // resolucionFacturacionLabel
             // 
+            resolucionFacturacionLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             resolucionFacturacionLabel.AutoSize = true;
             resolucionFacturacionLabel.ForeColor = System.Drawing.SystemColors.Control;
             resolucionFacturacionLabel.Location = new System.Drawing.Point(695, 613);
@@ -284,6 +298,7 @@
             // 
             // fechaResolucionFacturacionLabel
             // 
+            fechaResolucionFacturacionLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             fechaResolucionFacturacionLabel.AutoSize = true;
             fechaResolucionFacturacionLabel.ForeColor = System.Drawing.SystemColors.Control;
             fechaResolucionFacturacionLabel.Location = new System.Drawing.Point(667, 650);
@@ -294,6 +309,7 @@
             // 
             // vigenciaResolucionLabel
             // 
+            vigenciaResolucionLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             vigenciaResolucionLabel.AutoSize = true;
             vigenciaResolucionLabel.ForeColor = System.Drawing.SystemColors.Control;
             vigenciaResolucionLabel.Location = new System.Drawing.Point(883, 648);
@@ -304,6 +320,7 @@
             // 
             // matriculaMercantilLabel
             // 
+            matriculaMercantilLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             matriculaMercantilLabel.AutoSize = true;
             matriculaMercantilLabel.ForeColor = System.Drawing.SystemColors.Control;
             matriculaMercantilLabel.Location = new System.Drawing.Point(606, 508);
@@ -314,6 +331,7 @@
             // 
             // escrituraConstitucionLabel
             // 
+            escrituraConstitucionLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             escrituraConstitucionLabel.AutoSize = true;
             escrituraConstitucionLabel.ForeColor = System.Drawing.SystemColors.Control;
             escrituraConstitucionLabel.Location = new System.Drawing.Point(890, 508);
@@ -324,6 +342,7 @@
             // 
             // facturaAutorizadaDesdeLabel
             // 
+            facturaAutorizadaDesdeLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             facturaAutorizadaDesdeLabel.AutoSize = true;
             facturaAutorizadaDesdeLabel.ForeColor = System.Drawing.SystemColors.Control;
             facturaAutorizadaDesdeLabel.Location = new System.Drawing.Point(633, 684);
@@ -334,6 +353,7 @@
             // 
             // facturaAutorizadaHastaLabel
             // 
+            facturaAutorizadaHastaLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             facturaAutorizadaHastaLabel.AutoSize = true;
             facturaAutorizadaHastaLabel.ForeColor = System.Drawing.SystemColors.Control;
             facturaAutorizadaHastaLabel.Location = new System.Drawing.Point(885, 684);
@@ -365,6 +385,7 @@
             // 
             // panelSubContenedor
             // 
+            this.panelSubContenedor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panelSubContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(27)))), ((int)(((byte)(64)))));
             this.panelSubContenedor.Controls.Add(facturaAutorizadaHastaLabel);
             this.panelSubContenedor.Controls.Add(this.facturaAutorizadaHastaTextBox);
@@ -419,7 +440,6 @@
             this.panelSubContenedor.Controls.Add(this.logoTextBox);
             this.panelSubContenedor.Controls.Add(this.bindingNavigator);
             this.panelSubContenedor.Controls.Add(this.panelSubMenuSuperior);
-            this.panelSubContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelSubContenedor.Location = new System.Drawing.Point(0, 0);
             this.panelSubContenedor.Name = "panelSubContenedor";
             this.panelSubContenedor.Size = new System.Drawing.Size(1096, 800);
@@ -427,6 +447,7 @@
             // 
             // facturaAutorizadaHastaTextBox
             // 
+            this.facturaAutorizadaHastaTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.facturaAutorizadaHastaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.datosEmpresaBindingSource, "facturaAutorizadaHasta", true));
             this.facturaAutorizadaHastaTextBox.Location = new System.Drawing.Point(929, 681);
             this.facturaAutorizadaHastaTextBox.Name = "facturaAutorizadaHastaTextBox";
@@ -445,6 +466,7 @@
             // 
             // facturaAutorizadaDesdeTextBox
             // 
+            this.facturaAutorizadaDesdeTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.facturaAutorizadaDesdeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.datosEmpresaBindingSource, "facturaAutorizadaDesde", true));
             this.facturaAutorizadaDesdeTextBox.Location = new System.Drawing.Point(779, 681);
             this.facturaAutorizadaDesdeTextBox.Name = "facturaAutorizadaDesdeTextBox";
@@ -453,6 +475,7 @@
             // 
             // escrituraConstitucionTextBox
             // 
+            this.escrituraConstitucionTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.escrituraConstitucionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.datosEmpresaBindingSource, "escrituraConstitucion", true));
             this.escrituraConstitucionTextBox.Location = new System.Drawing.Point(962, 505);
             this.escrituraConstitucionTextBox.Name = "escrituraConstitucionTextBox";
@@ -461,6 +484,7 @@
             // 
             // matriculaMercantilTextBox
             // 
+            this.matriculaMercantilTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.matriculaMercantilTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.datosEmpresaBindingSource, "matriculaMercantil", true));
             this.matriculaMercantilTextBox.Location = new System.Drawing.Point(712, 505);
             this.matriculaMercantilTextBox.Name = "matriculaMercantilTextBox";
@@ -469,6 +493,7 @@
             // 
             // labelResolucionFacturacion
             // 
+            this.labelResolucionFacturacion.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelResolucionFacturacion.AutoSize = true;
             this.labelResolucionFacturacion.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelResolucionFacturacion.ForeColor = System.Drawing.SystemColors.Control;
@@ -480,6 +505,7 @@
             // 
             // labelOtrosDatos
             // 
+            this.labelOtrosDatos.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelOtrosDatos.AutoSize = true;
             this.labelOtrosDatos.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelOtrosDatos.ForeColor = System.Drawing.SystemColors.Control;
@@ -491,10 +517,11 @@
             // 
             // labelContacto
             // 
+            this.labelContacto.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelContacto.AutoSize = true;
             this.labelContacto.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelContacto.ForeColor = System.Drawing.SystemColors.Control;
-            this.labelContacto.Location = new System.Drawing.Point(82, 493);
+            this.labelContacto.Location = new System.Drawing.Point(87, 567);
             this.labelContacto.Name = "labelContacto";
             this.labelContacto.Size = new System.Drawing.Size(80, 22);
             this.labelContacto.TabIndex = 20;
@@ -502,6 +529,7 @@
             // 
             // vigenciaResolucionTextBox
             // 
+            this.vigenciaResolucionTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.vigenciaResolucionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.datosEmpresaBindingSource, "vigenciaResolucion", true));
             this.vigenciaResolucionTextBox.Location = new System.Drawing.Point(979, 644);
             this.vigenciaResolucionTextBox.Name = "vigenciaResolucionTextBox";
@@ -512,10 +540,11 @@
             // 
             // labelUbicacion
             // 
+            this.labelUbicacion.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelUbicacion.AutoSize = true;
             this.labelUbicacion.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelUbicacion.ForeColor = System.Drawing.SystemColors.Control;
-            this.labelUbicacion.Location = new System.Drawing.Point(82, 322);
+            this.labelUbicacion.Location = new System.Drawing.Point(87, 396);
             this.labelUbicacion.Name = "labelUbicacion";
             this.labelUbicacion.Size = new System.Drawing.Size(90, 22);
             this.labelUbicacion.TabIndex = 13;
@@ -523,8 +552,9 @@
             // 
             // numeroDocumentoTextBox
             // 
+            this.numeroDocumentoTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.numeroDocumentoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.datosEmpresaBindingSource, "numeroDocumento", true));
-            this.numeroDocumentoTextBox.Location = new System.Drawing.Point(145, 202);
+            this.numeroDocumentoTextBox.Location = new System.Drawing.Point(150, 276);
             this.numeroDocumentoTextBox.Name = "numeroDocumentoTextBox";
             this.numeroDocumentoTextBox.ReadOnly = true;
             this.numeroDocumentoTextBox.Size = new System.Drawing.Size(150, 20);
@@ -533,6 +563,7 @@
             // 
             // fechaResolucionFacturacionDateTimePicker
             // 
+            this.fechaResolucionFacturacionDateTimePicker.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.fechaResolucionFacturacionDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.datosEmpresaBindingSource, "fechaResolucionFacturacion", true));
             this.fechaResolucionFacturacionDateTimePicker.Enabled = false;
             this.fechaResolucionFacturacionDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
@@ -543,10 +574,11 @@
             // 
             // labelIdentificacion
             // 
+            this.labelIdentificacion.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelIdentificacion.AutoSize = true;
             this.labelIdentificacion.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelIdentificacion.ForeColor = System.Drawing.SystemColors.Control;
-            this.labelIdentificacion.Location = new System.Drawing.Point(82, 156);
+            this.labelIdentificacion.Location = new System.Drawing.Point(87, 230);
             this.labelIdentificacion.Name = "labelIdentificacion";
             this.labelIdentificacion.Size = new System.Drawing.Size(120, 22);
             this.labelIdentificacion.TabIndex = 4;
@@ -554,6 +586,7 @@
             // 
             // resolucionFacturacionTextBox
             // 
+            this.resolucionFacturacionTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.resolucionFacturacionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.datosEmpresaBindingSource, "resolucionFacturacion", true));
             this.resolucionFacturacionTextBox.Location = new System.Drawing.Point(779, 610);
             this.resolucionFacturacionTextBox.Name = "resolucionFacturacionTextBox";
@@ -563,6 +596,7 @@
             // 
             // buttonLogo
             // 
+            this.buttonLogo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.buttonLogo.Location = new System.Drawing.Point(831, 148);
             this.buttonLogo.Name = "buttonLogo";
             this.buttonLogo.Size = new System.Drawing.Size(75, 23);
@@ -572,8 +606,9 @@
             // 
             // razonSocialTextBox
             // 
+            this.razonSocialTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.razonSocialTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.datosEmpresaBindingSource, "razonSocial", true));
-            this.razonSocialTextBox.Location = new System.Drawing.Point(145, 235);
+            this.razonSocialTextBox.Location = new System.Drawing.Point(150, 309);
             this.razonSocialTextBox.Name = "razonSocialTextBox";
             this.razonSocialTextBox.ReadOnly = true;
             this.razonSocialTextBox.Size = new System.Drawing.Size(400, 20);
@@ -581,6 +616,7 @@
             // 
             // fechaConstitucionDateTimePicker
             // 
+            this.fechaConstitucionDateTimePicker.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.fechaConstitucionDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.datosEmpresaBindingSource, "fechaConstitucion", true));
             this.fechaConstitucionDateTimePicker.Enabled = false;
             this.fechaConstitucionDateTimePicker.Location = new System.Drawing.Point(712, 468);
@@ -605,6 +641,7 @@
             // 
             // idTerceroRepresentanteComboBox
             // 
+            this.idTerceroRepresentanteComboBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.idTerceroRepresentanteComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.idTerceroRepresentanteComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.idTerceroRepresentanteComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.datosEmpresaBindingSource, "idTerceroRepresentante", true));
@@ -625,8 +662,9 @@
             // 
             // nombreComercialTextBox
             // 
+            this.nombreComercialTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.nombreComercialTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.datosEmpresaBindingSource, "nombreComercial", true));
-            this.nombreComercialTextBox.Location = new System.Drawing.Point(145, 268);
+            this.nombreComercialTextBox.Location = new System.Drawing.Point(150, 342);
             this.nombreComercialTextBox.Name = "nombreComercialTextBox";
             this.nombreComercialTextBox.ReadOnly = true;
             this.nombreComercialTextBox.Size = new System.Drawing.Size(400, 20);
@@ -634,8 +672,9 @@
             // 
             // direccionTextBox
             // 
+            this.direccionTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.direccionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.datosEmpresaBindingSource, "direccion", true));
-            this.direccionTextBox.Location = new System.Drawing.Point(145, 366);
+            this.direccionTextBox.Location = new System.Drawing.Point(150, 440);
             this.direccionTextBox.Name = "direccionTextBox";
             this.direccionTextBox.ReadOnly = true;
             this.direccionTextBox.Size = new System.Drawing.Size(400, 20);
@@ -643,6 +682,7 @@
             // 
             // idTerceroArlComboBox
             // 
+            this.idTerceroArlComboBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.idTerceroArlComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.idTerceroArlComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.idTerceroArlComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.datosEmpresaBindingSource, "idTerceroArl", true));
@@ -658,8 +698,9 @@
             // 
             // sitioWebTextBox
             // 
+            this.sitioWebTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.sitioWebTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.datosEmpresaBindingSource, "sitioWeb", true));
-            this.sitioWebTextBox.Location = new System.Drawing.Point(145, 607);
+            this.sitioWebTextBox.Location = new System.Drawing.Point(150, 681);
             this.sitioWebTextBox.Name = "sitioWebTextBox";
             this.sitioWebTextBox.ReadOnly = true;
             this.sitioWebTextBox.Size = new System.Drawing.Size(400, 20);
@@ -667,6 +708,7 @@
             // 
             // idDepartamentoComboBox
             // 
+            this.idDepartamentoComboBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.idDepartamentoComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.idDepartamentoComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.idDepartamentoComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.datosEmpresaBindingSource, "idDepartamento", true));
@@ -674,7 +716,7 @@
             this.idDepartamentoComboBox.DisplayMember = "departamento";
             this.idDepartamentoComboBox.Enabled = false;
             this.idDepartamentoComboBox.FormattingEnabled = true;
-            this.idDepartamentoComboBox.Location = new System.Drawing.Point(145, 399);
+            this.idDepartamentoComboBox.Location = new System.Drawing.Point(150, 473);
             this.idDepartamentoComboBox.Name = "idDepartamentoComboBox";
             this.idDepartamentoComboBox.Size = new System.Drawing.Size(400, 21);
             this.idDepartamentoComboBox.TabIndex = 17;
@@ -687,8 +729,9 @@
             // 
             // correoTextBox
             // 
+            this.correoTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.correoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.datosEmpresaBindingSource, "correo", true));
-            this.correoTextBox.Location = new System.Drawing.Point(145, 570);
+            this.correoTextBox.Location = new System.Drawing.Point(150, 644);
             this.correoTextBox.Name = "correoTextBox";
             this.correoTextBox.ReadOnly = true;
             this.correoTextBox.Size = new System.Drawing.Size(400, 20);
@@ -696,6 +739,7 @@
             // 
             // idMunicipioComboBox
             // 
+            this.idMunicipioComboBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.idMunicipioComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.idMunicipioComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.idMunicipioComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.datosEmpresaBindingSource, "idMunicipio", true));
@@ -703,7 +747,7 @@
             this.idMunicipioComboBox.DisplayMember = "municipio";
             this.idMunicipioComboBox.Enabled = false;
             this.idMunicipioComboBox.FormattingEnabled = true;
-            this.idMunicipioComboBox.Location = new System.Drawing.Point(145, 433);
+            this.idMunicipioComboBox.Location = new System.Drawing.Point(150, 507);
             this.idMunicipioComboBox.Name = "idMunicipioComboBox";
             this.idMunicipioComboBox.Size = new System.Drawing.Size(400, 21);
             this.idMunicipioComboBox.TabIndex = 19;
@@ -716,8 +760,9 @@
             // 
             // telefono1TextBox
             // 
+            this.telefono1TextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.telefono1TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.datosEmpresaBindingSource, "telefono1", true));
-            this.telefono1TextBox.Location = new System.Drawing.Point(145, 533);
+            this.telefono1TextBox.Location = new System.Drawing.Point(150, 607);
             this.telefono1TextBox.Name = "telefono1TextBox";
             this.telefono1TextBox.ReadOnly = true;
             this.telefono1TextBox.Size = new System.Drawing.Size(150, 20);
@@ -725,8 +770,9 @@
             // 
             // telefono2TextBox
             // 
+            this.telefono2TextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.telefono2TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.datosEmpresaBindingSource, "telefono2", true));
-            this.telefono2TextBox.Location = new System.Drawing.Point(301, 533);
+            this.telefono2TextBox.Location = new System.Drawing.Point(306, 607);
             this.telefono2TextBox.Name = "telefono2TextBox";
             this.telefono2TextBox.ReadOnly = true;
             this.telefono2TextBox.Size = new System.Drawing.Size(150, 20);
@@ -734,8 +780,9 @@
             // 
             // dvTextBox
             // 
+            this.dvTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dvTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.datosEmpresaBindingSource, "dv", true));
-            this.dvTextBox.Location = new System.Drawing.Point(307, 202);
+            this.dvTextBox.Location = new System.Drawing.Point(312, 276);
             this.dvTextBox.Name = "dvTextBox";
             this.dvTextBox.ReadOnly = true;
             this.dvTextBox.Size = new System.Drawing.Size(20, 20);
@@ -758,6 +805,7 @@
             // 
             // pictureBoxLogo
             // 
+            this.pictureBoxLogo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBoxLogo.BackColor = System.Drawing.Color.Silver;
             this.pictureBoxLogo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBoxLogo.Location = new System.Drawing.Point(752, 177);
@@ -768,6 +816,7 @@
             // 
             // logoTextBox
             // 
+            this.logoTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.logoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.datosEmpresaBindingSource, "logo", true));
             this.logoTextBox.Location = new System.Drawing.Point(912, 150);
             this.logoTextBox.Name = "logoTextBox";

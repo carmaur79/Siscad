@@ -403,6 +403,16 @@ namespace Siscad.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap imagenAceptar {
+            get {
+                object obj = ResourceManager.GetObject("imagenAceptar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap incidenteAccidente {
             get {
                 object obj = ResourceManager.GetObject("incidenteAccidente", resourceCulture);

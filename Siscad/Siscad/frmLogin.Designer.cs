@@ -41,9 +41,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panelSuperior = new System.Windows.Forms.Panel();
-            this.btnCancelar = new System.Windows.Forms.Button();
             this.panelInferior = new System.Windows.Forms.Panel();
             this.btnAceptar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.panelSuperior.SuspendLayout();
             this.SuspendLayout();
@@ -165,6 +165,35 @@
             this.panelSuperior.Size = new System.Drawing.Size(600, 40);
             this.panelSuperior.TabIndex = 30;
             // 
+            // panelInferior
+            // 
+            this.panelInferior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(178)))), ((int)(((byte)(105)))));
+            this.panelInferior.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelInferior.Location = new System.Drawing.Point(0, 360);
+            this.panelInferior.Name = "panelInferior";
+            this.panelInferior.Size = new System.Drawing.Size(600, 40);
+            this.panelInferior.TabIndex = 31;
+            // 
+            // btnAceptar
+            // 
+            this.btnAceptar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(123)))), ((int)(((byte)(75)))));
+            this.btnAceptar.BackgroundImage = global::Siscad.Properties.Resources.imagenAceptar;
+            this.btnAceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAceptar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAceptar.FlatAppearance.BorderSize = 0;
+            this.btnAceptar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
+            this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAceptar.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAceptar.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnAceptar.Location = new System.Drawing.Point(229, 233);
+            this.btnAceptar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAceptar.Name = "btnAceptar";
+            this.btnAceptar.Size = new System.Drawing.Size(140, 40);
+            this.btnAceptar.TabIndex = 25;
+            this.btnAceptar.Text = "&Ingresar";
+            this.btnAceptar.UseVisualStyleBackColor = false;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
+            // 
             // btnCancelar
             // 
             this.btnCancelar.BackColor = System.Drawing.Color.Transparent;
@@ -184,36 +213,6 @@
             this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
-            // panelInferior
-            // 
-            this.panelInferior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(178)))), ((int)(((byte)(105)))));
-            this.panelInferior.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelInferior.Location = new System.Drawing.Point(0, 360);
-            this.panelInferior.Name = "panelInferior";
-            this.panelInferior.Size = new System.Drawing.Size(600, 40);
-            this.panelInferior.TabIndex = 31;
-            // 
-            // btnAceptar
-            // 
-            this.btnAceptar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(123)))), ((int)(((byte)(75)))));
-            this.btnAceptar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAceptar.FlatAppearance.BorderSize = 0;
-            this.btnAceptar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
-            this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAceptar.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptar.ForeColor = System.Drawing.Color.Black;
-            this.btnAceptar.Image = global::Siscad.Properties.Resources.aceptar;
-            this.btnAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAceptar.Location = new System.Drawing.Point(229, 233);
-            this.btnAceptar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(140, 40);
-            this.btnAceptar.TabIndex = 25;
-            this.btnAceptar.Text = "&Ingresar";
-            this.btnAceptar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAceptar.UseVisualStyleBackColor = false;
-            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // frmLogin
             // 
